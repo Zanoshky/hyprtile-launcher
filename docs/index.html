@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hyprtile user guide</title>
+<meta name="description" content="Hyprtile, a tiling Linux desktop for your Android home screen: user guide, recipes, FAQ and bug reports.">
+<meta name="theme-color" content="#0a0717">
+<meta property="og:title" content="Hyprtile user guide">
+<meta property="og:description" content="Hyprtile, a tiling Linux desktop for your Android home screen: user guide, recipes, FAQ and bug reports.">
+<meta property="og:image" content="img/phone-1-home.webp">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="index.html"><img src="img/icon-192.png" alt="" width="30" height="30"><span>hyprtile</span></a>
+  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html" aria-current="page"><span class="ws" aria-hidden="true">1</span>home</a></li><li><a href="guide.html"><span class="ws" aria-hidden="true">2</span>guide</a></li><li><a href="use-cases.html"><span class="ws" aria-hidden="true">3</span>use cases</a></li><li><a href="cookbook.html"><span class="ws" aria-hidden="true">4</span>cookbook</a></li><li><a href="faq.html"><span class="ws" aria-hidden="true">5</span>faq</a></li><li><a href="report.html"><span class="ws" aria-hidden="true">6</span>report a bug</a></li></ul></nav>
+</header>
+<div class="wrap">
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-h">
+  <div class="tile">
+    <div class="title" aria-hidden="true">kitty ~ user guide</div>
+    <h1 id="hero-h">hyprtile</h1>
+    <div class="underline" aria-hidden="true"></div>
+    <p class="lede">A tiling Linux desktop as your Android home screen. Inspired by Hyprland, Omarchy and kitty. Widgets become windows with gaps and glowing borders, with a terminal, a launcher and 31 themes from the ricing scene.</p>
+    <p class="dim">This is the user guide, and the place to report bugs and ask for features. The app itself is on Google Play.</p>
+    <div class="actions">
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.zanoshky.hyprtile">Get it on Google Play</a>
+      <a class="btn ghost" href="guide.html">Read the guide</a>
+      <a class="btn ghost" href="report.html">Report a bug</a>
+    </div>
+  </div>
+  <div class="phone"><img src="img/phone-1-home.webp" width="540" height="1080" alt="Hyprtile home in the hyper theme over the synthwave scene: a big gradient clock, a weather window for Zagreb with sunrise, sunset and a temperature curve, a battery window at 100 percent and a moon window at first quarter."></div>
+</section>
+
+<div class="tiles">
+<div class="tile quiet"><h2>Tiling home screen</h2>
+<p>Widgets are windows, tiled with gaps, rounded corners, rotating gradient borders, drop shadows and a frosted blur of the wallpaper behind each one.</p>
+</div>
+<div class="tile quiet"><h2>Workspaces</h2>
+<p>Swipe sideways to slide between workspaces. Each one keeps its own windows. Tile them like Hyprland, or place them like Android widgets.</p>
+</div>
+<div class="tile quiet"><h2>Rice it</h2>
+<p>18 presets, 31 themes, painted wallpapers that move, five terminal fonts, and hyprtile.conf in Hyprland's own syntax.</p>
+</div>
+<div class="tile quiet"><h2>25 windows</h2>
+<p>Terminal, btop, cliamp with radio, cava, weather, calendar, pomodoro, pipes, matrix and more.</p>
+</div>
+</div>
+
+<section class="tile " id="shots" aria-labelledby="shots-h"><div class="title" aria-hidden="true">swayimg</div><h2 id="shots-h">Screenshots</h2>
+
+<p class="dim">From a real phone. Scroll sideways for more.</p>
+<div class="shots-wrap" tabindex="0" role="region" aria-label="Screenshots, scroll sideways">
+<ul class="shots"><li><figure><div class="phone"><img src="img/phone-1-home.webp" width="540" height="1080" alt="Hyprtile home in the hyper theme over the synthwave scene: a big gradient clock, a weather window for Zagreb with sunrise, sunset and a temperature curve, a battery window at 100 percent and a moon window at first quarter." loading="lazy"></div><figcaption>workspace 1: clock, weather, battery and moon</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-2-system.webp" width="540" height="1080" alt="A tiled workspace: a btop style monitor with cpu cores, network, memory and power, the cliamp music player playing Midnight Drive, a fetch window with phone specs, and toggles for torch, wifi, bluetooth and sound." loading="lazy"></div><figcaption>workspace 2: btop, cliamp, fetch and toggles</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-3-planner.webp" width="540" height="1080" alt="A planner workspace: the October calendar with upcoming events, a todo list, a pomodoro ring at 25:00 and the moon." loading="lazy"></div><figcaption>workspace 3: calendar, todo, pomodoro and moon</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-4-rofi.webp" width="540" height="1080" alt="The rofi style app launcher open over the desktop, listing apps like Calendar, Camera, Chrome and Clock." loading="lazy"></div><figcaption>rofi: swipe up and type to find an app</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-5-edit.webp" width="540" height="1080" alt="Edit mode: the strip at the top reads add, workspaces, look, settings and done. Each window has a close mark and edge handles, and a plus spot sits in the free space." loading="lazy"></div><figcaption>edit mode: close, resize and add</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-6-add.webp" width="540" height="1080" alt="The add a window sheet with a search field and live previews of clock, world, weather, sun, moon and calendar, each with its size." loading="lazy"></div><figcaption>add a window: the picker</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-7-presets.webp" width="540" height="1080" alt="The presets menu: neon hyper, night city, aurora glass, outrun drive, deep space, vapor dream, blood moon, toxic circuit, glacier, oled void, sakura, mocha cozy, dracula and github dark." loading="lazy"></div><figcaption>presets: a complete look in one tap</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-8-aurora.webp" width="540" height="1080" alt="The system workspace in the borealis theme over the aurora scene, with green and teal borders." loading="lazy"></div><figcaption>the aurora glass look</figcaption></figure></li></ul>
+</div>
+</section>
+
+<section class="tile " id="start" aria-labelledby="start-h"><div class="title" aria-hidden="true">quick start</div><h2 id="start-h">Quick start</h2>
+
+<ol class="steps">
+  <li>Install Hyprtile from <a href="https://play.google.com/store/apps/details?id=com.zanoshky.hyprtile">Google Play</a>. It runs on Android 7 or newer.</li>
+  <li>Open it. The welcome card shows the main gestures. Take the tour: it acts out each gesture on your own windows.</li>
+  <li>Tap <code>set up your phone</code> for the setup guide: default home, lock screen, notification access and more.</li>
+  <li>Swipe sideways for workspaces, swipe up for rofi, double tap a window for full screen.</li>
+  <li>Hold an empty spot for edit mode. Add windows, open workspaces, look and settings from the strip.</li>
+  <li>Pick a preset under <code>look</code>, and your desktop is riced.</li>
+</ol>
+<p><a href="guide.html">The full guide, from A to Z</a></p>
+
+</section>
+
+<div class="tiles">
+<div class="tile "><h2>Guide</h2>
+<p>Setup, gestures, workspaces, edit mode, windows, looks, hyprtile.conf, lock screen, battery and accessibility.</p><p><a href="guide.html">Open the guide</a></p>
+</div>
+<div class="tile "><h2>Use cases</h2>
+<p>A focus phone, a music setup, a work dashboard, a night setup and a full rice.</p><p><a href="use-cases.html">See use cases</a></p>
+</div>
+<div class="tile "><h2>Cookbook</h2>
+<p>Short recipes: a music page, a calm page, a night look, border gradients and more.</p><p><a href="cookbook.html">Open the cookbook</a></p>
+</div>
+<div class="tile "><h2>Help</h2>
+<p>Answers, fixes for common problems, and how to report a bug.</p><p><a href="faq.html">FAQ</a> · <a href="report.html">Report a bug</a></p>
+</div>
+</div>
+
+</main>
+<footer>
+  <div class="tile quiet">
+  <ul>
+    <li><a href="https://play.google.com/store/apps/details?id=com.zanoshky.hyprtile">Google Play</a></li>
+    <li><a href="https://hyprtile.zanoski.com">hyprtile.zanoski.com</a></li>
+    <li><a href="https://github.com/Zanoshky/hyprtile-launcher/issues">Issues</a></li>
+    <li><a href="https://github.com/Zanoshky/hyprtile-launcher/blob/main/LICENSE">License</a></li>
+  </ul>
+  <p>Guide text and images are shared under CC BY 4.0. The Hyprtile app itself is proprietary. Made by Marko Zanoski. Hyprtile is an independent app and is not affiliated with Hyprland, Omarchy, kitty or cliamp.</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

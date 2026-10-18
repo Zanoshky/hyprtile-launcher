@@ -1,0 +1,73 @@
+name: Feature request
+description: An idea for something Hyprtile could do.
+title: "[idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What you want
+      description: Describe the feature in a few lines.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What would it help you do? A real example helps.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: "Which window or screen?"
+      options:
+        - clock
+        - world
+        - weather
+        - sun
+        - moon
+        - calendar
+        - meeting
+        - notifications
+        - apps
+        - toggles
+        - battery
+        - network
+        - storage
+        - cliamp
+        - cava
+        - btop
+        - gauges
+        - fetch
+        - dash
+        - terminal
+        - pipes
+        - matrix
+        - notes
+        - pomodoro
+        - calc
+        - rofi (app launcher)
+        - edit mode or add a window
+        - workspaces or tiling
+        - look, presets or themes
+        - hyprtile.conf
+        - settings
+        - setup or tour
+        - lock screen
+        - link devices
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Pictures or links
+      description: A sketch, a screenshot or a link to something similar.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open issues and this idea is not there yet.
+          required: true

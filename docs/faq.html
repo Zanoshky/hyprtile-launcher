@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ · Hyprtile user guide</title>
+<meta name="description" content="Hyprtile questions and troubleshooting.">
+<meta name="theme-color" content="#0a0717">
+<meta property="og:title" content="FAQ · Hyprtile user guide">
+<meta property="og:description" content="Hyprtile questions and troubleshooting.">
+<meta property="og:image" content="img/phone-1-home.webp">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="index.html"><img src="img/icon-192.png" alt="" width="30" height="30"><span>hyprtile</span></a>
+  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html"><span class="ws" aria-hidden="true">1</span>home</a></li><li><a href="guide.html"><span class="ws" aria-hidden="true">2</span>guide</a></li><li><a href="use-cases.html"><span class="ws" aria-hidden="true">3</span>use cases</a></li><li><a href="cookbook.html"><span class="ws" aria-hidden="true">4</span>cookbook</a></li><li><a href="faq.html" aria-current="page"><span class="ws" aria-hidden="true">5</span>faq</a></li><li><a href="report.html"><span class="ws" aria-hidden="true">6</span>report a bug</a></li></ul></nav>
+</header>
+<div class="wrap">
+<main id="main">
+
+<div class="eyebrow">~/faq</div>
+<h1>FAQ and troubleshooting</h1>
+<div class="underline" aria-hidden="true"></div>
+<p class="lede">Quick answers. If yours is not here, <a href="report.html">report it</a>.</p>
+<div class="tiles one">
+<section class="tile " id="questions" aria-labelledby="questions-h"><div class="title" aria-hidden="true">questions</div><h2 id="questions-h">Questions</h2>
+<details><summary>Where are the settings?</summary><div><p>The bar is hidden on a fresh install. Hold an empty spot and tap <code>settings</code> in the strip. On a full page with no empty spot, hold a window, let go, and tap <code>settings</code>. With the bar shown, tap <code>≡</code> on it.</p></div></details><details><summary>Can Hyprtile replace my lock screen?</summary><div><p>Android does not allow that. Hyprtile draws a live wallpaper that shows behind Android's lock screen. Android still asks for your PIN or fingerprint.</p></div></details><details><summary>I see two clocks on the lock screen.</summary><div><p>The other one is Android's. Use the setup steps <code>hide system cards</code> and <code>dynamic clock off</code>.</p></div></details><details><summary>Is Hyprtile made by the Hyprland team?</summary><div><p>No. Hyprtile is an independent app and is not affiliated with Hyprland, Omarchy, kitty or cliamp. It is inspired by them.</p></div></details><details><summary>Which Android version do I need?</summary><div><p>Android 7 or newer.</p></div></details><details><summary>Does it collect my data?</summary><div><p>No. No account, no ads, no analytics. See the <a href="https://hyprtile.zanoski.com/privacy">privacy policy</a>.</p></div></details><details><summary>Why does the real visualizer ask for the microphone?</summary><div><p>Android uses that permission for reading the sound the phone plays. Only the loudness per band is read, to draw the bars. Nothing is kept or sent.</p></div></details><details><summary>Do I have to edit the config file?</summary><div><p>No. Every look option has a row in settings. The file is there for people who like it.</p></div></details><details><summary>What is the difference between a tiled and a free page?</summary><div><p>A tiled page fills the screen with its windows, like Hyprland. A free page is a grid of cells, like Android widgets, and empty cells stay empty. Switch under <code>workspaces</code>, <code>tiling</code>.</p></div></details>
+</section><section class="tile " id="fix" aria-labelledby="fix-h"><div class="title" aria-hidden="true">troubleshooting</div><h2 id="fix-h">Troubleshooting</h2>
+<details><summary>Swiping up does not open rofi.</summary><div><p>Swipe from the lower half of the screen. A swipe that starts on a window that scrolls, like apps, scrolls that window instead. Start on the wallpaper or another window.</p></div></details><details><summary>The weather window asks to allow, or shows nothing.</summary><div><p>Allow location, or type a city under settings, <code>home</code>, <code>weather place</code>. "no place called x" means the city was not found; try another spelling.</p></div></details><details><summary>The music window shows no spectrum.</summary><div><p>Turn on <code>real visualizer</code> in settings, <code>home</code>, and allow the microphone. If it says "no audio from this player", that player keeps its sound private.</p></div></details><details><summary>The notifications window is empty.</summary><div><p>Allow notification access in the setup guide.</p></div></details><details><summary>The pomodoro rings late.</summary><div><p>Open settings, <code>feel</code>, and tap <code>pomodoro on time</code> to allow exact alarms.</p></div></details><details><summary>I broke my hyprtile.conf.</summary><div><p>Settings, <code>help</code>, <code>reset to defaults</code>. Your file is saved as hyprtile.conf.bak first, and <code>bring back the saved copy</code> can undo it.</p></div></details><details><summary>The lock screen went back to a plain wallpaper.</summary><div><p>Set it again: settings, <code>lock screen</code>, <code>set as lock screen</code>.</p></div></details><details><summary>Motion looks choppy, or the battery drains fast.</summary><div><p>Check <code>frame rate</code> in <code>motion and battery</code>. 60 is smooth, 30 saves battery, max uses your screen's top rate. Turn on <code>frame stats</code> to see the real rate. Still wrong? <a href="report.html">Report a bug</a> with your phone model.</p></div></details>
+</section></div>
+</main>
+<footer>
+  <div class="tile quiet">
+  <ul>
+    <li><a href="https://play.google.com/store/apps/details?id=com.zanoshky.hyprtile">Google Play</a></li>
+    <li><a href="https://hyprtile.zanoski.com">hyprtile.zanoski.com</a></li>
+    <li><a href="https://github.com/Zanoshky/hyprtile-launcher/issues">Issues</a></li>
+    <li><a href="https://github.com/Zanoshky/hyprtile-launcher/blob/main/LICENSE">License</a></li>
+  </ul>
+  <p>Guide text and images are shared under CC BY 4.0. The Hyprtile app itself is proprietary. Made by Marko Zanoski. Hyprtile is an independent app and is not affiliated with Hyprland, Omarchy, kitty or cliamp.</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

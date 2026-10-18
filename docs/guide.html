@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide · Hyprtile user guide</title>
+<meta name="description" content="The Hyprtile user guide from A to Z: setup, gestures, workspaces, edit mode, windows, presets, hyprtile.conf, lock screen, battery and accessibility.">
+<meta name="theme-color" content="#0a0717">
+<meta property="og:title" content="Guide · Hyprtile user guide">
+<meta property="og:description" content="The Hyprtile user guide from A to Z: setup, gestures, workspaces, edit mode, windows, presets, hyprtile.conf, lock screen, battery and accessibility.">
+<meta property="og:image" content="img/phone-1-home.webp">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="index.html"><img src="img/icon-192.png" alt="" width="30" height="30"><span>hyprtile</span></a>
+  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html"><span class="ws" aria-hidden="true">1</span>home</a></li><li><a href="guide.html" aria-current="page"><span class="ws" aria-hidden="true">2</span>guide</a></li><li><a href="use-cases.html"><span class="ws" aria-hidden="true">3</span>use cases</a></li><li><a href="cookbook.html"><span class="ws" aria-hidden="true">4</span>cookbook</a></li><li><a href="faq.html"><span class="ws" aria-hidden="true">5</span>faq</a></li><li><a href="report.html"><span class="ws" aria-hidden="true">6</span>report a bug</a></li></ul></nav>
+</header>
+<div class="wrap">
+<main id="main">
+
+<div class="eyebrow">~/.config/hyprtile</div>
+<h1>The guide</h1>
+<div class="underline" aria-hidden="true"></div>
+<p class="lede">Everything Hyprtile does, from install to the last config key, in order. Words in <code>code</code> are what you see in the app.</p>
+<div class="tiles"><nav class="tile toc" aria-labelledby="toc-h"><h2 id="toc-h">Contents</h2><ol><li><a href="#install"><span class="n">1</span>Install</a></li><li><a href="#setup"><span class="n">2</span>Welcome and setup</a></li><li><a href="#home"><span class="n">3</span>Set as home screen</a></li><li><a href="#tour"><span class="n">4</span>The tour and the cheat sheet</a></li><li><a href="#gestures"><span class="n">5</span>Gestures</a></li><li><a href="#desktop"><span class="n">6</span>The desktop</a></li><li><a href="#workspaces"><span class="n">7</span>Workspaces</a></li><li><a href="#edit"><span class="n">8</span>Edit mode</a></li><li><a href="#add"><span class="n">9</span>Add a window</a></li><li><a href="#free"><span class="n">10</span>Move and size on a free page</a></li><li><a href="#tiling"><span class="n">11</span>Tiled pages</a></li><li><a href="#winmenu"><span class="n">12</span>The window menu</a></li><li><a href="#windows"><span class="n">13</span>All 25 windows</a></li><li><a href="#rofi"><span class="n">14</span>Rofi: find an app</a></li><li><a href="#terminal"><span class="n">15</span>The terminal</a></li><li><a href="#music"><span class="n">16</span>Music, radio and cava</a></li><li><a href="#weather"><span class="n">17</span>Weather and places</a></li><li><a href="#looks"><span class="n">18</span>Presets, themes and looks</a></li><li><a href="#conf"><span class="n">19</span>hyprtile.conf</a></li><li><a href="#lock"><span class="n">20</span>Lock screen</a></li><li><a href="#settings"><span class="n">21</span>Settings map</a></li><li><a href="#motion"><span class="n">22</span>Motion and battery</a></li><li><a href="#link"><span class="n">23</span>Link devices</a></li><li><a href="#a11y"><span class="n">24</span>Accessibility</a></li><li><a href="#privacy"><span class="n">25</span>Privacy and permissions</a></li><li><a href="#reset"><span class="n">26</span>Showcase and reset</a></li></ol></nav></div>
+
+<div class="tiles one">
+<section class="tile " id="install" aria-labelledby="install-h"><div class="title" aria-hidden="true">01</div><h2 id="install-h">Install</h2>
+
+<p>Get Hyprtile on <a href="https://play.google.com/store/apps/details?id=com.zanoshky.hyprtile">Google Play</a>. Pay once: no subscription, no ads, no analytics, no account. Hyprtile runs on Android 7 or newer, on phones and tablets, in portrait and landscape.</p>
+
+</section>
+
+<section class="tile " id="setup" aria-labelledby="setup-h"><div class="title" aria-hidden="true">02</div><h2 id="setup-h">Welcome and setup</h2>
+
+<p>The first start opens <code>welcome to hyprtile</code>. It lists the gestures that run the desktop, then offers <code>take the tour</code>, <code>pick your look</code>, <code>set up your phone</code> and <code>start exploring</code>.</p>
+<p>The setup guide has 8 steps. Tap a step to open its page. Done steps show a tick.</p>
+<ol class="steps">
+  <li><code>default home</code>: make Hyprtile your home screen.</li>
+  <li><code>lock screen</code>: pick Hyprtile lock screen, then "Lock screen" or "Home and lock screen".</li>
+  <li><code>notification access</code>: for the notifications window and music controls.</li>
+  <li><code>hide system cards</code>: set lock screen notifications to "Don't show any notifications".</li>
+  <li><code>dynamic clock off</code>: so Android's big clock does not cover yours.</li>
+  <li><code>location for weather</code>: or type a city instead.</li>
+  <li><code>calendar</code>: for the calendar and meeting windows.</li>
+  <li><code>battery saver</code>: advice on saving power.</li>
+</ol>
+<p>The guide is in settings again under <code>help</code>, <code>setup guide</code>, or type <code>setup</code> in the terminal.</p>
+
+</section>
+
+<section class="tile " id="home" aria-labelledby="home-h"><div class="title" aria-hidden="true">03</div><h2 id="home-h">Set as home screen</h2>
+
+<p>The easiest way is the first setup step, <code>default home</code>. You can also do it in Android settings. On most phones it is under Apps, then Default apps, then Home app. To go back, pick your old launcher there.</p>
+
+</section>
+
+<section class="tile " id="tour" aria-labelledby="tour-h"><div class="title" aria-hidden="true">04</div><h2 id="tour-h">The tour and the cheat sheet</h2>
+
+<p>The tour has 8 steps on your real desktop: swipe sideways, double tap a window, hold and drag to swap, drag a gap, double tap a gap, swipe up for rofi, hold an empty spot for edit mode, and tap <code>+ add</code>. A ghost finger acts each one out on your own windows. The card has back, skip and end. TalkBack hears each step.</p>
+<p>If the tour changed your layout, the end card offers <code>undo the tour</code>.</p>
+<p>The <code>gestures</code> cheat sheet lists every gesture with what it does and how. Find both in settings, <code>help</code>, or type <code>tour</code> or <code>gestures</code> in the terminal.</p>
+
+</section>
+
+<section class="tile " id="gestures" aria-labelledby="gestures-h"><div class="title" aria-hidden="true">05</div><h2 id="gestures-h">Gestures</h2>
+
+<dl class="keys">
+  <dt>swipe sideways</dt><dd>workspaces. Each page keeps its own windows.</dd>
+  <dt>swipe up</dt><dd>find an app. From the lower half; type to filter.</dd>
+  <dt>pull down</dt><dd>notifications, from the top of the screen</dd>
+  <dt>tap a window</dt><dd>use it. Every window is live.</dd>
+  <dt>double tap a window</dt><dd>full screen. Double tap again to tile it back.</dd>
+  <dt>hold a window, drag</dt><dd>move. The middle of a window swaps, its edge splits it, empty space moves it.</dd>
+  <dt>hold a window, let go</dt><dd>the window menu: move, size, replace, close, move to workspace</dd>
+  <dt>hold an empty spot</dt><dd>edit mode. x closes, edges resize, plus adds; done saves.</dd>
+  <dt>tap + or + add</dt><dd>add a window. It lands at its own size, half the page at most.</dd>
+  <dt>drag a gap</dt><dd>resize. Windows on both sides follow.</dd>
+  <dt>double tap a gap</dt><dd>flip split: side by side or stacked</dd>
+</dl>
+
+</section>
+
+<section class="tile " id="desktop" aria-labelledby="desktop-h"><div class="title" aria-hidden="true">06</div><h2 id="desktop-h">The desktop</h2>
+
+<p>Your home is a tiling desktop, like Hyprland on a laptop. Each window is live, with a gradient border, a soft glow and frosted glass that lets the wallpaper shine through.</p>
+<p><b>The bar.</b> A waybar style bar with workspace pills, the clock, battery, network, cpu and memory. On a fresh install it is hidden, like in the store pictures, so windows get the space. Show it under settings, <code>home</code>, <code>top bar</code>. With the bar shown, the <code>≡</code> button on it opens settings. The phone's own status bar has its own row there too.</p>
+<p><b>The default desktop</b> has four workspaces:</p>
+<ol class="steps">
+  <li>clock, weather, battery and moon, placed on a grid with room to add more</li>
+  <li>btop, cliamp, fetch and toggles</li>
+  <li>calendar, notes, pomodoro and moon</li>
+  <li>a black page</li>
+</ol>
+
+</section>
+
+<section class="tile " id="workspaces" aria-labelledby="workspaces-h"><div class="title" aria-hidden="true">07</div><h2 id="workspaces-h">Workspaces</h2>
+
+<p>Swipe sideways to slide between workspaces. Open settings, <code>workspaces</code>:</p>
+<dl class="keys">
+  <dt>go to 1, 2, 3...</dt><dd>jump to a workspace</dd>
+  <dt>new workspace</dt><dd>a new page. New pages start free, like a home screen grid.</dd>
+  <dt>new black page</dt><dd>a page of pure black with no frost</dd>
+  <dt>black page</dt><dd>turn this page black, or back</dd>
+  <dt>tiling</dt><dd>switch this page between tiled and free</dd>
+  <dt>move left, move right</dt><dd>reorder pages</dd>
+  <dt>close workspace</dt><dd>remove this page</dd>
+</dl>
+<p>On an empty black page the bar hides too, so it is all black.</p>
+
+</section>
+
+<section class="tile " id="edit" aria-labelledby="edit-h"><div class="title" aria-hidden="true">08</div><h2 id="edit-h">Edit mode</h2>
+
+<p>Hold an empty spot, or tap <code>edit home screen</code> in the window menu or settings. The strip on top reads:</p>
+<dl class="keys">
+  <dt>+ add</dt><dd>add a window</dd>
+  <dt>workspaces</dt><dd>the workspaces menu</dd>
+  <dt>look</dt><dd>presets, theme, wallpaper, font and more</dd>
+  <dt>settings</dt><dd>every setting</dd>
+  <dt>done</dt><dd>leave and save</dd>
+</dl>
+<p>Each window gets an <code>x</code> to close it, a grip and edge handles. Free cells show dotted <code>+</code> spots that open the picker aimed at them. Back, <code>done</code> or a tap on bare wallpaper leaves edit mode and saves.</p>
+<p>On a tiled page, a <code>make room: free page</code> pill turns it into a free page.</p>
+
+</section>
+
+<section class="tile " id="add" aria-labelledby="add-h"><div class="title" aria-hidden="true">09</div><h2 id="add-h">Add a window</h2>
+
+<ol class="steps">
+  <li>Tap <code>+ add</code>, or a dotted <code>+</code> spot.</li>
+  <li>The sheet shows windows in groups: time and weather, phone, media, system and tools. Each has a live preview, one line about it and the size it opens at, like <code>4x2</code>. Tap <code>search windows</code> to type.</li>
+  <li>Tap a window. Aimed at a spot, it goes straight in. Otherwise it waits at the best spot with <code>place for me</code>, <code>spots ›</code> and <code>cancel</code>, and you can drag it anywhere.</li>
+  <li>Or hold a row and drag: the window comes out under your finger, with a lit outline of where it lands.</li>
+</ol>
+<p>A new window opens at its own size and never takes more than half the page.</p>
+
+</section>
+
+<section class="tile " id="free" aria-labelledby="free-h"><div class="title" aria-hidden="true">10</div><h2 id="free-h">Move and size on a free page</h2>
+
+<p>A free page is a grid of cells, like an Android home screen: about 4x8 on a phone and 8x12 on a tablet. Empty cells stay empty.</p>
+<ul class="dots">
+  <li><b>Move:</b> hold a window and drag it to empty space.</li>
+  <li><b>Swap:</b> drop it on the middle of another window.</li>
+  <li><b>Split:</b> drop it near another window's edge to share that space.</li>
+  <li><b>Size:</b> in edit mode drag an edge handle, or use the window menu, <code>size ›</code>: wider, narrower, taller, shorter.</li>
+  <li><b>By taps only:</b> the window menu has <code>move</code> with a spots list and <code>size ›</code>, so nothing needs a drag.</li>
+</ul>
+<p>While you drag, the drop is named: "swap", "split 2x2", or the size.</p>
+
+</section>
+
+<section class="tile " id="tiling" aria-labelledby="tiling-h"><div class="title" aria-hidden="true">11</div><h2 id="tiling-h">Tiled pages</h2>
+
+<p>A tiled page fills the whole screen with its windows, like Hyprland. Pick the layout under settings, <code>home</code>, <code>layout</code>: dwindle or master.</p>
+<ul class="dots">
+  <li><b>Drag a gap</b> between two windows to resize. Every window on both sides follows, and the split snaps to the middle with a tick.</li>
+  <li><b>Double tap a gap</b> to flip that split: side by side or stacked.</li>
+  <li><b>Double tap a window</b> for full screen, and again to tile it back.</li>
+  <li><b>reset splits</b> in the window menu puts sizes and flips back.</li>
+</ul>
+<p>Each workspace keeps its own sizes.</p>
+
+</section>
+
+<section class="tile " id="winmenu" aria-labelledby="winmenu-h"><div class="title" aria-hidden="true">12</div><h2 id="winmenu-h">The window menu</h2>
+
+<p>Hold a window and let go. The menu starts with rows for that window kind, like <code>radio ›</code> on cliamp or <code>cava look ›</code> on cava. Then:</p>
+<dl class="keys">
+  <dt>fullscreen</dt><dd>same as a double tap</dd>
+  <dt>move, size</dt><dd>on free pages</dd>
+  <dt>flip split, reset splits</dt><dd>on tiled pages</dd>
+  <dt>replace with</dt><dd>turn this window into any other kind, in the same place</dd>
+  <dt>move to workspace</dt><dd>send it to another page, or a new one</dd>
+  <dt>add a window</dt><dd>the picker</dd>
+  <dt>edit home screen</dt><dd>edit mode</dd>
+  <dt>close</dt><dd>close the window</dd>
+  <dt>settings</dt><dd>shown when the bar is hidden</dd>
+</dl>
+
+</section>
+
+<section class="tile " id="windows" aria-labelledby="windows-h"><div class="title" aria-hidden="true">13</div><h2 id="windows-h">All 25 windows</h2>
+
+<dl class="keys">
+  <dt>clock</dt><dd>the time in big gradient digits, with the date. Tap for alarms.</dd>
+  <dt>world</dt><dd>a clock card for each city you pick</dd>
+  <dt>weather</dt><dd>now, the next hours and the coming days, with sunrise and sunset</dd>
+  <dt>sun</dt><dd>sunrise, sunset and golden hour today</dd>
+  <dt>moon</dt><dd>the moon phase tonight and the next full moon</dd>
+  <dt>calendar</dt><dd>the month and your next events</dd>
+  <dt>meeting</dt><dd>how long until your next meeting</dd>
+  <dt>notifications</dt><dd>your notifications as cards, mako style. Tap to open, swipe left to dismiss, hold for more.</dd>
+  <dt>apps</dt><dd>every app in a grid, pinned ones first</dd>
+  <dt>toggles</dt><dd>torch, ring mode, do not disturb and more</dd>
+  <dt>battery</dt><dd>level, charge, heat and a graph of the day</dd>
+  <dt>network</dt><dd>download and upload speed right now</dd>
+  <dt>storage</dt><dd>what fills the disk, as a treemap</dd>
+  <dt>cliamp</dt><dd>the music playing, with the real spectrum and radio</dd>
+  <dt>cava</dt><dd>a music visualizer in seven styles</dd>
+  <dt>btop</dt><dd>cores, memory and network, btop style</dd>
+  <dt>gauges</dt><dd>cpu, memory, disk and heat as rings</dd>
+  <dt>fetch</dt><dd>your phone's specs, fastfetch style</dd>
+  <dt>dash</dt><dd>a greeting, the date and a quote of the day</dd>
+  <dt>terminal</dt><dd>a small shell that knows the launcher</dd>
+  <dt>pipes</dt><dd>neon pipes that crawl across the tile</dd>
+  <dt>matrix</dt><dd>falling streams of glyphs, cmatrix style</dd>
+  <dt>notes</dt><dd>a todo list kept on the phone</dd>
+  <dt>pomodoro</dt><dd>a focus timer with rounds and breaks</dd>
+  <dt>calc</dt><dd>a calculator with brackets</dd>
+</dl>
+<p>Windows show more when their tile is bigger. A tile too small for its content draws the window zoomed out, never squashed.</p>
+
+</section>
+
+<section class="tile " id="rofi" aria-labelledby="rofi-h"><div class="title" aria-hidden="true">14</div><h2 id="rofi-h">Rofi: find an app</h2>
+
+<p>Swipe up from the lower half of the screen. Start typing, and fuzzy search finds the app. Apps are listed most opened first; switch to a to z under settings, <code>home</code>, <code>app order</code>.</p>
+<p>A swipe that starts on a window that scrolls, like apps, scrolls that window instead.</p>
+
+</section>
+
+<section class="tile " id="terminal" aria-labelledby="terminal-h"><div class="title" aria-hidden="true">15</div><h2 id="terminal-h">The terminal</h2>
+
+<p>The terminal window is a kitty style shell called hysh. It greets you with a fastfetch style summary. Try:</p>
+<dl class="keys">
+  <dt>help</dt><dd>every command</dd>
+  <dt>open camera</dt><dd>open an app</dd>
+  <dt>theme nord</dt><dd>change the theme</dd>
+  <dt>wall aurora</dt><dd>change the wallpaper</dd>
+  <dt>layout master</dt><dd>change the tiling layout</dd>
+  <dt>conf</dt><dd>edit hyprtile.conf</dd>
+  <dt>tour, gestures, setup</dt><dd>the tour, the cheat sheet, the setup guide</dd>
+  <dt>fetch, battery, uptime, date</dt><dd>info about the phone</dd>
+  <dt>clear</dt><dd>clear the screen</dd>
+</dl>
+
+</section>
+
+<section class="tile " id="music" aria-labelledby="music-h"><div class="title" aria-hidden="true">16</div><h2 id="music-h">Music, radio and cava</h2>
+
+<h3>cliamp</h3>
+<p>The music window, styled after cliamp by Bjarne Øverli (MIT): track and artist, time, Playing or Paused, a block spectrum, a seek bar, three keys and the playlist when the player shares one. Keys follow what the player allows. Tap a playlist row to jump to it.</p>
+<p>Hold the window and let go for <code>real visualizer</code>, <code>spectrum</code>, <code>music source</code>, <code>queue</code> and <code>radio ›</code>.</p>
+<h3>Radio</h3>
+<p>cliamp radio is built in: Lofi, Synthwave, EDM, Chiptunes, Amiga, NCS House, Dubstep, Drum and Bass, Trap, Phonk, Chill and more. Pick a station, see the song title as it plays, and step stations with next and previous. Radio by cliamp, radio.cliamp.stream. It connects only while a station plays.</p>
+<h3>cava</h3>
+<p>A visualizer in seven styles: bars, blocks, mirror, wave, radial, term and dots. Colors run vertical, across or mono. The window menu has <code>cava look ›</code>, <code>music source</code> and <code>go to player</code>.</p>
+<h3>The real visualizer</h3>
+<p>Turn on <code>real visualizer</code> under settings, <code>home</code>. Android asks for the microphone, because that permission reads the sound the phone plays. Only the loudness per band is read; nothing is kept or sent. Some players keep their sound private, and then the window says "no audio from this player".</p>
+
+</section>
+
+<section class="tile " id="weather" aria-labelledby="weather-h"><div class="title" aria-hidden="true">17</div><h2 id="weather-h">Weather and places</h2>
+
+<p>Weather comes from Open Meteo. With location allowed it uses where you are. Or set a city under settings, <code>home</code>, <code>weather place</code>, or from the weather window menu. Then no location permission is needed.</p>
+<p>Several places work too, split by commas: <code>Zagreb, London, here</code>, where <code>here</code> is your location. Tap the weather window to step to the next place. A tall weather window shows a pill per place and <code>+ city</code>; hold a pill to show, move or remove it. Tap a day in the days row to see that day.</p>
+
+</section>
+
+<section class="tile " id="looks" aria-labelledby="looks-h"><div class="title" aria-hidden="true">18</div><h2 id="looks-h">Presets, themes and looks</h2>
+
+<p>Open <code>look</code> from the edit strip or settings.</p>
+<dl class="keys">
+  <dt>presets</dt><dd>18 complete looks: neon hyper, night city, aurora glass, outrun drive, deep space, vapor dream, blood moon, toxic circuit, glacier, oled void, sakura, mocha cozy, dracula, github dark, one dark, monokai, gruvbox retro and nord lights. Each saves your current hyprtile.conf as hyprtile.conf.bak first.</dd>
+  <dt>theme</dt><dd>31 themes, each in its own original colours</dd>
+  <dt>wallpaper</dt><dd>aurora, nebula, synthwave, circuit, peaks, city, pastel or black</dd>
+  <dt>pick wallpaper image</dt><dd>any picture from your phone</dd>
+  <dt>font</dt><dd>JetBrains Mono, Fira Code, Meslo, Hack, Caskaydia Mono, or the phone's own</dd>
+  <dt>glass and blur ›</dt><dd>sliders that show live while you drag</dd>
+  <dt>borders and glow ›</dt><dd>border glow, and which window it follows</dd>
+  <dt>showcase setup</dt><dd>the look from the store pictures</dd>
+</dl>
+<h3>The 31 themes</h3>
+<p>The neon house looks: hyper, synthwave, cyberpunk, vaporwave, outrun, borealis, sunset, toxic, ice, blood moon, deep ocean and sakura. And the themes people use most: Tokyo Night, Catppuccin Mocha and Latte, Gruvbox, Nord, Rose Pine, Everforest, Kanagawa, Dracula, GitHub Dark, One Dark, Monokai, Solarized Dark, Night Owl, Ayu Mirage, Palenight, Matte Black, Osaka Jade and Ristretto.</p>
+
+</section>
+
+<section class="tile " id="conf" aria-labelledby="conf-h"><div class="title" aria-hidden="true">19</div><h2 id="conf-h">hyprtile.conf</h2>
+
+<p>Hyprtile keeps its look in hyprtile.conf, written in Hyprland's syntax. Open it from settings, <code>edit config file</code>, or type <code>conf</code> in the terminal. Save it and the desktop reloads live.</p>
+<pre class="conf" tabindex="0" aria-label="Part of the default hyprtile.conf"><span class="k">theme</span> = <span class="v">hyper</span>
+<span class="k">wallpaper</span> = <span class="v">synthwave</span>
+
+<span class="k">general</span> {
+    <span class="k">gaps_in</span> = <span class="v">5</span>
+    <span class="k">gaps_out</span> = <span class="v">12</span>
+    <span class="k">border_size</span> = <span class="v">3</span>
+    <span class="k">col.active_border</span> = <span class="v">theme 45deg</span>
+    <span class="k">layout</span> = <span class="v">dwindle</span>      <span class="c"># dwindle or master</span>
+}
+
+<span class="k">decoration</span> {
+    <span class="k">rounding</span> = <span class="v">16</span>
+    <span class="k">blur</span> {
+        <span class="k">enabled</span> = <span class="v">true</span>
+        <span class="k">size</span> = <span class="v">8</span>
+    }
+}
+
+<span class="k">workspace</span> = <span class="v">1, grid 4x8, clock 4x2+0+0, weather 4x3+0+2</span>
+<span class="k">workspace</span> = <span class="v">2, btop, cliamp, fetch, toggles</span></pre>
+<ul class="dots">
+  <li><code>general</code>: gaps, border size and gradient border colours</li>
+  <li><code>decoration</code>: rounding, opacity, blur, glow and shadow</li>
+  <li><code>fonts</code>: the terminal font, the clock face and its weight</li>
+  <li><code>animations</code>: bezier curves and the animations that use them</li>
+  <li><code>bar</code>: show or hide, top or bottom, modules and opacity</li>
+  <li><code>workspace</code>: what each page opens. <code>grid 4x8</code> makes a free page; each box is width x height + column + row.</li>
+  <li><code>windows</code>: world clock cities, pomodoro minutes, cliamp and cava options</li>
+  <li><code>lockscreen</code>: the clock, glow, seconds, style and what the lock screen shows</li>
+</ul>
+<p>The file itself explains every key in comments.</p>
+
+</section>
+
+<section class="tile " id="lock" aria-labelledby="lock-h"><div class="title" aria-hidden="true">20</div><h2 id="lock-h">Lock screen</h2>
+
+<p>Android does not let an app replace the lock screen, but it shows your wallpaper behind it. Hyprtile comes with a live wallpaper in the hyprlock style: the same moving scene, a big clock, and widgets for battery, weather, your next event and more.</p>
+<p>Open settings, <code>lock screen</code>:</p>
+<dl class="keys">
+  <dt>set as lock screen</dt><dd>opens the live wallpaper picker. Pick "Lock screen" or "Home and lock screen".</dd>
+  <dt>notifications</dt><dd>names, full or off. Names is the private default.</dd>
+  <dt>hide system cards</dt><dd>opens Android's lock screen page</dd>
+  <dt>lock screen style</dt><dd>pills or card</dd>
+  <dt>lock screen seconds</dt><dd>ring, trace or off</dd>
+</dl>
+<p>More keys live in the <code>lockscreen</code> section of hyprtile.conf.</p>
+
+</section>
+
+<section class="tile " id="settings" aria-labelledby="settings-h"><div class="title" aria-hidden="true">21</div><h2 id="settings-h">Settings map</h2>
+
+<p>Hold an empty spot and tap <code>settings</code> in the strip, or tap <code>≡</code> on the bar when it shows. <code>search settings</code> finds any row as you type.</p>
+<dl class="keys">
+  <dt>add a window</dt><dd>the picker</dd>
+  <dt>edit home screen</dt><dd>edit mode</dd>
+  <dt>workspaces</dt><dd>go to, new, new black page, black page, tiling, move, close</dd>
+  <dt>look</dt><dd>presets, theme, wallpaper, image, font, glass and blur, borders and glow, showcase setup</dd>
+  <dt>home</dt><dd>layout, top bar, status bar, app order, weather place, real visualizer</dd>
+  <dt>feel</dt><dd>haptic strength, scroll and slider ticks, pomodoro beeper, pomodoro buzz, pomodoro on time</dd>
+  <dt>motion and battery</dt><dd>animations, touch ripples, frame stats, frame rate</dd>
+  <dt>lock screen</dt><dd>see <a href="#lock">lock screen</a></dd>
+  <dt>link devices</dt><dd>see <a href="#link">link devices</a></dd>
+  <dt>help</dt><dd>tour, gestures, setup guide, reset to defaults</dd>
+  <dt>edit config file</dt><dd>hyprtile.conf</dd>
+</dl>
+
+</section>
+
+<section class="tile " id="motion" aria-labelledby="motion-h"><div class="title" aria-hidden="true">22</div><h2 id="motion-h">Motion and battery</h2>
+
+<dl class="keys">
+  <dt>frame rate</dt><dd>60 fps (the default), max (your screen's top rate) or 30 fps. It sets everything that moves on its own. Touches, drags and scrolling stay fast.</dd>
+  <dt>animations</dt><dd>off stills the scene, the border spin, ripples and transitions</dd>
+  <dt>touch ripples</dt><dd>a neon ring where your finger lands</dd>
+  <dt>frame stats</dt><dd>shows the frame rate on screen</dd>
+</dl>
+<p>Battery saver brings motion to about 30 frames a second and holds the weather sky still, unless you picked a frame rate yourself. A page where nothing moves, like a black or image wallpaper with still windows, drops to one frame a second.</p>
+<p>To save the most: frame rate 30, animations off, a black page or the oled void preset.</p>
+
+</section>
+
+<section class="tile " id="link" aria-labelledby="link-h"><div class="title" aria-hidden="true">23</div><h2 id="link-h">Link devices</h2>
+
+<p><code>link devices</code> syncs your theme with Phosphor or another Hyprtile on the same wifi, and with an Omarchy computer through the Phone Sync plugin. Turn link on, pick the device, and check that both screens show the same six digit code, then <code>same code, pair</code>.</p>
+<p>It stays on your own network and only sends theme names and colours to devices you paired. It is off by default. Full steps on the <a href="https://hyprtile.zanoski.com/phone-sync">Phone Sync page</a>.</p>
+
+</section>
+
+<section class="tile " id="a11y" aria-labelledby="a11y-h"><div class="title" aria-hidden="true">24</div><h2 id="a11y-h">Accessibility</h2>
+
+<ul class="dots">
+  <li>Touch targets are at least 48dp, even on a window drawn zoomed out.</li>
+  <li>TalkBack reads menu rows, picker rows, the edit strip, handles and every window. A double tap on a window opens its menu.</li>
+  <li>Nothing in placement needs a drag: the size and spots menus do it all by taps.</li>
+  <li>The glass under text keeps a 7:1 contrast. Themes keep their original colours.</li>
+  <li>The clock is lifted to 3:1 against the wallpaper under it, the rule for large text.</li>
+  <li>The system font size is honoured: windows zoom with it.</li>
+  <li>Android's "remove animations" and the <code>animations</code> setting still the motion.</li>
+</ul>
+
+</section>
+
+<section class="tile " id="privacy" aria-labelledby="privacy-h"><div class="title" aria-hidden="true">25</div><h2 id="privacy-h">Privacy and permissions</h2>
+
+<p>No account, no ads, no analytics. Your data stays on your phone. Every permission is optional:</p>
+<dl class="keys">
+  <dt>notification access</dt><dd>the notifications and music windows, read only on your phone</dd>
+  <dt>calendar</dt><dd>calendar and meeting, read only on your phone</dd>
+  <dt>location</dt><dd>approximate, for the weather. Optional: type a city.</dd>
+  <dt>microphone</dt><dd>only for the real visualizer, off until you turn it on</dd>
+</dl>
+<p>The radio connects to radio.cliamp.stream only while a station plays. Read the full <a href="https://hyprtile.zanoski.com/privacy">privacy policy</a>.</p>
+
+</section>
+
+<section class="tile " id="reset" aria-labelledby="reset-h"><div class="title" aria-hidden="true">26</div><h2 id="reset-h">Showcase and reset</h2>
+
+<p><code>showcase setup</code> (in look) rewrites hyprtile.conf to the store look and keeps your old one as hyprtile.conf.bak.</p>
+<p><code>reset to defaults</code> (in help) offers <code>yes, reset it</code>, <code>bring back the saved copy</code> and <code>keep my config</code>. A reset always saves a copy first.</p>
+
+</section>
+</div>
+
+</main>
+<footer>
+  <div class="tile quiet">
+  <ul>
+    <li><a href="https://play.google.com/store/apps/details?id=com.zanoshky.hyprtile">Google Play</a></li>
+    <li><a href="https://hyprtile.zanoski.com">hyprtile.zanoski.com</a></li>
+    <li><a href="https://github.com/Zanoshky/hyprtile-launcher/issues">Issues</a></li>
+    <li><a href="https://github.com/Zanoshky/hyprtile-launcher/blob/main/LICENSE">License</a></li>
+  </ul>
+  <p>Guide text and images are shared under CC BY 4.0. The Hyprtile app itself is proprietary. Made by Marko Zanoski. Hyprtile is an independent app and is not affiliated with Hyprland, Omarchy, kitty or cliamp.</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User guide
+    url: https://zanoshky.github.io/hyprtile-launcher/
+    about: Setup, gestures, recipes and answers to common questions.
+  - name: hyprtile.zanoski.com
+    url: https://hyprtile.zanoski.com
+    about: The Hyprtile website, with the privacy policy and contact details.

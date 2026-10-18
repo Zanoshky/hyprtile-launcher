@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cookbook · Hyprtile user guide</title>
+<meta name="description" content="Short Hyprtile recipes: a music page, a calm page, a night look, border gradients and more.">
+<meta name="theme-color" content="#0a0717">
+<meta property="og:title" content="Cookbook · Hyprtile user guide">
+<meta property="og:description" content="Short Hyprtile recipes: a music page, a calm page, a night look, border gradients and more.">
+<meta property="og:image" content="img/phone-1-home.webp">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="index.html"><img src="img/icon-192.png" alt="" width="30" height="30"><span>hyprtile</span></a>
+  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html"><span class="ws" aria-hidden="true">1</span>home</a></li><li><a href="guide.html"><span class="ws" aria-hidden="true">2</span>guide</a></li><li><a href="use-cases.html"><span class="ws" aria-hidden="true">3</span>use cases</a></li><li><a href="cookbook.html" aria-current="page"><span class="ws" aria-hidden="true">4</span>cookbook</a></li><li><a href="faq.html"><span class="ws" aria-hidden="true">5</span>faq</a></li><li><a href="report.html"><span class="ws" aria-hidden="true">6</span>report a bug</a></li></ul></nav>
+</header>
+<div class="wrap">
+<main id="main">
+
+<div class="eyebrow">~/cookbook</div>
+<h1>Cookbook</h1>
+<div class="underline" aria-hidden="true"></div>
+<p class="lede">Short recipes, a few taps each. "Hold an empty spot" means a long press on wallpaper with no window.</p>
+<div class="tiles">
+<section class="tile " id="music" aria-labelledby="music-h"><div class="title" aria-hidden="true">recipe</div><h2 id="music-h">Make a music page</h2>
+<ol class="steps"><li>Hold an empty spot, tap <code>workspaces</code>, then <code>new workspace</code>.</li><li>Tap <code>+ add</code> and pick <b>cliamp</b> from the media group.</li><li>Add <b>cava</b> the same way.</li><li>Drag an edge handle to give cliamp more room. Taller shows the playlist.</li><li>Tap <code>done</code>.</li></ol><p>Radio: hold cliamp, let go, tap <code>radio ›</code> and pick a station.</p>
+</section><section class="tile " id="calm" aria-labelledby="calm-h"><div class="title" aria-hidden="true">recipe</div><h2 id="calm-h">A calm page for reading</h2>
+<ol class="steps"><li>Hold an empty spot, <code>workspaces</code>, <code>new black page</code>.</li><li>Tap <code>+ add</code> and add <b>notes</b> and a <b>clock</b>.</li><li>In <code>look</code>, cycle <code>font</code> until you like how it reads.</li><li>In settings, <code>motion and battery</code>, turn <code>animations</code> off for a still page.</li></ol>
+</section><section class="tile " id="night" aria-labelledby="night-h"><div class="title" aria-hidden="true">recipe</div><h2 id="night-h">Switch to a night look</h2>
+<ol class="steps"><li>Hold an empty spot and tap <code>look</code>, then <code>presets</code>.</li><li>Tap <b>oled void</b>. Your current hyprtile.conf is saved as hyprtile.conf.bak first.</li><li>In the morning, pick <b>neon hyper</b> or your own preset again.</li></ol><p>Quicker: type <code>theme matte-black</code> in the terminal window.</p>
+</section><section class="tile " id="border" aria-labelledby="border-h"><div class="title" aria-hidden="true">recipe</div><h2 id="border-h">Your own border gradient</h2>
+<ol class="steps"><li>Open settings, <code>edit config file</code>.</li><li>In <code>general</code>, set the line below. Add as many colours as you like.<pre class="conf" tabindex="0" aria-label="Border line"><span class="k">col.active_border</span> = <span class="v">rgba(00e5ffee) rgba(8b5cffee) rgba(ff2bd6ee) 45deg</span></pre></li><li>Save. The desktop reloads live.</li></ol><p>Go back to the theme's own gradient with <code>col.active_border = theme 45deg</code>.</p>
+</section><section class="tile " id="gaps" aria-labelledby="gaps-h"><div class="title" aria-hidden="true">recipe</div><h2 id="gaps-h">Tight gaps, sharp corners</h2>
+<ol class="steps"><li>Open hyprtile.conf.</li><li>In <code>general</code>, set <code>gaps_in</code> and <code>gaps_out</code> lower.</li><li>In <code>decoration</code>, set <code>rounding = 0</code>.</li><li>Save.</li></ol>
+</section><section class="tile " id="places" aria-labelledby="places-h"><div class="title" aria-hidden="true">recipe</div><h2 id="places-h">Weather for several cities</h2>
+<ol class="steps"><li>Open settings, <code>home</code>, <code>weather place</code>.</li><li>Type <code>Zagreb, London, here</code>. <code>here</code> is your location.</li><li>Tap the weather window to step to the next place.</li></ol>
+</section><section class="tile " id="resize" aria-labelledby="resize-h"><div class="title" aria-hidden="true">recipe</div><h2 id="resize-h">Resize two tiled windows</h2>
+<ol class="steps"><li>On a tiled page, drag the gap between two windows.</li><li>Double tap the gap to flip them side by side or stacked.</li><li>Undo it: hold a window, let go, <code>reset splits</code>.</li></ol>
+</section><section class="tile " id="replace" aria-labelledby="replace-h"><div class="title" aria-hidden="true">recipe</div><h2 id="replace-h">Turn a window into another</h2>
+<ol class="steps"><li>Hold the window and let go.</li><li>Tap <code>replace with</code> and pick any kind. It takes the same place.</li></ol>
+</section><section class="tile " id="moveto" aria-labelledby="moveto-h"><div class="title" aria-hidden="true">recipe</div><h2 id="moveto-h">Move a window to another workspace</h2>
+<ol class="steps"><li>Hold the window and let go.</li><li>Tap <code>move to workspace</code> and pick a page, or <code>new workspace</code>.</li></ol>
+</section><section class="tile " id="free" aria-labelledby="free-h"><div class="title" aria-hidden="true">recipe</div><h2 id="free-h">Place windows like widgets</h2>
+<ol class="steps"><li>Hold an empty spot on a tiled page.</li><li>Tap the <code>make room: free page</code> pill.</li><li>Now each window sits on its own cells, and empty cells stay empty.</li></ol><p>Switch back under <code>workspaces</code>, <code>tiling</code>.</p>
+</section><section class="tile " id="lock" aria-labelledby="lock-h"><div class="title" aria-hidden="true">recipe</div><h2 id="lock-h">A matching lock screen</h2>
+<ol class="steps"><li>Open settings, <code>lock screen</code>, <code>set as lock screen</code>.</li><li>Pick Hyprtile lock screen, then "Lock screen" or "Home and lock screen".</li><li>Tap <code>hide system cards</code> and set notifications to "Don't show any notifications". Turn off "Dynamic clock" too.</li><li>Pick <code>lock screen style</code>: pills or card.</li></ol>
+</section><section class="tile " id="battery" aria-labelledby="battery-h"><div class="title" aria-hidden="true">recipe</div><h2 id="battery-h">Save battery</h2>
+<ol class="steps"><li>Settings, <code>motion and battery</code>, <code>frame rate</code>: 30 fps.</li><li>Turn <code>animations</code> off.</li><li>Use a black or image wallpaper, or the <b>oled void</b> preset.</li></ol>
+</section><section class="tile " id="wall" aria-labelledby="wall-h"><div class="title" aria-hidden="true">recipe</div><h2 id="wall-h">Your own wallpaper</h2>
+<ol class="steps"><li>Open <code>look</code>, <code>pick wallpaper image</code>.</li><li>Pick any picture from your phone.</li></ol>
+</section><section class="tile " id="font" aria-labelledby="font-h"><div class="title" aria-hidden="true">recipe</div><h2 id="font-h">Change the terminal font</h2>
+<ol class="steps"><li>Open <code>look</code> and tap <code>font</code> to cycle: JetBrains Mono, Fira Code, Meslo, Hack, Caskaydia Mono, or the phone's own.</li></ol><p>Or in hyprtile.conf: <code>fonts { mono = fira-code }</code>.</p>
+</section><section class="tile " id="work" aria-labelledby="work-h"><div class="title" aria-hidden="true">recipe</div><h2 id="work-h">A work page</h2>
+<ol class="steps"><li>Make a new workspace.</li><li>Add <b>calendar</b>, <b>meeting</b>, <b>notes</b> and <b>pomodoro</b>.</li><li>Allow the calendar when asked.</li></ol>
+</section><section class="tile " id="sync" aria-labelledby="sync-h"><div class="title" aria-hidden="true">recipe</div><h2 id="sync-h">Sync the theme with Omarchy or Phosphor</h2>
+<ol class="steps"><li>Settings, <code>link devices</code>, turn link on.</li><li>Pick the other device. Both screens show a six digit code.</li><li>If they match, tap <code>same code, pair</code>.</li></ol><p>Omarchy needs the Phone Sync plugin; see the <a href="https://hyprtile.zanoski.com/phone-sync">Phone Sync page</a>.</p>
+</section><section class="tile " id="store" aria-labelledby="store-h"><div class="title" aria-hidden="true">recipe</div><h2 id="store-h">Get the store look back</h2>
+<ol class="steps"><li>Open <code>look</code>, <code>showcase setup</code>, <code>apply it</code>.</li><li>Your old conf is kept as hyprtile.conf.bak. <code>reset to defaults</code> in help can bring it back.</li></ol>
+</section></div>
+</main>
+<footer>
+  <div class="tile quiet">
+  <ul>
+    <li><a href="https://play.google.com/store/apps/details?id=com.zanoshky.hyprtile">Google Play</a></li>
+    <li><a href="https://hyprtile.zanoski.com">hyprtile.zanoski.com</a></li>
+    <li><a href="https://github.com/Zanoshky/hyprtile-launcher/issues">Issues</a></li>
+    <li><a href="https://github.com/Zanoshky/hyprtile-launcher/blob/main/LICENSE">License</a></li>
+  </ul>
+  <p>Guide text and images are shared under CC BY 4.0. The Hyprtile app itself is proprietary. Made by Marko Zanoski. Hyprtile is an independent app and is not affiliated with Hyprland, Omarchy, kitty or cliamp.</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>
