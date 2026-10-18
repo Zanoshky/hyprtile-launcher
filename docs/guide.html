@@ -87,7 +87,7 @@
 <section class="tile " id="desktop" aria-labelledby="desktop-h"><div class="title" aria-hidden="true">06</div><h2 id="desktop-h">The desktop</h2>
 
 <p>Your home is a tiling desktop, like Hyprland on a laptop. Each window is live, with a gradient border, a soft glow and frosted glass that lets the wallpaper shine through.</p>
-<p><b>The bar.</b> A waybar style bar with workspace pills, the clock, battery, network, cpu and memory. On a fresh install it is hidden, like in the store pictures, so windows get the space. Show it under settings, <code>home</code>, <code>top bar</code>. With the bar shown, the <code>≡</code> button on it opens settings. The phone's own status bar has its own row there too.</p>
+<p><b>The bar.</b> A waybar style bar with workspace pills, the clock, battery, network, cpu and memory. On a fresh install it is hidden, like in the store pictures, so windows get the space. Show it under settings, <code>home</code>, <code>top bar</code>. With the bar shown, the <code>≡</code> button on it opens settings. The phone's own status bar has its own row there too. <code>top bar items</code> picks what the bar shows: cpu heat, memory, network speed and battery.</p>
 <p><b>The default desktop</b> has four workspaces:</p>
 <ol class="steps">
   <li>clock, weather, battery and moon, placed on a grid with room to add more</li>
@@ -246,11 +246,12 @@
 
 <h3>cliamp</h3>
 <p>The music window, styled after cliamp by Bjarne Øverli (MIT): track and artist, time, Playing or Paused, a block spectrum, a seek bar, three keys and the playlist when the player shares one. Keys follow what the player allows. Tap a playlist row to jump to it.</p>
+<p>More than one player? Swipe the track line or the <code>[app]</code> tag sideways to switch players. Tap the tag to open that app, and hold it for the list of players. Hyprtile stays on the app you last started, even between songs.</p>
 <p>Hold the window and let go for <code>real visualizer</code>, <code>spectrum</code>, <code>music source</code>, <code>queue</code> and <code>radio ›</code>.</p>
 <h3>Radio</h3>
 <p>cliamp radio is built in: Lofi, Synthwave, EDM, Chiptunes, Amiga, NCS House, Dubstep, Drum and Bass, Trap, Phonk, Chill and more. Pick a station, see the song title as it plays, and step stations with next and previous. Radio by cliamp, radio.cliamp.stream. It connects only while a station plays.</p>
 <h3>cava</h3>
-<p>A visualizer in seven styles: bars, blocks, mirror, wave, radial, term and dots. Colors run vertical, across or mono. The window menu has <code>cava look ›</code>, <code>music source</code> and <code>go to player</code>.</p>
+<p>A visualizer in seven styles: bars, blocks, mirror, wave, radial, term and dots. Colors run vertical, across or mono. The window menu has <code>cava look ›</code>, <code>music source</code> and <code>go to player</code>. Swipe cava sideways to switch players, or hold its title for the list.</p>
 <h3>The real visualizer</h3>
 <p>Turn on <code>real visualizer</code> under settings, <code>home</code>. Android asks for the microphone, because that permission reads the sound the phone plays. Only the loudness per band is read; nothing is kept or sent. Some players keep their sound private, and then the window says "no audio from this player".</p>
 
@@ -259,6 +260,7 @@
 <section class="tile " id="weather" aria-labelledby="weather-h"><div class="title" aria-hidden="true">17</div><h2 id="weather-h">Weather and places</h2>
 
 <p>Weather comes from Open Meteo. With location allowed it uses where you are. Or set a city under settings, <code>home</code>, <code>weather place</code>, or from the weather window menu. Then no location permission is needed.</p>
+<p><code>calendar app</code>, under settings, <code>home</code>, picks which app opens your events and days, so Android stops asking each time.</p>
 <p>Several places work too, split by commas: <code>Zagreb, London, here</code>, where <code>here</code> is your location. Tap the weather window to step to the next place. A tall weather window shows a pill per place and <code>+ city</code>; hold a pill to show, move or remove it. Tap a day in the days row to see that day.</p>
 
 </section>
@@ -342,7 +344,7 @@
   <dt>edit home screen</dt><dd>edit mode</dd>
   <dt>workspaces</dt><dd>go to, new, new black page, black page, tiling, move, close</dd>
   <dt>look</dt><dd>presets, theme, wallpaper, image, font, glass and blur, borders and glow, showcase setup</dd>
-  <dt>home</dt><dd>layout, top bar, status bar, app order, weather place, real visualizer</dd>
+  <dt>home</dt><dd>layout, top bar, status bar, top bar items, app order, weather place, calendar app, real visualizer</dd>
   <dt>feel</dt><dd>haptic strength, scroll and slider ticks, pomodoro beeper, pomodoro buzz, pomodoro on time</dd>
   <dt>motion and battery</dt><dd>animations, touch ripples, frame stats, frame rate</dd>
   <dt>lock screen</dt><dd>see <a href="#lock">lock screen</a></dd>
