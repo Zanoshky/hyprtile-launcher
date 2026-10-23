@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#0a0717">
 <meta property="og:title" content="Cookbook · Hyprtile user guide">
 <meta property="og:description" content="Short Hyprtile recipes: a music page, a calm page, a night look, border gradients and more.">
-<meta property="og:image" content="img/phone-1-home.webp">
+<meta property="og:image" content="img/look-camel-and-navy.webp">
 <link rel="icon" type="image/png" href="img/icon-192.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -26,10 +26,20 @@
 <div class="underline" aria-hidden="true"></div>
 <p class="lede">Short recipes, a few taps each. "Hold an empty spot" means a long press on wallpaper with no window.</p>
 <div class="tiles">
-<section class="tile " id="music" aria-labelledby="music-h"><div class="title" aria-hidden="true">recipe</div><h2 id="music-h">Make a music page</h2>
+<section class="tile " id="preset" aria-labelledby="preset-h"><div class="title" aria-hidden="true">recipe</div><h2 id="preset-h">Try a look and go back</h2>
+<ol class="steps"><li>Hold an empty spot and tap <code>look</code>, then <code>presets</code>.</li><li>Tap a look, like <b>camel and navy</b>, <b>cream and forest</b> or <b>rgb glow</b>. Wallpaper, colours, glass, borders, fonts and clock change at once.</li><li>Try the next one. Your windows stay where they are.</li><li>To go back, tap <code>your own look</code> at the end of the list.</li></ol><p>See the painted looks on the <a href="index.html#looks">home page</a>.</p>
+</section><section class="tile " id="names" aria-labelledby="names-h"><div class="title" aria-hidden="true">recipe</div><h2 id="names-h">Name a workspace</h2>
+<ol class="steps"><li>Go to the workspace you want to name.</li><li>Hold an empty spot, tap <code>workspaces</code>, then <code>rename this page</code>.</li><li>Type a name, like mail or music.</li></ol><p>The name shows on the bar and in menus. Empty brings back the number.</p>
+</section><section class="tile " id="lockgesture" aria-labelledby="lockgesture-h"><div class="title" aria-hidden="true">recipe</div><h2 id="lockgesture-h">Lock with a double tap</h2>
+<ol class="steps"><li>Open settings, <code>home</code>, <code>lock gesture ›</code>.</li><li>Tap <code>double tap empty space</code>. Hyprtile says what the lock service does.</li><li>Tap <code>agree and open settings</code> and turn on Hyprtile lock in Accessibility.</li><li>Back home, double tap empty wallpaper or the empty part of the bar. The phone locks.</li></ol><p>Fingerprint and face unlock keep working. Windows keep their double tap for full screen.</p>
+</section><section class="tile " id="pulldown" aria-labelledby="pulldown-h"><div class="title" aria-hidden="true">recipe</div><h2 id="pulldown-h">A pull down of your own</h2>
+<ol class="steps"><li>Open settings, <code>home</code>, <code>pull down</code>.</li><li>Pick the <code>hyprtile panel</code>, <code>android notifications</code>, <code>quick settings</code> or <code>app search</code>.</li><li>Or pick any app, like your camera.</li></ol>
+</section><section class="tile " id="bar" aria-labelledby="bar-h"><div class="title" aria-hidden="true">recipe</div><h2 id="bar-h">Arrange the bar like waybar</h2>
+<ol class="steps"><li>Open settings, <code>home</code>, and turn <code>top bar</code> on.</li><li>Tap <code>top bar items</code>.</li><li>Put each item left, in the centre or right, in the order you like.</li><li>Pick the clock format: 12 or 24 hour, date or seconds.</li></ol><p>Any clock pattern works in hyprtile.conf, <code>bar</code>, <code>clock_format</code>.</p>
+</section><section class="tile " id="music" aria-labelledby="music-h"><div class="title" aria-hidden="true">recipe</div><h2 id="music-h">Make a music page</h2>
 <ol class="steps"><li>Hold an empty spot, tap <code>workspaces</code>, then <code>new workspace</code>.</li><li>Tap <code>+ add</code> and pick <b>cliamp</b> from the media group.</li><li>Add <b>cava</b> the same way.</li><li>Drag an edge handle to give cliamp more room. Taller shows the playlist.</li><li>Tap <code>done</code>.</li></ol><p>Radio: hold cliamp, let go, tap <code>radio ›</code> and pick a station.</p>
 </section><section class="tile " id="calm" aria-labelledby="calm-h"><div class="title" aria-hidden="true">recipe</div><h2 id="calm-h">A calm page for reading</h2>
-<ol class="steps"><li>Hold an empty spot, <code>workspaces</code>, <code>new black page</code>.</li><li>Tap <code>+ add</code> and add <b>notes</b> and a <b>clock</b>.</li><li>In <code>look</code>, cycle <code>font</code> until you like how it reads.</li><li>In settings, <code>motion and battery</code>, turn <code>animations</code> off for a still page.</li></ol>
+<ol class="steps"><li>Hold an empty spot, <code>workspaces</code>, <code>new black page</code> (pro), or a <code>new workspace</code>.</li><li>Tap <code>+ add</code> and add <b>notes</b> and a <b>clock</b>.</li><li>In <code>look</code>, cycle <code>font</code> until you like how it reads.</li><li>In settings, <code>motion and battery</code>, turn <code>animations</code> off for a still page.</li></ol>
 </section><section class="tile " id="night" aria-labelledby="night-h"><div class="title" aria-hidden="true">recipe</div><h2 id="night-h">Day and night themes</h2>
 <ol class="steps"><li>Hold an empty spot and tap <code>look</code>, then <code>day and night ›</code>.</li><li>Tap <code>switch</code>: <code>by the sun</code> turns at sunrise and sunset, <code>22 to 7</code> turns by the clock.</li><li>Tap <code>day theme</code> until your day theme shows, like <b>catppuccin-latte</b>.</li><li>Tap <code>night theme</code> the same way, like <b>tokyo-night</b>. <code>same as theme</code> keeps your main theme.</li></ol><p>By the sun uses sunrise and sunset where the weather is, worked out on the phone. Before the weather has a place, day is 7 to 19. The lock screen follows too. In hyprtile.conf: <code>theme_auto = sun</code>, <code>theme_day</code> and <code>theme_night</code>.</p>
 </section><section class="tile " id="shelf" aria-labelledby="shelf-h"><div class="title" aria-hidden="true">recipe</div><h2 id="shelf-h">A row of favourite apps</h2>

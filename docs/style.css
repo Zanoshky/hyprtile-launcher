@@ -130,7 +130,7 @@ section { margin-block: 0 var(--gap-out); scroll-margin-top: 16px; }
   background: var(--grad);
   box-shadow: 0 0 30px rgba(255, 43, 214, 0.35), 0 0 60px rgba(0, 229, 255, 0.18);
 }
-.phone img { display: block; width: 100%; aspect-ratio: 1 / 2; border-radius: 23px; background: #000; }
+.phone img { display: block; width: 100%; height: auto; border-radius: 23px; background: #000; }
 
 /* ---------- screenshot strip ---------- */
 .shots-wrap { overflow-x: auto; scroll-snap-type: x mandatory; padding: 8px 4px 16px; border-radius: 12px; }
@@ -195,3 +195,24 @@ footer a { display: inline-flex; align-items: center; min-height: 48px; padding:
 .pair .phone { margin: 0; width: 100%; max-width: 220px; border-radius: 18px; padding: 2px; }
 .pair .phone img { border-radius: 16px; }
 .pair figcaption { color: var(--dim); font-size: 14px; margin-top: 10px; }
+
+/* ---------- bigger screens show more: the wrap widens on a 4K screen ---------- */
+@media (min-width: 1700px) { .wrap, .bar { max-width: 1520px; } body { font-size: 17px; } }
+@media (min-width: 2600px) { .wrap, .bar { max-width: 2040px; } body { font-size: 19px; } }
+
+/* ---------- numbers row, like waybar modules ---------- */
+.stats { list-style: none; margin: 0 0 var(--gap-out); padding: 0; display: grid; gap: var(--gap-in); grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
+.stats li { border-radius: 12px; padding: 12px 14px; background: linear-gradient(var(--tile), var(--tile)) padding-box, var(--grad) border-box; border: 2px solid transparent; }
+.stats b { display: block; font: 700 26px/1.2 var(--mono); background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.stats span { color: var(--dim); font-size: 14px; }
+
+/* ---------- looks gallery: two a row on a phone, more as the screen grows ---------- */
+.looks { list-style: none; margin: 0 0 14px; padding: 0; display: grid; gap: 22px 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 700px) { .looks { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 24px 18px; } }
+.looks figure { margin: 0; }
+.looks .phone { width: 100%; border-radius: 18px; padding: 2px; }
+.looks .phone img { border-radius: 16px; }
+.looks figcaption { margin-top: 10px; font-size: 14px; color: var(--dim); }
+.looks figcaption b { display: block; color: #ffffff; font: 700 15px var(--mono); }
+.cols { columns: 2 320px; column-gap: 32px; }
+.cols li { break-inside: avoid; }

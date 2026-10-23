@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hyprtile user guide</title>
-<meta name="description" content="Hyprtile, a tiling Linux desktop for your Android home screen: user guide, recipes, FAQ and bug reports.">
+<meta name="description" content="Hyprtile, a tiling Linux desktop for your Android home screen: whole looks in one tap, the user guide, recipes, FAQ and bug reports.">
 <meta name="theme-color" content="#0a0717">
 <meta property="og:title" content="Hyprtile user guide">
-<meta property="og:description" content="Hyprtile, a tiling Linux desktop for your Android home screen: user guide, recipes, FAQ and bug reports.">
-<meta property="og:image" content="img/phone-1-home.webp">
+<meta property="og:description" content="Hyprtile, a tiling Linux desktop for your Android home screen: whole looks in one tap, the user guide, recipes, FAQ and bug reports.">
+<meta property="og:image" content="img/look-camel-and-navy.webp">
 <link rel="icon" type="image/png" href="img/icon-192.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -23,78 +23,125 @@
 
 <section class="hero" aria-labelledby="hero-h">
   <div class="tile">
-    <div class="title" aria-hidden="true">kitty ~ user guide</div>
+    <div class="title" aria-hidden="true">kitty ~ user guide · 1.54</div>
     <h1 id="hero-h">hyprtile</h1>
     <div class="underline" aria-hidden="true"></div>
-    <p class="lede">A tiling Linux desktop as your Android home screen. Inspired by Hyprland, Omarchy and kitty. Widgets become windows with gaps and glowing borders, with a terminal, a launcher and 31 themes from the ricing scene.</p>
+    <p class="lede">Your Android home screen as a tiling Linux desktop, inspired by Hyprland, Omarchy and kitty. Widgets become windows with gaps and glowing borders, under a waybar, with a terminal, a launcher and 34 themes from the ricing scene.</p>
+    <p>Whole looks in one tap, from calm camel and navy to liquid glass and a full rgb glow, each with its own painted wallpaper, and each look carries over to your lock screen.</p>
     <p class="dim">This is the user guide, and the place to report bugs and ask for features. The app itself is on Google Play.</p>
     <div class="actions">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.zanoshky.hyprtile">Get it on Google Play</a>
+      <a class="btn ghost" href="#looks">See the looks</a>
       <a class="btn ghost" href="guide.html">Read the guide</a>
-      <a class="btn ghost" href="report.html">Report a bug</a>
     </div>
   </div>
-  <div class="phone"><img src="img/phone-1-home.webp" width="540" height="1080" alt="Hyprtile home in the hyper theme over the synthwave scene: a big gradient clock, a weather window for Zagreb with sunrise, sunset and a temperature curve, a battery window at 100 percent and a moon window at first quarter."></div>
+  <div class="phone"><img src="img/look-camel-and-navy.webp" width="540" height="1200" alt="Hyprtile in the camel and navy look: a big serif clock reading 22:03 in camel gold over navy silk, the October calendar, a weather window for Zagreb, a world clock and a todo list, each window with a thin camel border."></div>
 </section>
 
-<section class="tile " id="new" aria-labelledby="new-h"><div class="title" aria-hidden="true">changelog</div><h2 id="new-h">New in 1.35</h2>
-
-<ul class="dots">
-  <li><a href="guide.html#daynight"><b>Day and night</b></a>: the theme switches by the sun or by the clock, with its own day theme and night theme. <a href="cookbook.html#night">Recipe</a></li>
-  <li><a href="guide.html#liveweather"><b>Live weather</b></a>: real rain, drizzle, snow, fog and thunder over the wallpaper, on home, the lock screen and the screen saver. <a href="cookbook.html#liveweather">Recipe</a></li>
-  <li><a href="guide.html#shelf"><b>App shelf</b></a>: a new window with one app per cell, as a row, a column or a grid of icons. <a href="cookbook.html#shelf">Recipe</a></li>
-  <li><a href="guide.html#wallpapers"><b>Ten new wallpapers</b></a>: blackhole, warp, abyss, hex, matrix, topo, sakura, lowpoly, palms and tokyo, picked from a list with a note under each. <a href="cookbook.html#newwall">Recipe</a></li>
+<section aria-label="Hyprtile in numbers">
+<ul class="stats">
+  <li><b>39</b><span>presets, a whole look each</span></li>
+  <li><b>34</b><span>themes, 15 more with pro</span></li>
+  <li><b>18</b><span>moving wallpapers, plus 7 painted</span></li>
+  <li><b>29</b><span>window kinds, 8 more with pro</span></li>
+  <li><b>5</b><span>terminal fonts</span></li>
+  <li><b>0</b><span>ads, accounts or analytics</span></li>
 </ul>
-<p class="dim">Version 1.35 is on its way to Google Play. Until it reaches your phone, these rows are not in the app yet.</p>
+</section>
 
+<section class="tile" id="looks" aria-labelledby="looks-h"><div class="title" aria-hidden="true">look · presets</div><h2 id="looks-h">Whole looks in one tap</h2>
+
+<p>One tap changes the whole look: wallpaper, colours, glass, borders, fonts and clock. Your windows stay, and <code>your own look</code> at the end brings yours back. The painted looks lead the list; a look built on a pro theme carries a pro tag.</p>
+<ul class="looks">
+  <li><figure><div class="phone"><img src="img/look-camel-and-navy-s.webp" srcset="img/look-camel-and-navy-s.webp 270w, img/look-camel-and-navy.webp 540w" sizes="(min-width: 1700px) 240px, (min-width: 700px) 190px, 45vw" width="540" height="1200" loading="lazy" alt="Camel and navy: a camel serif clock on navy silk with thin camel borders."></div><figcaption><b>camel and navy</b>the out of the box look: navy silk, camel borders, a serif clock</figcaption></figure></li>
+  <li><figure><div class="phone"><img src="img/look-liquid-glass-s.webp" srcset="img/look-liquid-glass-s.webp 270w, img/look-liquid-glass.webp 540w" sizes="(min-width: 1700px) 240px, (min-width: 700px) 190px, 45vw" width="540" height="1200" loading="lazy" alt="Liquid glass: clear white glass windows over flowing violet, pink and blue, with a dock of app icons."></div><figcaption><b>liquid glass · pro</b>clear white glass over a flowing colour field</figcaption></figure></li>
+  <li><figure><div class="phone"><img src="img/look-classy-black-s.webp" srcset="img/look-classy-black-s.webp 270w, img/look-classy-black.webp 540w" sizes="(min-width: 1700px) 240px, (min-width: 700px) 190px, 45vw" width="540" height="1200" loading="lazy" alt="Classy black: a thin grey clock on black silk with hairline white borders, a calendar, weather and a battery window."></div><figcaption><b>classy black · pro</b>pure black, hairline white borders, a thin clock</figcaption></figure></li>
+  <li><figure><div class="phone"><img src="img/look-rose-s.webp" srcset="img/look-rose-s.webp 270w, img/look-rose.webp 540w" sizes="(min-width: 1700px) 240px, (min-width: 700px) 190px, 45vw" width="540" height="1200" loading="lazy" alt="Rose: a light serif clock in blush pink on wine dark silk, with weather, todo, the moon and a pomodoro ring."></div><figcaption><b>rose · pro</b>rose gold on pink silk, a light serif clock</figcaption></figure></li>
+  <li><figure><div class="phone"><img src="img/look-emerald-s.webp" srcset="img/look-emerald-s.webp 270w, img/look-emerald.webp 540w" sizes="(min-width: 1700px) 240px, (min-width: 700px) 190px, 45vw" width="540" height="1200" loading="lazy" alt="Emerald: a lime to teal clock on green silk, with a fetch window, gauges and a network window under the waybar."></div><figcaption><b>emerald · pro</b>jade glass on green silk, lime to teal borders</figcaption></figure></li>
+  <li><figure><div class="phone"><img src="img/look-black-gold-s.webp" srcset="img/look-black-gold-s.webp 270w, img/look-black-gold.webp 540w" sizes="(min-width: 1700px) 240px, (min-width: 700px) 190px, 45vw" width="540" height="1200" loading="lazy" alt="Black and gold: a gold clock over a black hole, with gold ring gauges, a stopwatch and a battery window."></div><figcaption><b>black and gold · pro</b>gold borders round a black hole</figcaption></figure></li>
+  <li><figure><div class="phone"><img src="img/look-rgb-glow-s.webp" srcset="img/look-rgb-glow-s.webp 270w, img/look-rgb-glow.webp 540w" sizes="(min-width: 1700px) 240px, (min-width: 700px) 190px, 45vw" width="540" height="1200" loading="lazy" alt="Rgb glow: a rainbow clock and rainbow borders on true black, with btop, gauges and a pipes window."></div><figcaption><b>rgb glow</b>a rainbow border on true black, every window lit</figcaption></figure></li>
+</ul>
+<p>The list also has cream and forest, deep forest, latte paper, tokyo rain, vice city, neon hyper, nord lights, dracula, gruvbox retro and many more. <a href="guide.html#presets">Every preset</a> · <a href="cookbook.html#preset">recipe: try a look and go back</a></p>
+</section>
+
+<section class="tile" id="new" aria-labelledby="new-h"><div class="title" aria-hidden="true">changelog</div><h2 id="new-h">New since 1.35</h2>
+
+<ul class="dots cols">
+  <li><a href="guide.html#presets"><b>Whole looks</b></a>: camel and navy is the new default, with painted wallpapers for the new looks.</li>
+  <li><a href="guide.html#wsnames"><b>Workspace names</b></a>: give each workspace a name, shown on the bar and in menus.</li>
+  <li><a href="guide.html#lockgesture"><b>Lock gesture</b></a>: double tap empty space to lock the phone, if you turn it on.</li>
+  <li><a href="guide.html#pulldown"><b>Pull down</b></a>: the full screen hyprtile panel, notifications, quick settings, search or any app you pick.</li>
+  <li><a href="guide.html#desktop"><b>Top bar items</b></a>: put each item left, centre or right, in any order, like waybar, and pick the clock format.</li>
+  <li><a href="guide.html#windows"><b>Stopwatch and countdown</b></a> windows for everyone.</li>
+  <li><a href="guide.html#notifs"><b>Badges and buttons</b></a>: notification badges on app icons, and buttons like mark as read and archive.</li>
+  <li><a href="guide.html#settings"><b>Rotation</b></a>: lock home in portrait or landscape, or let it follow the phone. The gesture bar sits on your look.</li>
+  <li><a href="guide.html#looks"><b>Big numbers and icon size</b></a>: a smaller temperature, clock and timers, and room for icon packs that draw small.</li>
+  <li><a href="guide.html#pro"><b>Hyprtile pro</b></a>: widgets, icon packs, 2fa codes, news, gps, sensors, friend and more, as one optional extra.</li>
+  <li><b>A clean desktop</b>: the CRT screen looks are removed, so Hyprtile stays a clean tiling desktop.</li>
+</ul>
 </section>
 
 <div class="tiles">
-<div class="tile quiet"><h2>Tiling home screen</h2>
-<p>Widgets are windows, tiled with gaps, rounded corners, rotating gradient borders, drop shadows and a frosted blur of the wallpaper behind each one.</p>
+<div class="tile quiet"><h2>A tiling home screen</h2>
+<p>Widgets are windows in a dwindle layout, with gaps, rounded corners, rotating gradient borders, shadows and a frosted blur behind each one. Swipe between workspaces, each with its own windows and a name you give it.</p>
 </div>
-<div class="tile quiet"><h2>Workspaces</h2>
-<p>Swipe sideways to slide between workspaces. Each one keeps its own windows. Tile them like Hyprland, or place them like Android widgets.</p>
+<div class="tile quiet"><h2>A waybar, a terminal, a launcher</h2>
+<p>Workspace pills, clock, battery, network, cpu and memory up top. A kitty style terminal greets you with a fastfetch summary and runs a small shell. A rofi style launcher finds any app as you type.</p>
 </div>
-<div class="tile quiet"><h2>Rice it</h2>
-<p>18 presets, 31 themes with day and night, 17 painted wallpapers that move, live weather, five terminal fonts, and hyprtile.conf in Hyprland's own syntax.</p>
+<div class="tile quiet"><h2>Windows for everything</h2>
+<p>A big clock, weather with sunrise and sunset, a btop style monitor, notifications, a calendar, pinned apps, a cava visualizer and a music player styled after cliamp, with cliamp radio built in.</p>
 </div>
-<div class="tile quiet"><h2>27 windows</h2>
-<p>Terminal, btop, cliamp with radio, cava, weather, calendar, pomodoro, the app shelf, pipes, matrix and more.</p>
+<div class="tile quiet"><h2>Rice it in a config file</h2>
+<p>hyprtile.conf, in Hyprland's syntax, reloads live as you save it: gaps, borders and gradient colours, rounding, blur and shadow, and the bezier curves that move windows and slide workspaces.</p>
 </div>
 </div>
 
-<section class="tile " id="shots" aria-labelledby="shots-h"><div class="title" aria-hidden="true">swayimg</div><h2 id="shots-h">Screenshots</h2>
+<section class="tile" id="shots" aria-labelledby="shots-h"><div class="title" aria-hidden="true">swayimg</div><h2 id="shots-h">Inside the app</h2>
 
-<p class="dim">From a real phone. Scroll sideways for more.</p>
+<p class="dim">Edit mode, the picker, rofi and more, from a real phone. Scroll sideways for more.</p>
 <div class="shots-wrap" tabindex="0" role="region" aria-label="Screenshots, scroll sideways">
-<ul class="shots"><li><figure><div class="phone"><img src="img/phone-1-home.webp" width="540" height="1080" alt="Hyprtile home in the hyper theme over the synthwave scene: a big gradient clock, a weather window for Zagreb with sunrise, sunset and a temperature curve, a battery window at 100 percent and a moon window at first quarter." loading="lazy"></div><figcaption>workspace 1: clock, weather, battery and moon</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-2-system.webp" width="540" height="1080" alt="A tiled workspace: a btop style monitor with cpu cores, network, memory and power, the cliamp music player playing Midnight Drive, a fetch window with phone specs, and toggles for torch, wifi, bluetooth and sound." loading="lazy"></div><figcaption>workspace 2: btop, cliamp, fetch and toggles</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-3-planner.webp" width="540" height="1080" alt="A planner workspace: the October calendar with upcoming events, a todo list, a pomodoro ring at 25:00 and the moon." loading="lazy"></div><figcaption>workspace 3: calendar, todo, pomodoro and moon</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-4-rofi.webp" width="540" height="1080" alt="The rofi style app launcher open over the desktop, listing apps like Calendar, Camera, Chrome and Clock." loading="lazy"></div><figcaption>rofi: swipe up and type to find an app</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-5-edit.webp" width="540" height="1080" alt="Edit mode: the strip at the top reads add, workspaces, look, settings and done. Each window has a close mark and edge handles, and a plus spot sits in the free space." loading="lazy"></div><figcaption>edit mode: close, resize and add</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-6-add.webp" width="540" height="1080" alt="The add a window sheet with a search field and live previews of clock, world, weather, sun, moon and calendar, each with its size." loading="lazy"></div><figcaption>add a window: the picker</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-7-presets.webp" width="540" height="1080" alt="The presets menu: neon hyper, night city, aurora glass, outrun drive, deep space, vapor dream, blood moon, toxic circuit, glacier, oled void, sakura, mocha cozy, dracula and github dark." loading="lazy"></div><figcaption>presets: a complete look in one tap</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-8-aurora.webp" width="540" height="1080" alt="The system workspace in the borealis theme over the aurora scene, with green and teal borders." loading="lazy"></div><figcaption>the aurora glass look</figcaption></figure></li></ul>
+<ul class="shots"><li><figure><div class="phone"><img src="img/make-it-yours.webp" width="540" height="1080" alt="Make it yours: edit mode with the strip reading add, workspaces, look, settings and done, a gradient clock, a weather window with a temperature curve, battery and moon windows, each with a close mark." loading="lazy"></div><figcaption>edit mode: add, move and resize</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-2-system.webp" width="540" height="1080" alt="A tiled workspace: a btop style monitor with cpu cores, network, memory and power, the cliamp music player, a fetch window with phone specs, and toggles for torch, wifi, bluetooth and sound." loading="lazy"></div><figcaption>btop, cliamp, fetch and toggles</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-3-planner.webp" width="540" height="1080" alt="A planner workspace: the October calendar with upcoming events, a todo list, a pomodoro ring at 25:00 and the moon." loading="lazy"></div><figcaption>calendar, todo, pomodoro and moon</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-4-rofi.webp" width="540" height="1080" alt="The rofi style app launcher open over the desktop, listing apps like Calendar, Camera, Chrome and Clock." loading="lazy"></div><figcaption>rofi: swipe up and type to find an app</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-6-add.webp" width="540" height="1080" alt="The add a window sheet with a search field and live previews of clock, world, weather, sun, moon and calendar, each with its size." loading="lazy"></div><figcaption>add a window: the picker</figcaption></figure></li><li><figure><div class="phone"><img src="img/phone-7-presets.webp" width="540" height="1080" alt="The presets menu: neon hyper, night city, aurora glass, outrun drive, deep space, vapor dream, blood moon, toxic circuit, glacier, oled void, sakura, mocha cozy, dracula and github dark." loading="lazy"></div><figcaption>more presets from the ricing scene</figcaption></figure></li></ul>
 </div>
 </section>
 
-<section class="tile " id="start" aria-labelledby="start-h"><div class="title" aria-hidden="true">quick start</div><h2 id="start-h">Quick start</h2>
+<section class="tile" id="pro" aria-labelledby="pro-h"><div class="title" aria-hidden="true">optional extra</div><h2 id="pro-h">Hyprtile pro</h2>
+
+<p>Everything above is yours with the app. One optional purchase adds everything here and every add on that comes later. No subscription.</p>
+<ul class="dots cols">
+  <li>Android widgets from your other apps as tiled windows, stacked if you like</li>
+  <li>A news window for any RSS or Atom feed, riced like newsboat, that turns into a ticker tape when short</li>
+  <li>A GPS window with your position and every satellite, and a sensors window with a level, a compass and live traces</li>
+  <li>15 more themes: pure black, pure white, C64, C128 and night red among them</li>
+  <li>Icon packs from your installed icon pack apps</li>
+  <li>2fa codes, encrypted on this phone only: scan a QR code, bring codes over from Google Authenticator, keep a sealed backup</li>
+  <li>A text and json editor, strong passwords never saved, a clipboard history sealed on this phone, and contacts in search</li>
+  <li>Friend, fli the terminal pet, as a window</li>
+</ul>
+<p class="dim">Settings, <code>hyprtile pro</code>. <code>restore purchase</code> brings pro back on a new phone. <a href="guide.html#pro">More in the guide</a>.</p>
+</section>
+
+<section class="tile" id="start" aria-labelledby="start-h"><div class="title" aria-hidden="true">quick start</div><h2 id="start-h">Quick start</h2>
 
 <ol class="steps">
   <li>Install Hyprtile from <a href="https://play.google.com/store/apps/details?id=com.zanoshky.hyprtile">Google Play</a>. It runs on Android 7 or newer.</li>
-  <li>Open it. The welcome card shows the main gestures. Take the tour: it acts out each gesture on your own windows.</li>
+  <li>Open it. The welcome card shows the main gestures, then offers <code>take the tour</code>, <code>pick your look</code>, <code>set up your phone</code> and <code>start exploring</code>.</li>
   <li>Tap <code>set up your phone</code> for the setup guide: default home, lock screen, notification access and more.</li>
   <li>Swipe sideways for workspaces, swipe up for rofi, double tap a window for full screen.</li>
   <li>Hold an empty spot for edit mode. Add windows, open workspaces, look and settings from the strip.</li>
   <li>Pick a preset under <code>look</code>, and your desktop is riced.</li>
 </ol>
 <p><a href="guide.html">The full guide, from A to Z</a></p>
-
 </section>
 
 <div class="tiles">
 <div class="tile "><h2>Guide</h2>
-<p>Setup, gestures, workspaces, edit mode, windows, looks, hyprtile.conf, lock screen, battery and accessibility.</p><p><a href="guide.html">Open the guide</a></p>
+<p>Setup, gestures, workspaces, edit mode, windows, looks, hyprtile.conf, lock screen, pro, battery and accessibility.</p><p><a href="guide.html">Open the guide</a></p>
 </div>
 <div class="tile "><h2>Use cases</h2>
-<p>A focus phone, a music setup, a work dashboard, a night setup, your apps as icons and a full rice.</p><p><a href="use-cases.html">See use cases</a></p>
+<p>A focus phone, a music setup, a work dashboard, a night setup, your apps as icons, a full rice and more.</p><p><a href="use-cases.html">See use cases</a></p>
 </div>
 <div class="tile "><h2>Cookbook</h2>
-<p>Short recipes: day and night themes, a row of favourite apps, live weather, a rainy night look, a new wallpaper and more.</p><p><a href="cookbook.html">Open the cookbook</a></p>
+<p>Short recipes: try a look, name a workspace, lock with a double tap, a pull down of your own, day and night, live weather and more.</p><p><a href="cookbook.html">Open the cookbook</a></p>
 </div>
 <div class="tile "><h2>Help</h2>
 <p>Answers, fixes for common problems, and how to report a bug.</p><p><a href="faq.html">FAQ</a> · <a href="report.html">Report a bug</a></p>
