@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Guide · Hyprtile user guide</title>
-<meta name="description" content="The Hyprtile user guide from A to Z: setup, gestures, workspaces, edit mode, windows, presets, hyprtile.conf, lock screen, battery and accessibility.">
+<meta name="description" content="The Hyprtile user guide from A to Z: setup, gestures, workspaces, edit mode, windows, looks, hyprtile.conf, lock screen, battery and accessibility.">
 <meta name="theme-color" content="#0a0717">
 <meta property="og:title" content="Guide · Hyprtile user guide">
-<meta property="og:description" content="The Hyprtile user guide from A to Z: setup, gestures, workspaces, edit mode, windows, presets, hyprtile.conf, lock screen, battery and accessibility.">
+<meta property="og:description" content="The Hyprtile user guide from A to Z: setup, gestures, workspaces, edit mode, windows, looks, hyprtile.conf, lock screen, battery and accessibility.">
 <meta property="og:image" content="img/look-camel-and-navy.webp">
 <link rel="icon" type="image/png" href="img/icon-192.png">
 <link rel="stylesheet" href="style.css">
@@ -25,7 +25,7 @@
 <h1>The guide</h1>
 <div class="underline" aria-hidden="true"></div>
 <p class="lede">Everything Hyprtile does, from install to the last config key, in order. Words in <code>code</code> are what you see in the app.</p>
-<div class="tiles"><nav class="tile toc" aria-labelledby="toc-h"><h2 id="toc-h">Contents</h2><ol><li><a href="#install"><span class="n">1</span>Install</a></li><li><a href="#setup"><span class="n">2</span>Welcome and setup</a></li><li><a href="#home"><span class="n">3</span>Set as home screen</a></li><li><a href="#tour"><span class="n">4</span>The tour and the cheat sheet</a></li><li><a href="#gestures"><span class="n">5</span>Gestures</a></li><li><a href="#desktop"><span class="n">6</span>The desktop</a></li><li><a href="#workspaces"><span class="n">7</span>Workspaces</a></li><li><a href="#edit"><span class="n">8</span>Edit mode</a></li><li><a href="#add"><span class="n">9</span>Add a window</a></li><li><a href="#free"><span class="n">10</span>Move and size on a free page</a></li><li><a href="#tiling"><span class="n">11</span>Tiled pages</a></li><li><a href="#winmenu"><span class="n">12</span>The window menu</a></li><li><a href="#windows"><span class="n">13</span>Every window</a></li><li><a href="#notifs"><span class="n">14</span>Notifications and pull down</a></li><li><a href="#rofi"><span class="n">15</span>Rofi: find an app</a></li><li><a href="#terminal"><span class="n">16</span>The terminal</a></li><li><a href="#music"><span class="n">17</span>Music, radio and cava</a></li><li><a href="#weather"><span class="n">18</span>Weather and places</a></li><li><a href="#looks"><span class="n">19</span>Presets, themes and looks</a></li><li><a href="#conf"><span class="n">20</span>hyprtile.conf</a></li><li><a href="#lock"><span class="n">21</span>Lock screen</a></li><li><a href="#lockgesture"><span class="n">22</span>Lock gesture</a></li><li><a href="#settings"><span class="n">23</span>Settings map</a></li><li><a href="#motion"><span class="n">24</span>Motion and battery</a></li><li><a href="#link"><span class="n">25</span>Link devices</a></li><li><a href="#pro"><span class="n">26</span>Hyprtile pro</a></li><li><a href="#a11y"><span class="n">27</span>Accessibility</a></li><li><a href="#privacy"><span class="n">28</span>Privacy and permissions</a></li><li><a href="#reset"><span class="n">29</span>Showcase and reset</a></li></ol></nav></div>
+<div class="tiles"><nav class="tile toc" aria-labelledby="toc-h"><h2 id="toc-h">Contents</h2><ol><li><a href="#install"><span class="n">1</span>Install</a></li><li><a href="#setup"><span class="n">2</span>First run and setup</a></li><li><a href="#home"><span class="n">3</span>Set as home screen</a></li><li><a href="#tour"><span class="n">4</span>The tour and the cheat sheet</a></li><li><a href="#gestures"><span class="n">5</span>Gestures</a></li><li><a href="#desktop"><span class="n">6</span>The desktop</a></li><li><a href="#workspaces"><span class="n">7</span>Workspaces</a></li><li><a href="#edit"><span class="n">8</span>Edit mode</a></li><li><a href="#add"><span class="n">9</span>Add a window</a></li><li><a href="#free"><span class="n">10</span>Move and size on a free page</a></li><li><a href="#tiling"><span class="n">11</span>Tiled pages</a></li><li><a href="#winmenu"><span class="n">12</span>The window menu</a></li><li><a href="#windows"><span class="n">13</span>Every window</a></li><li><a href="#notifs"><span class="n">14</span>Notifications and pull down</a></li><li><a href="#rofi"><span class="n">15</span>Rofi: find an app</a></li><li><a href="#terminal"><span class="n">16</span>The terminal</a></li><li><a href="#music"><span class="n">17</span>Music, radio and cava</a></li><li><a href="#weather"><span class="n">18</span>Weather and places</a></li><li><a href="#looks"><span class="n">19</span>Looks, themes and wallpapers</a></li><li><a href="#conf"><span class="n">20</span>hyprtile.conf</a></li><li><a href="#lock"><span class="n">21</span>Lock screen</a></li><li><a href="#lockgesture"><span class="n">22</span>Lock gesture</a></li><li><a href="#settings"><span class="n">23</span>The menu</a></li><li><a href="#motion"><span class="n">24</span>Motion and battery</a></li><li><a href="#link"><span class="n">25</span>Link devices</a></li><li><a href="#pro"><span class="n">26</span>Hyprtile pro</a></li><li><a href="#a11y"><span class="n">27</span>Accessibility</a></li><li><a href="#privacy"><span class="n">28</span>Privacy and permissions</a></li><li><a href="#reset"><span class="n">29</span>Store look and reset</a></li></ol></nav></div>
 
 <div class="tiles one">
 <section class="tile " id="install" aria-labelledby="install-h"><div class="title" aria-hidden="true">01</div><h2 id="install-h">Install</h2>
@@ -34,10 +34,17 @@
 
 </section>
 
-<section class="tile " id="setup" aria-labelledby="setup-h"><div class="title" aria-hidden="true">02</div><h2 id="setup-h">Welcome and setup</h2>
+<section class="tile " id="setup" aria-labelledby="setup-h"><div class="title" aria-hidden="true">02</div><h2 id="setup-h">First run and setup</h2>
 
-<p>The first start opens <code>welcome to hyprtile</code>. It lists the gestures that run the desktop, then offers <code>take the tour</code>, <code>pick your look</code>, <code>set up your phone</code> and <code>start exploring</code>.</p>
-<p>The setup guide has 8 steps. Tap a step to open its page. Done steps show a tick.</p>
+<p>The first start has three screens, one choice each. The title tells you where you are, like <code>1 of 3 · pick your look</code>.</p>
+<ol class="steps">
+  <li><code>pick your look</code>: every look as a card, in four groups. Tap one and your home changes behind the screen. Then <code>next ›</code>.</li>
+  <li><code>pick your pages</code>: the free <a href="#ready">ready workspaces</a> as cards. Tick up to three; at a glance and music are ticked to begin with. They take the place of the starter pages. Untick them all and you get <code>keep the starter pages ›</code>.</li>
+  <li><code>make it your home</code>: tap <code>make it my home</code> and pick Hyprtile when Android asks which app opens on home. Then <code>take the tour ›</code>, or <code>later, take the tour ›</code>.</li>
+</ol>
+<p>Each screen has <code>‹ back</code>. The first run asks for no permission. Location, calendar and notification access are asked the first time a window needs them. People who update from an older Hyprtile never see the first run and keep their pages.</p>
+<h3 id="setupguide">The setup guide</h3>
+<p>While the first steps are not done, the main menu starts with <code>finish setup</code>, with how many are left. The setup guide has 8 steps; the first three count for <code>finish setup</code>. Tap a step to open its page. Done steps show a tick.</p>
 <ol class="steps">
   <li><code>default home</code>: make Hyprtile your home screen.</li>
   <li><code>lock screen</code>: pick Hyprtile lock screen, then "Lock screen" or "Home and lock screen".</li>
@@ -48,21 +55,32 @@
   <li><code>calendar</code>: for the calendar and meeting windows.</li>
   <li><code>battery saver</code>: advice on saving power.</li>
 </ol>
-<p>The guide is in settings again under <code>help</code>, <code>setup guide</code>, or type <code>setup</code> in the terminal.</p>
+<p>The guide is in the menu again under <code>tour and gestures</code>, <code>setup guide</code>, or type <code>setup</code> in the terminal.</p>
 
 </section>
 
 <section class="tile " id="home" aria-labelledby="home-h"><div class="title" aria-hidden="true">03</div><h2 id="home-h">Set as home screen</h2>
 
-<p>The easiest way is the first setup step, <code>default home</code>. You can also do it in Android settings. On most phones it is under Apps, then Default apps, then Home app. To go back, pick your old launcher there.</p>
+<p>The easiest way is the third screen of the first run, <code>make it my home</code>, or later the setup step <code>default home</code>. You can also do it in Android settings. On most phones it is under Apps, then Default apps, then Home app. To go back, pick your old launcher there.</p>
 
 </section>
 
 <section class="tile " id="tour" aria-labelledby="tour-h"><div class="title" aria-hidden="true">04</div><h2 id="tour-h">The tour and the cheat sheet</h2>
 
-<p>The tour has 8 steps on your real desktop: swipe sideways, double tap a window, hold and drag to swap, drag a gap, double tap a gap, swipe up for rofi, hold an empty spot for edit mode, and tap <code>+ add</code>. A ghost finger acts each one out on your own windows. The card has back, skip and end. TalkBack hears each step.</p>
-<p>If the tour changed your layout, the end card offers <code>undo the tour</code>.</p>
-<p>The <code>gestures</code> cheat sheet lists every gesture with what it does and how. Find both in settings, <code>help</code>, or type <code>tour</code> or <code>gestures</code> in the terminal.</p>
+<p>The tour starts by itself at the end of the first run. It has 8 steps on your real desktop, and edit mode comes first, since the layout is locked outside it:</p>
+<ol class="steps">
+  <li><code>hold an empty spot</code>: edit mode. Keep your finger still until it buzzes.</li>
+  <li><code>tap + add</code>: pick a window. It lands in free space at its own size. Hold one and drag it out to drop it where you like.</li>
+  <li><code>drag a window</code>: drop it in the middle of another to swap, on its edge to split, or on free space to move it.</li>
+  <li><code>drag a gap or an edge</code>: resize. The windows beside it follow.</li>
+  <li><code>tap done</code>: done saves the layout, and outside edit mode nothing moves by accident.</li>
+  <li><code>swipe sideways</code>: move between pages.</li>
+  <li><code>double tap a window</code>: it fills the screen. Double tap again to tile it back.</li>
+  <li><code>swipe up from the bottom</code>: find an app. Type to filter, tap to launch.</li>
+</ol>
+<p>A ghost finger acts each one out on your own windows, and a step is done when you do it yourself. The card has back, skip and end. TalkBack hears each step.</p>
+<p>The end card, <code>tour done</code>, offers the <code>gesture cheat sheet</code>, and <code>undo the tour</code> if the tour changed your layout.</p>
+<p>The <code>gestures</code> cheat sheet lists every gesture with what it does and how. Find both in the menu under <code>tour and gestures</code>, or type <code>tour</code> or <code>gestures</code> in the terminal.</p>
 
 </section>
 
@@ -71,68 +89,97 @@
 <dl class="keys">
   <dt>swipe sideways</dt><dd>workspaces. Each page keeps its own windows.</dd>
   <dt>swipe up</dt><dd>find an app. From the lower half; type to filter.</dd>
-  <dt>pull down</dt><dd>what you picked: the full screen hyprtile panel by default. See <a href="#pulldown">pull down</a>.</dd>
+  <dt>pull down</dt><dd>from the top of the screen: what you picked, the full screen hyprtile panel by default. See <a href="#pulldown">pull down</a>.</dd>
   <dt>double tap empty space</dt><dd>lock the phone, once <a href="#lockgesture">lock gesture</a> is on</dd>
   <dt>tap the clock</dt><dd>your clock app</dd>
   <dt>tap a window</dt><dd>use it. Every window is live.</dd>
   <dt>double tap a window</dt><dd>full screen. Double tap again to tile it back.</dd>
-  <dt>hold a window, drag</dt><dd>move. The middle of a window swaps, its edge splits it, empty space moves it.</dd>
-  <dt>hold a window, let go</dt><dd>the window menu: move, size, replace, close, move to workspace</dd>
-  <dt>hold an empty spot</dt><dd>edit mode. x closes, edges resize, plus adds; done saves.</dd>
+  <dt>hold a window, drag</dt><dd>in edit mode: move. The middle of a window swaps, its edge splits it, empty space moves it.</dd>
+  <dt>hold a window, let go</dt><dd>the window menu: size, move, replace, move to a page, remove</dd>
+  <dt>hold an empty spot</dt><dd>edit mode. The strip on top has add, looks, pages, menu, lock and done.</dd>
   <dt>tap + or + add</dt><dd>add a window. It lands at its own size, half the page at most.</dd>
-  <dt>drag a gap</dt><dd>resize. Windows on both sides follow.</dd>
-  <dt>double tap a gap</dt><dd>flip split: side by side or stacked</dd>
+  <dt>drag a gap or an edge</dt><dd>in edit mode: resize. Windows on both sides follow.</dd>
+  <dt>double tap a gap</dt><dd>in edit mode: flip split, side by side or stacked</dd>
+  <dt>tap x</dt><dd>in edit mode: remove the window. Undo shows for 6 seconds.</dd>
+  <dt>hold an app</dt><dd>in rofi or the dock: pin, hide, app info, uninstall</dd>
 </dl>
+<p>The layout is locked outside edit mode, so nothing moves by accident while you use your windows. The <code>lock</code> button on the edit strip turns that off.</p>
 
 </section>
 
 <section class="tile " id="desktop" aria-labelledby="desktop-h"><div class="title" aria-hidden="true">06</div><h2 id="desktop-h">The desktop</h2>
 
 <p>Your home is a tiling desktop, like Hyprland on a laptop. Each window is live, with a gradient border, a soft glow and frosted glass that lets the wallpaper shine through.</p>
-<p><b>The bar.</b> A waybar style bar with workspace pills, the clock, battery, network, cpu and memory. On a fresh install it is hidden, like in the store pictures, so windows get the space. Show it under settings, <code>home</code>, <code>top bar</code>. With the bar shown, the <code>≡</code> button on it opens settings. The phone's own status bar has its own row there too. <code>top bar items</code> picks what the bar shows: cpu heat, memory, network speed and battery.</p>
-<p><b>Top bar items.</b> Settings, <code>home</code>, <code>top bar items</code>: put each item left, in the centre or right, in the order you like, like waybar. Pick the clock format: 12 or 24 hour, date, seconds, or your own pattern in hyprtile.conf, <code>bar</code>, <code>clock_format</code>. Auto shows the date when it fits.</p>
-<p><b>The dock</b> lines up with the windows and takes all its apps, in two rows when needed. The gesture bar sits on your look, with no grey band.</p>
-<p><b>The default desktop</b> has four workspaces:</p>
+<p><b>The bar.</b> A waybar style bar with workspace pills, the clock, battery, network, cpu and memory. On a fresh install it is hidden, like in the store pictures, so windows get the space. Show it in the menu under <code>home and apps</code>, <code>top bar</code>. With the bar shown, the <code>≡</code> button on it opens the menu. The phone's own status bar has its own row there too.</p>
+<p><b>Top bar items.</b> Menu, <code>home and apps</code>, <code>top bar items</code>: pick what the bar shows, and put each item left, in the centre or right, in the order you like, like waybar. Pick the clock format: 12 or 24 hour, date, seconds, or your own pattern in hyprtile.conf, <code>bar</code>, <code>clock_format</code>. Auto shows the date when it fits.</p>
+<p><b>The dock</b> lines up with the windows and takes all its apps, in two rows when needed. Work apps get their own icons and pins, and an app you uninstall leaves the dock. With three button navigation, the buttons sit on a solid band.</p>
+<p><b>The starter desktop</b> has four workspaces, if you keep the starter pages in the first run:</p>
 <ol class="steps">
   <li>clock, weather, battery and moon, placed on a grid with room to add more</li>
   <li>btop, cliamp, fetch and toggles</li>
   <li>calendar, notes, pomodoro and moon</li>
-  <li>a black page</li>
+  <li>an empty page</li>
 </ol>
+<p>Pick pages in the first run instead, and you get those pages. At a glance and music are ticked to begin with.</p>
 
 </section>
 
 <section class="tile " id="workspaces" aria-labelledby="workspaces-h"><div class="title" aria-hidden="true">07</div><h2 id="workspaces-h">Workspaces</h2>
 
-<p>Swipe sideways to slide between workspaces. Open settings, <code>workspaces</code>:</p>
+<p>Swipe sideways to slide between workspaces, or pages. You can have up to 9. Open the menu, <code>pages</code>, or <code>pages</code> on the edit strip:</p>
 <dl class="keys">
-  <dt>go to 1, 2, 3...</dt><dd>jump to a workspace</dd>
-  <dt>new workspace</dt><dd>a new page. New pages start free, like a home screen grid.</dd>
-  <dt>new black page</dt><dd>a page of pure black with no frost</dd>
-  <dt>black page</dt><dd>turn this page black, or back</dd>
-  <dt>tiling</dt><dd>switch this page between tiled and free</dd>
-  <dt>move left, move right</dt><dd>reorder pages</dd>
-  <dt>close workspace</dt><dd>remove this page</dd>
+  <dt>move this page</dt><dd>‹ moves it left, a tap anywhere else moves it right</dd>
+  <dt>rename this page</dt><dd>see <a href="#wsnames">workspace names</a></dd>
+  <dt>close this page</dt><dd>remove this page</dd>
+  <dt>go to 1, 2, 3...</dt><dd>jump to a page, with how many windows it has</dd>
+  <dt>apps, notifications</dt><dd>rofi and the notification shade, by tap</dd>
+  <dt>lock phone</dt><dd>lock the phone now, once the <a href="#lockgesture">lock service</a> is on</dd>
+  <dt>new page</dt><dd>a new empty page. New pages start free, like a home screen grid.</dd>
+  <dt>ready workspaces</dt><dd>a whole page in one tap. See <a href="#ready">ready workspaces</a>.</dd>
+  <dt>free page</dt><dd>on keeps each window where you put it; off tiles the page</dd>
+  <dt>black page</dt><dd>turn this page pure black, or back (pro)</dd>
+  <dt>new black page</dt><dd>a page of pure black with no frost (pro)</dd>
 </dl>
-<p>On an empty black page the bar hides too, so it is all black. The black page is part of <a href="#pro">pro</a>.</p>
+<p>On an empty black page the bar hides too, so it is all black.</p>
 <h3 id="wsnames">Workspace names</h3>
-<p>Open the workspaces menu and tap <code>rename this page</code>. Type a name, like mail or music. It shows on the bar and in menus, like <code>go to 2 · music</code>. Leave it empty for the number.</p>
+<p>Open <code>pages</code> and tap <code>rename this page</code>. Type a name, like mail or music. It shows on the bar and in menus, like <code>go to 2 · music</code>. Leave it empty for the number.</p>
+<h3 id="ready">Ready workspaces</h3>
+<p>Menu, <code>ready workspaces</code>: whole pages for how people use their phones. Each card shows a picture of the page as it will be laid out on your screen. Tap one, then pick <code>new page</code> (your other pages stay as they are) or <code>replace this page</code>. The windows grow to fill the whole page, and the page takes the name.</p>
+<dl class="keys">
+  <dt>at a glance</dt><dd>clock, weather and your calendar</dd>
+  <dt>daily driver</dt><dd>clock, weather, calendar and notifications</dd>
+  <dt>minimal</dt><dd>a clock and your apps</dd>
+  <dt>music</dt><dd>clock, cliamp and cava</dd>
+  <dt>focus</dt><dd>clock, pomodoro and notes</dd>
+  <dt>night stand</dt><dd>clock, alarm and battery</dd>
+  <dt>traveller</dt><dd>world clocks, weather and the forecast</dd>
+  <dt>well being</dt><dd>water, breathe and habits</dd>
+  <dt>rice</dt><dd>fetch, btop and cava, for the screenshot</dd>
+  <dt>fit</dt><dd>health, devices and water (pro)</dd>
+  <dt>dev</dt><dd>git, ping and the editor (pro)</dd>
+  <dt>explorer</dt><dd>gps and sensors (pro)</dd>
+  <dt>news desk</dt><dd>clock, news and on this day (pro)</dd>
+  <dt>vault</dt><dd>2fa codes, passwords and clipboard (pro)</dd>
+  <dt>space</dt><dd>iss, launches and aurora (pro)</dd>
+  <dt>matchday</dt><dd>matchday and a clock (pro)</dd>
+  <dt>world watch</dt><dd>radar, quakes and rates (pro)</dd>
+</dl>
+<p>That is 17 pages: 9 free and 8 with pro. A page with a pro window is pro.</p>
 
 </section>
 
 <section class="tile " id="edit" aria-labelledby="edit-h"><div class="title" aria-hidden="true">08</div><h2 id="edit-h">Edit mode</h2>
 
-<p>Hold an empty spot, or tap <code>edit home screen</code> in the window menu or settings. The strip on top reads:</p>
+<p>Hold an empty spot, or tap <code>edit home screen</code> in the window menu or the main menu. The strip on top reads:</p>
 <dl class="keys">
   <dt>+ add</dt><dd>add a window</dd>
-  <dt>workspaces</dt><dd>the workspaces menu</dd>
-  <dt>go</dt><dd>jump to a workspace, apps or notifications</dd>
-  <dt>look</dt><dd>theme, day and night, wallpaper, live weather, presets, font and more</dd>
-  <dt>settings</dt><dd>every setting</dd>
-  <dt>lock layout</dt><dd>on keeps sizes and places as they are outside edit mode</dd>
+  <dt>looks</dt><dd>whole looks, a picture of each. See <a href="#presets">looks</a>.</dd>
+  <dt>pages</dt><dd>go to, new, ready workspaces, move, close, apps and notifications by tap</dd>
+  <dt>menu</dt><dd>every setting, with search</dd>
+  <dt>lock on, lock off</dt><dd>on keeps sizes and places as they are outside edit mode. On by default.</dd>
   <dt>done</dt><dd>leave and save</dd>
 </dl>
-<p>Each window gets an <code>x</code> to close it, a grip and edge handles. Free cells show dotted <code>+</code> spots that open the picker aimed at them. Back, <code>done</code> or a tap on bare wallpaper leaves edit mode and saves.</p>
+<p>When the buttons do not fit across, the strip takes two rows. Each window gets an <code>x</code> to remove it, a grip and edge handles. After a remove, <code>undo</code> shows for 6 seconds. Free cells show dotted <code>+</code> spots that open the picker aimed at them. Back, <code>done</code> or a tap on bare wallpaper leaves edit mode and saves.</p>
 <p>On a tiled page, a <code>make room: free page</code> pill turns it into a free page.</p>
 
 </section>
@@ -141,7 +188,7 @@
 
 <ol class="steps">
   <li>Tap <code>+ add</code>, or a dotted <code>+</code> spot.</li>
-  <li>The sheet shows windows in groups: time and weather, phone, media, system and tools. Each has a live preview, one line about it and the size it opens at, like <code>4x2</code>. Tap <code>search windows</code> to type.</li>
+  <li>The sheet shows windows in groups: time and weather, phone, media, system, tools and pro. Each has a live preview, one line about it and the size it opens at, like <code>4x2</code>. Tap <code>search windows</code> to type. The list glides on after a flick.</li>
   <li>Tap a window. Aimed at a spot, it goes straight in. Otherwise it waits at the best spot with <code>place for me</code>, <code>spots ›</code> and <code>cancel</code>, and you can drag it anywhere.</li>
   <li>Or hold a row and drag: the window comes out under your finger, with a lit outline of where it lands.</li>
 </ol>
@@ -160,15 +207,16 @@
   <li><b>By taps only:</b> the window menu has <code>move</code> with a spots list and <code>size ›</code>, so nothing needs a drag.</li>
 </ul>
 <p>While you drag, the drop is named: "swap", "split 2x2", or the size.</p>
+<p><b>Landscape.</b> Turn the phone and a free page fits the screen. Edit it in landscape and it keeps its own landscape layout, while portrait stays as it was. <code>rotation</code> in <code>home and apps</code> steps through follow phone, portrait, landscape and always turns.</p>
 
 </section>
 
 <section class="tile " id="tiling" aria-labelledby="tiling-h"><div class="title" aria-hidden="true">11</div><h2 id="tiling-h">Tiled pages</h2>
 
-<p>A tiled page fills the whole screen with its windows, like Hyprland. Pick the layout under settings, <code>home</code>, <code>layout</code>: dwindle or master.</p>
+<p>A tiled page fills the whole screen with its windows, like Hyprland. Pick the layout in the menu, <code>home and apps</code>, <code>how windows share the page</code>: each new one halves (dwindle) or one big, rest stacked (master).</p>
 <ul class="dots">
-  <li><b>Drag a gap</b> between two windows to resize. Every window on both sides follows, and the split snaps to the middle with a tick.</li>
-  <li><b>Double tap a gap</b> to flip that split: side by side or stacked.</li>
+  <li><b>Drag a gap</b> between two windows in edit mode to resize. Every window on both sides follows, and the split snaps to the middle with a tick.</li>
+  <li><b>Double tap a gap</b> in edit mode to flip that split: side by side or stacked.</li>
   <li><b>Double tap a window</b> for full screen, and again to tile it back.</li>
   <li><b>reset splits</b> in the window menu puts sizes and flips back.</li>
 </ul>
@@ -178,40 +226,63 @@
 
 <section class="tile " id="winmenu" aria-labelledby="winmenu-h"><div class="title" aria-hidden="true">12</div><h2 id="winmenu-h">The window menu</h2>
 
-<p>Hold a window and let go. The menu starts with rows for that window kind, like <code>radio ›</code> on cliamp or <code>cava look ›</code> on cava. Then:</p>
+<p>Hold a window and let go. The menu starts with <code>what it shows</code>: an on or off row for each part of that window. Every window has a few parts on out of the box. Turn them all off and one big reading fills the box, like the temperature or the time. Then come rows for that window kind, like <code>radio ›</code> on cliamp or <code>album art blur</code> on cliamp and cava. Then:</p>
 <dl class="keys">
-  <dt>fullscreen</dt><dd>same as a double tap</dd>
-  <dt>move, size</dt><dd>on free pages</dd>
-  <dt>flip split, reset splits</dt><dd>on tiled pages</dd>
+  <dt>size, move</dt><dd>on free pages</dd>
   <dt>replace with</dt><dd>turn this window into any other kind, in the same place</dd>
   <dt>move to workspace</dt><dd>send it to another page, or a new one</dd>
+  <dt>fullscreen</dt><dd>same as a double tap</dd>
+  <dt>flip split</dt><dd>where two windows share a split</dd>
+  <dt>reset splits</dt><dd>on tiled pages: sizes and flips back</dd>
   <dt>add a window</dt><dd>the picker</dd>
   <dt>edit home screen</dt><dd>edit mode</dd>
-  <dt>close</dt><dd>close the window</dd>
-  <dt>settings</dt><dd>shown when the bar is hidden</dd>
+  <dt>remove</dt><dd>remove the window, with undo for 6 seconds</dd>
+  <dt>menu</dt><dd>the main menu, shown when the bar is hidden</dd>
 </dl>
 
 </section>
 
 <section class="tile " id="windows" aria-labelledby="windows-h"><div class="title" aria-hidden="true">13</div><h2 id="windows-h">Every window</h2>
 
+<p>Hyprtile has 70 window kinds: 51 free and 19 with <a href="#pro">pro</a>, plus Android widgets with pro. They are listed here in the groups of <code>+ add</code>. Kinds marked pro come with pro; without it they show a pro card, fetch nothing, and the picker still shows what each looks like.</p>
+<h3 id="win-time">Time and weather</h3>
 <dl class="keys">
   <dt>clock</dt><dd>the time in big gradient digits, with the date. Tap it to open your clock app.</dd>
   <dt>world</dt><dd>a clock card for each city you pick</dd>
   <dt>weather</dt><dd>now, the next hours and the coming days, with sunrise and sunset</dd>
+  <dt>forecast</dt><dd>the week as range bars, a chart of highs and lows</dd>
   <dt>sun</dt><dd>sunrise, sunset and golden hour today</dd>
   <dt>moon</dt><dd>the moon phase tonight and the next full moon</dd>
   <dt>calendar</dt><dd>the month and your next events</dd>
   <dt>meeting</dt><dd>how long until your next meeting</dd>
+  <dt>countdown</dt><dd>days left to a date you pick, or a timer: "tea 4m", "1h30", "at 18:30"</dd>
+  <dt>word clock</dt><dd>the time in words, on a grid of letters</dd>
+  <dt>binary</dt><dd>the time as a binary clock, bcd or plain bits</dd>
+  <dt>progress</dt><dd>how far through the day, week, month and year</dd>
+  <dt>air</dt><dd>air quality and pollen for your place, with the best hours to go out</dd>
+  <dt>holidays</dt><dd>days to the next public holiday, long weekends and the bridge day to take off</dd>
+  <dt>on this day</dt><dd>what happened on this date in history, from Wikipedia</dd>
+  <dt>since</dt><dd>days since a start, with milestones</dd>
+</dl>
+<h3 id="win-phone">Phone</h3>
+<dl class="keys">
   <dt>notifications</dt><dd>your notifications as cards, mako style. Tap to open, swipe left to dismiss, hold for more.</dd>
+  <dt>inbox</dt><dd>notifications and events as tabs</dd>
+  <dt>brief</dt><dd>date, next event, weather, inbox, tasks and phone in one</dd>
   <dt>apps</dt><dd>every app in a grid, pinned ones first</dd>
   <dt>app shelf</dt><dd>app icons you pick, one per cell, as a row or a block. See <a href="#shelf">the app shelf</a>.</dd>
   <dt>toggles</dt><dd>torch, ring mode, do not disturb and more</dd>
   <dt>battery</dt><dd>level, charge, heat and a graph of the day</dd>
   <dt>network</dt><dd>download and upload speed right now</dd>
   <dt>storage</dt><dd>what fills the disk, as a treemap</dd>
+</dl>
+<h3 id="win-media">Media</h3>
+<dl class="keys">
   <dt>cliamp</dt><dd>the music playing, with the real spectrum and radio</dd>
   <dt>cava</dt><dd>a music visualizer in seven styles</dd>
+</dl>
+<h3 id="win-system">System</h3>
+<dl class="keys">
   <dt>btop</dt><dd>cores, memory and network, btop style</dd>
   <dt>gauges</dt><dd>cpu, memory, disk and heat as rings</dd>
   <dt>fetch</dt><dd>your phone's specs, fastfetch style</dd>
@@ -219,27 +290,53 @@
   <dt>terminal</dt><dd>a small shell that knows the launcher</dd>
   <dt>pipes</dt><dd>neon pipes that crawl across the tile</dd>
   <dt>matrix</dt><dd>falling streams of glyphs, cmatrix style</dd>
+  <dt>fortune</dt><dd>a quote of the day, said by a cow</dd>
+</dl>
+<h3 id="win-tools">Tools</h3>
+<dl class="keys">
   <dt>notes</dt><dd>a todo list kept on the phone</dd>
+  <dt>notepad</dt><dd>a free text pad like a small vim</dd>
   <dt>pomodoro</dt><dd>a focus timer with rounds and breaks</dd>
   <dt>alarm</dt><dd>your next alarm, sleep cycles and quick alarms, set in the clock app</dd>
   <dt>calc</dt><dd>a calculator with brackets</dd>
   <dt>stopwatch</dt><dd>a stopwatch with laps</dd>
-  <dt>countdown</dt><dd>the time left to a date you pick</dd>
+  <dt>snake</dt><dd>snake, steered with swipes</dd>
+  <dt>punch</dt><dd>clock in and out, work hours by week</dd>
+  <dt>water</dt><dd>a glass that fills as you drink</dd>
+  <dt>breathe</dt><dd>box breathing with a dot tracing the shape</dd>
+  <dt>tally</dt><dd>a big tap counter for push ups, coffees, laps</dd>
+  <dt>habits</dt><dd>a habit grid you tap to mark a day</dd>
+  <dt>dice</dt><dd>a coin, one to five dice or a d20, tap to roll</dd>
+  <dt>pet</dt><dd>a pixel pet to feed and play with</dd>
+  <dt>qr</dt><dd>your wifi, a link or a contact as a code to scan</dd>
+  <dt>tldr</dt><dd>a command a day for git, Linux, Hyprland, vim and adb</dd>
 </dl>
+<p>A running countdown, pomodoro or stopwatch, and your work time while you are clocked in, also tick as pills on the <a href="#lock">lock screen</a>.</p>
 <h3 id="prowindows">Pro windows</h3>
 <p>These come with <a href="#pro">Hyprtile pro</a>.</p>
 <dl class="keys">
   <dt>android widgets</dt><dd>widgets from your other apps as tiled windows. A widget stack holds several in one window: swipe to flip through.</dd>
-  <dt>otp (2fa codes)</dt><dd>2fa codes, encrypted on this phone only and never in a backup. Scan a QR code with the camera or from a picture, bring all your codes over from Google Authenticator in one scan, and keep a backup file sealed with your passphrase.</dd>
-  <dt>editor</dt><dd>a text and json editor</dd>
+  <dt>2fa codes (otp)</dt><dd>2fa codes, encrypted on this phone only and never in a backup. Scan a QR code with the camera or from a picture, bring all your codes over from Google Authenticator in one scan, and keep a backup file sealed with your passphrase.</dd>
+  <dt>editor</dt><dd>plain text and json files: format, check, tree</dd>
   <dt>passwords</dt><dd>strong passwords and passphrases, never saved. The clipboard is cleared after.</dd>
   <dt>clipboard</dt><dd>what you copy, sealed on this phone, with pins. Off until you turn it on.</dd>
   <dt>friend</dt><dd>fli, the terminal pet, as a window: 18 pets with big line art, five traits (kindness, patience, playfulness, wisdom and humor) and 600 bits of everyday life advice. Roll an egg or type a seed; your terminal user name gives the same pet fli gave you.</dd>
+  <dt>gps</dt><dd>where you are and every satellite overhead, cgps style</dd>
+  <dt>sensors</dt><dd>compass, level, motion, air pressure and light, live</dd>
   <dt>news</dt><dd>any RSS or Atom feed, riced like newsboat, that turns into a ticker tape when short</dd>
-  <dt>gps</dt><dd>your position and every satellite</dd>
-  <dt>sensors</dt><dd>a level, a compass and live traces</dd>
+  <dt>rain radar</dt><dd>rain around you, with its last hour on a loop</dd>
+  <dt>aurora</dt><dd>the northern lights tonight, from the Kp index</dd>
+  <dt>quakes</dt><dd>the latest earthquakes on a world map, the nearest to you and how deep</dd>
+  <dt>iss</dt><dd>where the space station is now, its track, and when you can see it fly over</dd>
+  <dt>launches</dt><dd>a countdown to the next rocket launch</dd>
+  <dt>rates</dt><dd>currency rates from the central bank, with a chart of the month or the year</dd>
+  <dt>ping</dt><dd>a gping style latency graph to a few hosts, and whether your sites are up</dd>
+  <dt>git</dt><dd>your GitHub or GitLab contribution graph, the one in every ricer's readme</dd>
+  <dt>matchday</dt><dd>up to 3 teams from football, NBA, NFL, NHL and more: a countdown to kickoff, then the live score, goals, cards and stats, with form, the table and next fixtures. It fetches only while the window is on screen.</dd>
+  <dt>devices</dt><dd>your buds, headphones, watch and car with a battery ring, and the last day as a graph</dd>
+  <dt>health</dt><dd>steps toward your goal, heart rate and sleep, from Health Connect or the phone's own step counter. It reads only what it shows, and nothing in the background.</dd>
 </dl>
-<p>With pro, <code>icon pack</code> (settings, <code>home</code>) uses any icon pack app you have for the dock, shelves and apps, and a hold on an app lets you <code>change icon</code> to any icon from any pack. <code>icon size</code> helps packs that draw small.</p>
+<p>With pro, <code>icon pack</code> (menu, <code>home and apps</code>) uses any icon pack app you have for the dock, shelves and apps, and a hold on an app lets you <code>change icon</code> to any icon from any pack. <code>icon size</code> helps packs that draw small.</p>
 <p>Windows show more when their tile is bigger. A tile too small for its content draws the window zoomed out, never squashed.</p>
 <h3 id="shelf">The app shelf</h3>
 <p>The app shelf is in the phone group of <code>+ add</code>. It holds one app per cell, at any size: 1x1 is one app, a 4x1 is a row of four, a 1x4 is a column, and 4x2 or bigger is a grid. It opens as a 4x1 row. Each shelf keeps its own apps, so you can have as many as you like.</p>
@@ -248,7 +345,7 @@
   <li><b>Open an app:</b> tap its icon.</li>
   <li><b>Change the shelf:</b> hold an app and let go. The window menu starts with <code>open</code>, <code>change app ›</code>, <code>move left</code>, <code>move right</code> and <code>remove from shelf</code>, then <code>apps on the shelf ›</code> and <code>labels</code>.</li>
   <li><b>Size:</b> <code>size ›</code> in the same menu, or the edge handles in edit mode. A smaller shelf keeps the apps it cannot show for when it grows.</li>
-  <li><b>Labels:</b> auto, on or off. Auto shows names when there is room. The same row is in settings, <code>home</code>, <code>app shelf labels</code>.</li>
+  <li><b>Labels:</b> auto, on or off. Auto shows names when there is room. The same row is in the menu, <code>home and apps</code>, <code>app shelf labels</code>.</li>
 </ul>
 <p>The icons follow the dock's <code>icons</code> style: color, theme or mono. TalkBack reads "app shelf, 4 apps, 4 by 1" and each app by name, and <code>apps on the shelf</code> lets you reorder by taps.</p>
 
@@ -257,17 +354,25 @@
 <section class="tile " id="notifs" aria-labelledby="notifs-h"><div class="title" aria-hidden="true">14</div><h2 id="notifs-h">Notifications and pull down</h2>
 <p>The notifications window shows your notifications as cards, mako style: tap to open, swipe left to dismiss, hold for more. Buttons like mark as read and archive sit right on the card.</p>
 <dl class="keys">
-  <dt>notifications ›</dt><dd>settings, <code>home</code>: <code>filter</code> is show all, hide system, or hide system and silent. System noise like charging and USB notices stays out. Any app can be hidden with a hold.</dd>
+  <dt>notifications ›</dt><dd>menu, <code>home and apps</code>: <code>filter</code> is show all, hide system, or hide system and silent. System noise like charging and USB notices stays out. Any app can be hidden with a hold.</dd>
   <dt>notification badges</dt><dd>count, dot or none on app icons</dd>
 </dl>
 <h3 id="pulldown">Pull down</h3>
-<p>Settings, <code>home</code>, <code>pull down</code> picks what a pull down on home opens: the <code>hyprtile panel</code> (a full screen pull down with your toggles, the player and your notifications), <code>android notifications</code>, <code>quick settings</code>, <code>app search</code>, <code>nothing</code>, or any app you pick. Over a list that scrolls, a pull down opens the notification shade.</p>
+<p>Menu, <code>home and apps</code>, <code>pull down</code> picks what a pull down from the top part of home opens: the <code>hyprtile panel</code>, <code>android notifications</code>, <code>quick settings</code>, <code>app search</code>, <code>nothing</code>, or <code>open an app</code> you pick. Over a list that scrolls, the list comes first.</p>
+<p>The hyprtile panel is a full screen pull down of windows you pick. The same menu sets it up:</p>
+<dl class="keys">
+  <dt>sheet clock</dt><dd>the clock big, small or off</dd>
+  <dt>alarm, event and weather</dt><dd>your next alarm, next event and the weather in one line</dd>
+  <dt>android shade buttons</dt><dd>a quick settings button</dd>
+  <dt>sheet windows</dt><dd>which windows it shows, top down, and their order. Tap one to move it up or down or take it out. It can hold toggles, cliamp, notifications, calendar, weather, forecast, cava, alarm, battery, network, gauges, btop, brief, notes, pomodoro and world.</dd>
+</dl>
+<p>Notifications stretch to fill, and on a short screen the last windows wait. On a tablet the notifications go on the left and the rest on the right.</p>
 </section>
 <section class="tile " id="rofi" aria-labelledby="rofi-h"><div class="title" aria-hidden="true">15</div><h2 id="rofi-h">Rofi: find an app</h2>
 
-<p>Swipe up from the lower half of the screen. Start typing, and fuzzy search finds the app. Apps are listed most opened first; switch to a to z under settings, <code>home</code>, <code>app order</code>.</p>
-<p>A swipe that starts on a window that scrolls, like apps, scrolls that window instead.</p>
-<p>Turn on <code>open the only match</code> under settings, <code>home</code>, and the app opens by itself once your typing leaves just one.</p>
+<p>Swipe up from the lower half of the screen. Start typing, and fuzzy search finds the app. Apps are listed most opened first; switch to a to z in the menu, <code>home and apps</code>, <code>app order</code>.</p>
+<p>A swipe that starts on a window that scrolls, like apps, scrolls that window instead. Every list glides on after a flick, and a touch stops it.</p>
+<p>Turn on <code>open the only match</code> in <code>home and apps</code>, and the app opens by itself once your typing leaves just one.</p>
 <p>With pro, <code>contacts in search</code>: type a name in rofi to call or text. Off until you turn it on.</p>
 
 </section>
@@ -294,44 +399,46 @@
 <h3>cliamp</h3>
 <p>The music window, styled after cliamp by Bjarne Øverli (MIT): track and artist, time, Playing or Paused, a block spectrum, a seek bar, three keys and the playlist when the player shares one. Keys follow what the player allows. Tap a playlist row to jump to it.</p>
 <p>More than one player? Swipe the track line or the <code>[app]</code> tag sideways to switch players. Tap the tag to open that app, and hold it for the list of players. Hyprtile stays on the app you last started, even between songs.</p>
-<p>Hold the window and let go for <code>real visualizer</code>, <code>spectrum</code>, <code>music source</code>, <code>queue</code> and <code>radio ›</code>.</p>
+<p>Hold the window and let go for <code>real visualizer</code>, <code>spectrum</code>, <code>music source</code>, <code>queue</code> and <code>radio ›</code>. <code>album art</code> puts the cover behind the player, and <code>album art blur</code> sets it sharp, light or soft. cava has the same two rows.</p>
 <h3>Radio</h3>
 <p>cliamp radio is built in: Lofi, Synthwave, EDM, Chiptunes, Amiga, NCS House, Dubstep, Drum and Bass, Trap, Phonk, Chill and more. Pick a station, see the song title as it plays, and step stations with next and previous. Radio by cliamp, radio.cliamp.stream. It connects only while a station plays.</p>
 <h3>cava</h3>
-<p>A visualizer in seven styles: bars, blocks, mirror, wave, radial, term and dots. Colors run vertical, across or mono. The window menu has <code>cava look ›</code>, <code>music source</code> and <code>go to player</code>. Swipe cava sideways to switch players, or hold its title for the list.</p>
+<p>A visualizer in seven styles: bars, blocks, mirror, wave, radial, term and dots. cava shows only the sound; turn on the track and play keys in <code>what it shows</code>. Colors run vertical, across or mono. The window menu has <code>cava look ›</code>, <code>music source</code> and <code>go to player</code>. Swipe cava sideways to switch players, or hold its title for the list.</p>
 <h3>The real visualizer</h3>
-<p>Turn on <code>real visualizer</code> under settings, <code>home</code>. Android asks for the microphone, because that permission reads the sound the phone plays. Only the loudness per band is read; nothing is kept or sent. Some players keep their sound private, and then the window says "no audio from this player".</p>
+<p>Turn on <code>real visualizer</code> in the menu, <code>home and apps</code>. Android asks for the microphone, because that permission reads the sound the phone plays. Only the loudness per band is read; nothing is kept or sent. Some players keep their sound private, and then the window says "no audio from this player".</p>
 
 </section>
 
 <section class="tile " id="weather" aria-labelledby="weather-h"><div class="title" aria-hidden="true">18</div><h2 id="weather-h">Weather and places</h2>
 
-<p>Weather comes from Open Meteo. With location allowed it uses where you are. Or set a city under settings, <code>clock and weather</code>, <code>weather places</code>, or from the weather window menu. Then no location permission is needed.</p>
-<p><code>calendar app</code>, under settings, <code>clock and weather</code>, picks which app opens your events and days, so Android stops asking each time.</p>
+<p>Weather comes from Open Meteo. With location allowed it uses where you are, rounded to about 1 km before it is sent. Or set a city in the menu, <code>clock and weather</code>, <code>weather places</code>, or from the weather window menu. Then no location permission is needed.</p>
+<p><code>calendar app</code>, in <code>clock and weather</code>, picks which app opens your events and days, so Android stops asking each time.</p>
 <p>Several places work too, split by commas: <code>Zagreb, London, here</code>, where <code>here</code> is your location. Tap the weather window to step to the next place. A tall weather window shows a pill per place and <code>+ city</code>; hold a pill to show, move or remove it. Tap a day in the days row to see that day.</p>
 
 </section>
 
-<section class="tile " id="looks" aria-labelledby="looks-h"><div class="title" aria-hidden="true">19</div><h2 id="looks-h">Presets, themes and looks</h2>
+<section class="tile " id="looks" aria-labelledby="looks-h"><div class="title" aria-hidden="true">19</div><h2 id="looks-h">Looks, themes and wallpapers</h2>
 
-<p>Open <code>look</code> from the edit strip or settings.</p>
+<p>The look has three rows near the top of the main menu: <code>looks</code>, <code>wallpaper</code> and <code>fine tune</code>. <code>looks</code> is on the edit strip too.</p>
 <dl class="keys">
-  <dt>theme</dt><dd>a list of every theme, each with its own colours beside it</dd>
-  <dt>pro themes</dt><dd>15 more with <a href="#pro">pro</a></dd>
-  <dt>day and night ›</dt><dd>a day theme and a night theme, by the sun or by the clock. See <a href="#daynight">day and night</a>.</dd>
-  <dt>wallpaper ›</dt><dd>the list of live wallpapers and painted pictures, with a note under each. See <a href="#wallpapers">wallpapers</a>.</dd>
-  <dt>live weather</dt><dd>real rain, snow, fog and thunder over the wallpaper. See <a href="#liveweather">live weather</a>.</dd>
-  <dt>glass ›</dt><dd>opacity, glass tint, blur, rounding and gaps, as sliders that show live while you drag</dd>
-  <dt>presets</dt><dd>whole looks in one tap. See <a href="#presets">presets</a>.</dd>
-  <dt>pick wallpaper image</dt><dd>any picture from your phone</dd>
+  <dt>looks</dt><dd>whole looks in one tap. See <a href="#presets">looks</a>.</dd>
+  <dt>wallpaper</dt><dd>your own picture, live weather, and every scene with a note under each. See <a href="#wallpapers">wallpapers</a>.</dd>
+  <dt>fine tune</dt><dd>the parts of a look one by one, then motion and feel:</dd>
+</dl>
+<dl class="keys">
+  <dt>theme</dt><dd>a list of every theme, each with its own colours beside it. <code>pro themes</code> at the end has 15 more with <a href="#pro">pro</a>.</dd>
+  <dt>day and night</dt><dd>a day theme and a night theme, by the sun or by the clock, and the blue light filter. See <a href="#daynight">day and night</a>.</dd>
+  <dt>glass</dt><dd>opacity, glass tint, inactive, blur, dim inactive, bar opacity, menu opacity, rounding and gaps, as sliders that show live while you drag</dd>
+  <dt>borders and glow</dt><dd>border size, border glow, which window the glow follows, glow strength and glow size</dd>
   <dt>font</dt><dd>JetBrains Mono, Fira Code, Meslo, Hack, Caskaydia Mono, or the phone's own</dd>
+  <dt>load font file</dt><dd>any monospace .ttf or .otf from your phone, free</dd>
   <dt>clock weight</dt><dd>how bold the big clock is</dd>
   <dt>big numbers</dt><dd>a smaller temperature, clock and timers</dd>
-  <dt>borders and glow ›</dt><dd>border glow, and which window it follows</dd>
-  <dt>showcase setup</dt><dd>the look from the store pictures</dd>
+  <dt>motion and battery</dt><dd>see <a href="#motion">motion and battery</a></dd>
+  <dt>feel</dt><dd>haptics, scroll ticks, try every effect, pomodoro on time</dd>
 </dl>
-<h3 id="presets">Presets</h3>
-<p><code>look</code>, <code>presets</code> holds 39 looks. One tap changes the whole look: wallpaper, colours, glass, borders, fonts and clock. Your windows stay, and <code>your own look</code> at the end brings back the conf and wallpaper you had before trying these. Each card shows the look painted for real. A look built on a pro theme shows a pro tag, and without pro a tap opens the pro menu.</p>
+<h3 id="presets">Looks</h3>
+<p>Menu, <code>looks</code> holds 40 whole looks, as cards in four groups: calm, neon, editor themes and light. One tap changes the whole look: wallpaper, colours, glass, borders, fonts and clock. Your windows stay, and <code>your own look</code> at the end brings back the conf and wallpaper you had before trying these. Each card shows the look painted for real. A look built on a pro theme shows a pro tag, and without pro a tap opens the pro menu. Six are pro: classy black, liquid glass, emerald, rose, black and gold, and vice city.</p>
 <p>The painted looks lead the list:</p>
 <dl class="keys">
   <dt>classy black</dt><dd>pure black, hairline white borders, a thin clock (pro)</dd>
@@ -341,6 +448,7 @@
   <dt>deep forest</dt><dd>forest green night, cream silk, brass borders</dd>
   <dt>emerald</dt><dd>jade glass on green silk, lime to teal borders (pro)</dd>
   <dt>rose</dt><dd>rose gold on pink silk, a light serif clock (pro)</dd>
+  <dt>eink paper</dt><dd>grey ink on still paper, nothing glows or moves. Every window prints in ink only, and the weather holds still.</dd>
   <dt>latte paper</dt><dd>catppuccin latte on a light honeycomb</dd>
   <dt>black and gold</dt><dd>gold borders round a black hole (pro)</dd>
   <dt>tokyo rain</dt><dd>wet neon alleys, live weather on</dd>
@@ -350,20 +458,21 @@
 <p>Then the looks from the ricing scene: neon hyper, night city, aurora glass, outrun drive, deep space, vapor dream, blood moon, toxic circuit, glacier, oled void, sakura, mocha cozy, dracula, github dark, one dark, monokai, gruvbox retro, nord lights, event horizon, warp drive, the deep, honeycomb, digital rain, field map, hanami, polygon dusk and vice beach.</p>
 <div class="pair"><figure><div class="phone"><img src="img/look-camel-and-navy.webp" width="540" height="1200" loading="lazy" alt="The camel and navy preset: a camel serif clock on navy silk."></div><figcaption>camel and navy</figcaption></figure><figure><div class="phone"><img src="img/look-liquid-glass.webp" width="540" height="1200" loading="lazy" alt="The liquid glass preset: clear white glass windows over flowing colour."></div><figcaption>liquid glass</figcaption></figure><figure><div class="phone"><img src="img/look-rgb-glow.webp" width="540" height="1200" loading="lazy" alt="The rgb glow preset: rainbow borders on true black."></div><figcaption>rgb glow</figcaption></figure></div>
 <h3>The themes</h3>
-<p>34 themes, each in its own original colours. The house looks: hyper, synthwave, cyberpunk, vaporwave, outrun, borealis, sunset, toxic, ice, blood moon, deep ocean, sakura, navy, forest and cream. And the themes people use most: Tokyo Night, Catppuccin Mocha and Latte, Gruvbox, Nord, Rose Pine, Everforest, Kanagawa, Dracula, GitHub Dark, One Dark, Monokai, Solarized Dark, Night Owl, Ayu Mirage, Palenight, Matte Black, Osaka Jade and Ristretto.</p>
-<p>With pro, 15 more: pure black, pure white, gold, ember, jade, orchid, rose gold, blueprint, dune, nebula, miami, glacier, c64, c128 and night red. Night red is reds on black only, like an astronomy app, so your eyes keep their dark sight.</p>
+<p>35 themes, each in its own original colours. The house looks: hyper, synthwave, cyberpunk, vaporwave, outrun, borealis, sunset, toxic, ice, blood moon, deep ocean, sakura, navy, forest, cream and eink, grey ink on paper. And the themes people use most: Tokyo Night, Catppuccin Mocha and Latte, Gruvbox, Nord, Rose Pine, Everforest, Kanagawa, Dracula, GitHub Dark, One Dark, Monokai, Solarized Dark, Night Owl, Ayu Mirage, Palenight, Matte Black, Osaka Jade and Ristretto.</p>
+<p>With pro, 15 more under <code>pro themes</code>: pure black, pure white, gold, ember, jade, orchid, rose gold, blueprint, dune, nebula, miami, glacier, c64, c128 and night red. Night red is reds on black only, like an astronomy app, so your eyes keep their dark sight.</p>
 <h3 id="daynight">Day and night</h3>
-<p>The theme can change by itself: one theme by day, another by night. Open <code>look</code>, <code>day and night ›</code>:</p>
+<p>The theme can change by itself: one theme by day, another by night. Open the menu, <code>fine tune</code>, <code>day and night</code>:</p>
 <dl class="keys">
   <dt>switch</dt><dd>off, <code>by the sun</code> or <code>22 to 7</code>. By the sun turns at sunrise and sunset. 22 to 7 is by the clock: night from 22 to 7.</dd>
   <dt>day theme</dt><dd>the theme by day. <code>same as theme</code> keeps your main theme.</dd>
   <dt>night theme</dt><dd>the theme by night, the same way</dd>
+  <dt>blue light filter</dt><dd>it warms the home, the lock screen and the screen saver at night. The first tap turns it on at 40%; each tap after adds 10, up to 80%, and then it goes off. With the switch off, night is sunset to sunrise.</dd>
 </dl>
 <p>By the sun uses sunrise and sunset where the weather is, worked out on the phone. Before the weather has a place, day is 7 to 19. Turn the switch on with no side picked, and the day side starts on Catppuccin Latte, so you see the change.</p>
-<p>The <code>theme</code> row in look changes the side on show, when that side has its own theme. The lock screen and the screen saver follow too. In hyprtile.conf the keys are <code>theme_auto</code> (off, sun or hours), <code>theme_day</code> and <code>theme_night</code>.</p>
+<p>The <code>theme</code> row in fine tune changes the side on show, when that side has its own theme. The lock screen and the screen saver follow too. In hyprtile.conf the keys are <code>theme_auto</code> (off, sun or hours), <code>theme_day</code>, <code>theme_night</code> and <code>night_filter</code>.</p>
 <div class="pair"><figure><div class="phone"><img src="img/new-day.webp" width="540" height="1080" loading="lazy" alt="Day and night by the sun, by day: the Catppuccin Latte theme in light grey and violet over the synthwave scene, with a clock, a weather window for Tokyo, an app shelf row of Chrome, Gmail, Maps and Photos, a 2x2 app shelf and the moon."></div><figcaption>by day: the day theme</figcaption></figure><figure><div class="phone"><img src="img/new-night.webp" width="540" height="1080" loading="lazy" alt="The same home by night: the night theme in dark navy and teal, the weather window for London says drizzle, and the drizzle falls faintly over the wallpaper."></div><figcaption>by night: the night theme</figcaption></figure></div>
 <h3 id="wallpapers">Wallpapers</h3>
-<p><code>look</code>, <code>wallpaper ›</code> is a list. Each row has a note under it, and a tap paints that scene behind the menu, so you can try them in turn. A dot marks the one on show. Every scene takes the colours of your theme.</p>
+<p>Menu, <code>wallpaper</code> is a list. It starts with <code>your own picture</code> (pick a photo or image from this phone) and <a href="#liveweather">live weather</a>. Then every scene: each row has a note under it, and a tap paints that scene behind the menu, so you can try them in turn. A dot marks the one on show. Every scene takes the colours of your theme.</p>
 <dl class="keys">
   <dt>aurora</dt><dd>northern lights over a mountain lake</dd>
   <dt>nebula</dt><dd>deep space, a ringed planet and an arc of light</dd>
@@ -385,13 +494,15 @@
   <dt>silk</dt><dd>soft silk ribbons in your theme colours</dd>
   <dt>liquid, graphite, navy, rose, emerald, cream, forest</dt><dd>painted pictures: poured colour, black silk with a graphite sheen, navy silk with a camel satin ribbon, wine dark silk in blush light, emerald silk with a lime glint, ivory silk with a forest green band, and forest green silk with a brass ribbon. The presets use them.</dd>
   <dt>black</dt><dd>true black, the pixels stay off</dd>
-  <dt>image</dt><dd>your own picture, once you pick one with <code>pick wallpaper image</code></dd>
+  <dt>paper</dt><dd>plain still paper in your theme colour, the eink paper look uses it</dd>
+  <dt>phone</dt><dd>your phone's own wallpaper, from any wallpaper app, behind the windows</dd>
+  <dt>image</dt><dd>your own picture, listed once you pick one with <code>your own picture</code></dd>
 </dl>
-<p>That is 18 moving scenes and 7 painted pictures, plus black and your own image. Or type <code>wall tokyo</code> in the terminal.</p>
+<p>That is 29 choices: 18 moving scenes, 7 painted pictures, black, paper, your phone's wallpaper and your own image. Or type <code>wall tokyo</code> in the terminal.</p>
 <div class="pair"><figure><div class="phone"><img src="img/new-wallpapers.webp" width="540" height="1080" loading="lazy" alt="The wallpaper list in look: aurora, nebula, synthwave, circuit, peaks, city, pastel, blackhole, warp, abyss, hex, matrix and topo, each with a one line note under it."></div><figcaption>look, wallpaper: the list</figcaption></figure><figure><div class="phone"><img src="img/new-blackhole.webp" width="540" height="1080" loading="lazy" alt="The blackhole wallpaper: a black sphere with a glowing cyan ring and its disk bent over the top, among stars, under a gradient clock and an app shelf row."></div><figcaption>blackhole</figcaption></figure></div>
 <div class="pair"><figure><div class="phone"><img src="img/new-sakura.webp" width="540" height="1080" loading="lazy" alt="The sakura wallpaper: a pink cherry branch in bloom across a violet night sky with a pale moon."></div><figcaption>sakura</figcaption></figure><figure><div class="phone"><img src="img/new-abyss.webp" width="540" height="1080" loading="lazy" alt="The abyss wallpaper: rays of light from above in deep teal water, with glowing jellyfish rising."></div><figcaption>abyss</figcaption></figure></div>
 <h3 id="liveweather">Live weather</h3>
-<p>Turn on <code>live weather</code> in <code>look</code>, and the real weather falls over your wallpaper: rain, drizzle, heavy rain, snow, fog and thunder. It follows the place the weather window shows. A clear or cloudy sky adds nothing. It shows on home, on the lock screen and on the screen saver. In hyprtile.conf it is <code>wallpaper_weather = on</code>.</p>
+<p>Turn on <code>live weather</code> in <code>wallpaper</code>, and the real weather falls over your wallpaper: rain, drizzle, heavy rain, snow, fog and thunder. It follows the place the weather window shows. A clear or cloudy sky adds nothing. It shows on home, on the lock screen and on the screen saver. In hyprtile.conf it is <code>wallpaper_weather = on</code>.</p>
 <p>It costs little: about half a point of CPU.</p>
 <div class="pair"><figure><div class="phone"><img src="img/new-rain.webp" width="540" height="1080" loading="lazy" alt="Live weather at night: the tokyo wallpaper, a narrow neon street, in the tokyo night theme, with drizzle falling over it and a weather window for London that says drizzle."></div><figcaption>live weather: drizzle over tokyo</figcaption></figure><figure><div class="phone"><img src="img/new-palms.webp" width="540" height="1080" loading="lazy" alt="The palms wallpaper: a banded vaporwave sun setting at sea behind black palm trees."></div><figcaption>palms</figcaption></figure></div>
 
@@ -399,7 +510,7 @@
 
 <section class="tile " id="conf" aria-labelledby="conf-h"><div class="title" aria-hidden="true">20</div><h2 id="conf-h">hyprtile.conf</h2>
 
-<p>Hyprtile keeps its look in hyprtile.conf, written in Hyprland's syntax. Open it from settings, <code>edit config file</code>, or type <code>conf</code> in the terminal. Save it and the desktop reloads live.</p>
+<p>Hyprtile keeps its look in hyprtile.conf, written in Hyprland's syntax. Open it from the menu, <code>config file</code>, or type <code>conf</code> in the terminal. Save it and the desktop reloads live.</p>
 <pre class="conf" tabindex="0" aria-label="Part of a hyprtile.conf"><span class="k">theme</span> = <span class="v">navy</span>
 <span class="k">wallpaper</span> = <span class="v">navy</span>
 <span class="k">wallpaper_weather</span> = <span class="v">off</span>   <span class="c"># on: the real weather over the wallpaper</span>
@@ -444,20 +555,28 @@
 <section class="tile " id="lock" aria-labelledby="lock-h"><div class="title" aria-hidden="true">21</div><h2 id="lock-h">Lock screen</h2>
 
 <p>Android does not let an app replace the lock screen, but it shows your wallpaper behind it. Hyprtile comes with a live wallpaper in the hyprlock style: the same moving scene, a big clock, and widgets for battery, weather, your next event and more.</p>
-<p>Open settings, <code>lock screen</code>:</p>
+<p>Open the menu, <code>lock screen and saver</code>, <code>lock screen</code>:</p>
 <dl class="keys">
   <dt>set as lock screen</dt><dd>opens the live wallpaper picker. Pick "Lock screen" or "Home and lock screen".</dd>
+  <dt>motion</dt><dd>full (a bloom on wake and the full drift), soft (a slow drift) or off (still)</dd>
+  <dt>clock, date</dt><dd>show or hide each</dd>
+  <dt>clock size, clock glow</dt><dd>step them with ‹ and ›</dd>
+  <dt>pills</dt><dd>turn each on or off: weather, battery, next event, next alarm, unread count, network and uptime. With pro: steps today, last night's sleep and buds battery.</dd>
+  <dt>now playing</dt><dd>the track playing, with five bars that dance to the real sound when the real visualizer is on</dd>
   <dt>notifications</dt><dd>names, full or off. Names is the private default.</dd>
   <dt>hide system cards</dt><dd>opens Android's lock screen page</dd>
   <dt>style</dt><dd>pills or card</dd>
   <dt>seconds</dt><dd>ring, trace or off</dd>
 </dl>
+<p>A running countdown, pomodoro or stopwatch, and your work time while you are clocked in to punch, show as pills with the time ticking each second. No notification is needed, on every Android version Hyprtile runs on.</p>
+<h3 id="saver">Screen saver</h3>
+<p><code>lock screen and saver</code>, <code>screen saver</code>: <code>try it now</code>, <code>set as screen saver</code>, wallpaper, dim the screen, power readings, graphs, rings, top bar and seconds track. It shows while the phone charges.</p>
 <p>The lock screen follows <a href="#daynight">day and night</a>, and shows <a href="#liveweather">live weather</a> when it is on. More keys live in the <code>lockscreen</code> section of hyprtile.conf.</p>
 
 </section>
 
 <section class="tile " id="lockgesture" aria-labelledby="lockgesture-h"><div class="title" aria-hidden="true">22</div><h2 id="lockgesture-h">Lock gesture</h2>
-<p>Lock the phone with a gesture instead of the power button, on Android 9 and up. It is off by default. Open settings, <code>home</code>, <code>lock gesture ›</code>:</p>
+<p>Lock the phone with a gesture instead of the power button, on Android 9 and up. It is off by default. Open the menu, <code>home and apps</code>, <code>lock gesture ›</code>:</p>
 <dl class="keys">
   <dt>off</dt><dd>no gesture</dd>
   <dt>double tap empty space</dt><dd>the wallpaper or the empty part of the bar</dd>
@@ -465,35 +584,60 @@
   <dt>lock now</dt><dd>try it</dd>
 </dl>
 <p>Double tap empty wallpaper or the empty part of the bar and the phone locks, like the power button. Fingerprint and face unlock keep working. Windows keep their double tap for full screen, and gaps keep theirs for flip split.</p>
-<p>Android only lets an app lock the screen through an accessibility service, so Hyprtile first says what the Hyprtile lock service does: it locks the screen, does not read your screen, sees no other apps, and collects and shares no data. Tap <code>agree and open settings</code>, then turn on Hyprtile lock in Accessibility (it may be under downloaded apps). <code>lock phone</code> is in the go menu too. In hyprtile.conf it is <code>lock_gesture = double_tap</code> under <code>general</code>.</p>
+<p>Android only lets an app lock the screen through an accessibility service, so Hyprtile first says what the Hyprtile lock service does: it locks the screen, does not read your screen, sees no other apps, and collects and shares no data. Tap <code>agree and open settings</code>, then turn on Hyprtile lock in Accessibility (it may be under downloaded apps). <code>lock phone</code> is in the <code>pages</code> menu too. In hyprtile.conf it is <code>lock_gesture = double_tap</code> under <code>general</code>.</p>
 </section>
-<section class="tile " id="settings" aria-labelledby="settings-h"><div class="title" aria-hidden="true">23</div><h2 id="settings-h">Settings map</h2>
+<section class="tile " id="settings" aria-labelledby="settings-h"><div class="title" aria-hidden="true">23</div><h2 id="settings-h">The menu</h2>
 
-<p>Hold an empty spot and tap <code>settings</code> in the strip, or tap <code>≡</code> on the bar when it shows. <code>search settings</code> finds any row as you type.</p>
+<p>There is one main menu, the door to every setting. Hold an empty spot and tap <code>menu</code> on the strip, or tap <code>≡</code> on the bar when it shows. With the bar hidden, the window menu has a <code>menu</code> row too. The rows, top down:</p>
 <dl class="keys">
+  <dt>finish setup</dt><dd>only while the first setup steps are not done, with how many are left. See <a href="#setupguide">the setup guide</a>.</dd>
   <dt>search settings</dt><dd>find any row as you type</dd>
-  <dt>hyprtile pro</dt><dd>see <a href="#pro">Hyprtile pro</a></dd>
-  <dt>keyglow keyboard</dt><dd>Keyglow, our keyboard, one tap away on Google Play. It can take your wallpaper picture, glass and rounding along with the theme.</dd>
-  <dt>add a window</dt><dd>the picker</dd>
-  <dt>edit home screen</dt><dd>edit mode</dd>
-  <dt>workspaces</dt><dd>go to, new, new black page, black page, rename this page, tiling, move, close</dd>
-  <dt>look</dt><dd>theme, pro themes, day and night, wallpaper, live weather, glass, presets, pick wallpaper image, font, clock weight, big numbers, borders and glow, showcase setup</dd>
-  <dt>motion and battery</dt><dd>frame rate, animations, touch ripples, frame stats</dd>
-  <dt>home</dt><dd>top bar, status bar, app dock, rotation, app order, open the only match, pull down, notifications, notification badges, quick actions, real visualizer, hidden apps, app shelf labels, icon pack, icon size, layout, top bar items, lock gesture, lock layout</dd>
-  <dt>clock and weather</dt><dd>clock, units, weather places, calendar app</dd>
-  <dt>feel</dt><dd>haptics, scroll ticks, try every effect, pomodoro on time</dd>
-  <dt>lock screen</dt><dd>see <a href="#lock">lock screen</a></dd>
-  <dt>screen saver</dt><dd>try it now, set as screen saver, wallpaper, dim the screen, power readings, graphs, rings, top bar</dd>
-  <dt>link devices</dt><dd>see <a href="#link">link devices</a></dd>
-  <dt>help</dt><dd>tour, gestures, setup guide, reset to defaults, the version</dd>
-  <dt>edit config file</dt><dd>hyprtile.conf</dd>
 </dl>
-<p><code>rotation</code> steps through follow phone, portrait, landscape and always turns.</p>
+<h3>look</h3>
+<dl class="keys">
+  <dt>looks</dt><dd>40 whole looks. See <a href="#presets">looks</a>.</dd>
+  <dt>wallpaper</dt><dd>your own picture, live weather and every scene. See <a href="#wallpapers">wallpapers</a>.</dd>
+  <dt>fine tune</dt><dd>theme, day and night, glass, borders and glow, font, load font file, clock weight, big numbers, motion and battery, feel</dd>
+</dl>
+<h3>workspaces</h3>
+<dl class="keys">
+  <dt>ready workspaces</dt><dd>17 whole pages. See <a href="#ready">ready workspaces</a>.</dd>
+  <dt>add a window</dt><dd>the picker, with all 70 kinds</dd>
+  <dt>edit home screen</dt><dd>edit mode</dd>
+  <dt>pages</dt><dd>see <a href="#workspaces">workspaces</a></dd>
+</dl>
+<h3>system</h3>
+<dl class="keys">
+  <dt>home and apps</dt><dd>top bar, status bar, app dock, rotation, app order, open the only match, contacts in search (pro), pull down, notifications, lock gesture, notification badges, quick actions, real visualizer, hidden apps, app shelf labels, icon pack, icon size, hide passwords, how windows share the page, top bar items, lock layout, link devices, text editor, editor look</dd>
+  <dt>clock and weather</dt><dd>clock, units, weather places, calendar app</dd>
+  <dt>lock screen and saver</dt><dd><a href="#lock">lock screen</a> and <a href="#saver">screen saver</a></dd>
+  <dt>tour and gestures</dt><dd>tour, gestures, setup guide, reset to defaults</dd>
+  <dt>keyglow keyboard</dt><dd>Keyglow, our keyboard, one tap away on Google Play. It can take your wallpaper picture, glass and rounding along with the theme. Fileglow, the file manager, can take your theme too.</dd>
+  <dt>config file</dt><dd>hyprtile.conf</dd>
+</dl>
+<h3>privacy</h3>
+<dl class="keys">
+  <dt>privacy and permissions</dt><dd>the privacy page, with every permission and what it is for. See <a href="#privacy">privacy</a>.</dd>
+</dl>
+<h3>pro</h3>
+<dl class="keys">
+  <dt>hyprtile pro</dt><dd>see <a href="#pro">Hyprtile pro</a></dd>
+  <dt>restore purchase</dt><dd>pro bought on another phone</dd>
+</dl>
+<h3>help</h3>
+<dl class="keys">
+  <dt>user guide</dt><dd>this guide, in the browser</dd>
+  <dt>report a bug or ask for a feature</dt><dd>the <a href="report.html">report page</a></dd>
+  <dt>privacy policy</dt><dd>the full <a href="https://hyprtile.zanoski.com/privacy">privacy policy</a></dd>
+</dl>
+<h3>support the developer</h3>
+<p>A short note says you can support Hyprtile if it helps you, with a <code>buy me a coffee</code> row. Last comes <code>hyprtile v1.90</code> with <code>about ›</code>, which opens hyprtile.zanoski.com, and one line under it: Hyprtile has no server of its own, so we never see what it shows or fetches.</p>
 
 </section>
 
 <section class="tile " id="motion" aria-labelledby="motion-h"><div class="title" aria-hidden="true">24</div><h2 id="motion-h">Motion and battery</h2>
 
+<p>Menu, <code>fine tune</code>, <code>motion and battery</code>:</p>
 <dl class="keys">
   <dt>frame rate</dt><dd>60 fps (the default), max (your screen's top rate) or 30 fps. It sets everything that moves on its own. Touches, drags and scrolling stay fast.</dd>
   <dt>animations</dt><dd>off stills the scene, the border spin, ripples and transitions</dd>
@@ -502,26 +646,28 @@
 </dl>
 <p>Battery saver brings motion to about 30 frames a second and holds the weather sky still, unless you picked a frame rate yourself. A page where nothing moves, like a black or image wallpaper with still windows, drops to one frame a second.</p>
 <p><a href="#liveweather">Live weather</a> costs about half a point of CPU while rain, snow, fog or thunder falls, and nothing under a clear sky.</p>
-<p>To save the most: frame rate 30, animations off, a black page or the oled void preset.</p>
+<p>To save the most: frame rate 30, animations off, a black page, or the oled void or eink paper look. With animations off the weather sky stays still too. Solid one colour borders never redraw on their own.</p>
 
 </section>
 
 <section class="tile " id="link" aria-labelledby="link-h"><div class="title" aria-hidden="true">25</div><h2 id="link-h">Link devices</h2>
 
-<p><code>link devices</code> syncs your theme with Phosphor or another Hyprtile on the same wifi, and with an Omarchy computer through the Phone Sync plugin. Turn link on, pick the device, and check that both screens show the same six digit code, then <code>same code, pair</code>.</p>
-<p>It stays on your own network and only sends theme names and colours to devices you paired. It is off by default. Full steps on the <a href="https://hyprtile.zanoski.com/phone-sync">Phone Sync page</a>.</p>
+<p>Menu, <code>home and apps</code>, <code>link devices</code> syncs your theme with Phosphor or another Hyprtile on the same wifi, and with an Omarchy computer through the Phone Sync plugin. Turn link on, pick the device, and check that both screens show the same six digit code, then <code>same code, pair</code>.</p>
+<p>On Android 17 it asks for local network access, after a short note, when you turn link on. It stays on your own network and only sends the theme and this phone's name to devices you paired. It is off by default. Full steps on the <a href="https://hyprtile.zanoski.com/phone-sync">Phone Sync page</a>.</p>
 
 </section>
 
 <section class="tile " id="pro" aria-labelledby="pro-h"><div class="title" aria-hidden="true">26</div><h2 id="pro-h">Hyprtile pro</h2>
-<p>The Play price buys the whole app. Pro is an optional extra you never need: one purchase adds everything in it and every add on that comes later, with no subscription. Open settings, <code>hyprtile pro</code>, then <code>add pro extras</code>.</p>
+<p>The Play price buys the whole app. Pro is an optional extra you never need: one purchase adds everything in it and every add on that comes later, with no subscription. Open the menu, <code>hyprtile pro</code>, then <code>add pro extras</code>. Pro unlocks right after the purchase or a restore.</p>
 <ul class="dots">
-  <li><a href="#prowindows">Pro windows</a>: android widgets and widget stacks, 2fa codes, the editor, passwords, clipboard history, friend, news, gps and sensors.</li>
+  <li><a href="#prowindows">Pro windows</a>: android widgets and widget stacks, 2fa codes, the editor, passwords, clipboard history, friend, gps, sensors, news, rain radar, aurora, quakes, iss, launches, rates, ping, git, matchday, devices and health.</li>
+  <li>The 8 pro <a href="#ready">ready workspaces</a>, like fit, dev, vault and space.</li>
+  <li>Lock screen pills for steps today, last night's sleep and your buds' battery.</li>
   <li>Icon packs, and <code>change icon</code> on any app.</li>
   <li>Contacts in search.</li>
-  <li>15 more themes, night red among them, and the black page.</li>
+  <li>15 more themes, night red among them, the six looks built on them, and the black page.</li>
 </ul>
-<p><code>restore purchase</code> brings pro back on a new phone.</p>
+<p><code>restore purchase</code>, right under it in the menu, brings pro back on a new phone.</p>
 </section>
 <section class="tile " id="a11y" aria-labelledby="a11y-h"><div class="title" aria-hidden="true">27</div><h2 id="a11y-h">Accessibility</h2>
 
@@ -533,32 +679,47 @@
   <li>The clock is lifted to 3:1 against the wallpaper under it, the rule for large text.</li>
   <li>The system font size is honoured: windows zoom with it.</li>
   <li>Android's "remove animations" and the <code>animations</code> setting still the motion.</li>
-  <li>Lock gesture lets you lock the phone with a double tap, and <code>lock phone</code> in the go menu does it with one tap.</li>
+  <li>Lock gesture lets you lock the phone with a double tap, and <code>lock phone</code> in the <code>pages</code> menu does it with one tap.</li>
+  <li>Menus follow large font sizes, and the support row fits on one line with large text.</li>
 </ul>
 
 </section>
 
 <section class="tile " id="privacy" aria-labelledby="privacy-h"><div class="title" aria-hidden="true">28</div><h2 id="privacy-h">Privacy and permissions</h2>
 
-<p>No account, no ads, no analytics. Your data stays on your phone. Every permission is optional:</p>
+<p>No ads, no tracking, no analytics, no crash reports, no error reports, no account and no AI. Your data stays on your phone. Menu, <code>privacy and permissions</code> opens the privacy page. It says each thing once:</p>
+<ul class="dots">
+  <li><b>promises:</b> the list above, as pills</li>
+  <li><b>permissions:</b> each one Android asks you for, what it is for, and whether it is allowed now. Tap a row to open Android's page for Hyprtile, where you can take it back.</li>
+  <li><b>given without asking:</b> the ones Android gives on install, each with what it is for</li>
+  <li><b>denied by design:</b> SMS, call log, phone and your files. Hyprtile never asks for them; a wallpaper or font you pick comes through Android's picker.</li>
+  <li><b>only when you turn it on:</b> what goes out, and only once you turn it on</li>
+  <li><b>in full:</b> the privacy policy, with every host and what it receives</li>
+</ul>
+<p>Hyprtile holds 22 permissions: 12 that Android asks you for, and 10 that it gives without asking. Every asked one is optional:</p>
 <dl class="keys">
-  <dt>notification access</dt><dd>the notifications and music windows, read only on your phone</dd>
-  <dt>calendar</dt><dd>calendar and meeting, read only on your phone</dd>
-  <dt>location</dt><dd>approximate, for weather, air quality and rain radar, rounded to about 1 km before it is sent. Optional: type a city.</dd>
-  <dt>microphone</dt><dd>only for the real visualizer, off until you turn it on</dd>
-  <dt>precise location</dt><dd>only for the GPS window (pro), if you allow it; it never leaves the phone</dd>
-  <dt>contacts</dt><dd>only for contacts in search (pro), read only on your phone</dd>
-  <dt>camera</dt><dd>only to scan a 2fa QR code (pro)</dd>
-  <dt>accessibility</dt><dd>only for the lock gesture, and it only locks the screen</dd>
+  <dt>location</dt><dd>weather for where you are, rounded to about 1 km before it is sent. A typed weather place works without it. Precise only for the gps window (pro), and that never leaves the phone.</dd>
+  <dt>calendar</dt><dd>the calendar windows read your events on the phone, nothing is written</dd>
+  <dt>notification access</dt><dd>the notifications window, badges and the music controls. Read on the phone, never sent.</dd>
+  <dt>microphone</dt><dd>only for real audio bars in cava and cliamp: it reads how loud the music is. Nothing is recorded, kept or sent.</dd>
+  <dt>contacts</dt><dd>only for contacts in search (pro). Never saved or sent.</dd>
+  <dt>camera</dt><dd>only to scan a 2fa QR code (pro). No picture is kept.</dd>
+  <dt>nearby devices</dt><dd>the devices window (pro): names and battery of paired gear. It never scans.</dd>
+  <dt>health and activity</dt><dd>the health window (pro) and steps on the lock screen, read only</dd>
+  <dt>notifications</dt><dd>the radio's controls in the shade</dd>
+  <dt>exact alarms</dt><dd>the pomodoro rings on time from the background</dd>
+  <dt>local network</dt><dd>link and the router ping</dd>
+  <dt>accessibility service</dt><dd>only for the lock gesture: it locks the screen and reads nothing</dd>
 </dl>
-<p>Microphone, contacts, clipboard history and notification access each show a short note with <code>agree</code> and <code>not now</code> before Android asks. Weather, air quality and rain radar send your location rounded to about 1 km, only if you allow it; the GPS window shows your precise one on the phone only. Nothing is sent to us. The radio, news and world windows connect only to the services they show, and ping and git only to the hosts and user names you type. Read the full <a href="https://hyprtile.zanoski.com/privacy">privacy policy</a>, also under settings, <code>help</code>, <code>privacy policy</code>.</p>
+<p>Given without asking: internet, alarms, do not disturb, uninstall apps, pull down the shade, vibrate, network state, audio settings, radio playback and Google Play billing.</p>
+<p>Location, calendar and notification access are asked only the first time a window needs them. Microphone, contacts, clipboard history and notification access each show a short note with <code>agree</code> and <code>not now</code> before Android asks. Nothing is sent to us: Hyprtile has no server of its own. Only when you turn them on: the weather and the network windows you place (air quality, rain radar, news, holidays, on this day, aurora, quakes, space station, launches, rates, ping and git), the radio when you press play, link to your own paired devices on the same wifi, and Android backup to your own Google account. 2fa codes and the clipboard history are never in a backup. Read the full <a href="https://hyprtile.zanoski.com/privacy">privacy policy</a>, also under <code>help</code>, <code>privacy policy</code>.</p>
 
 </section>
 
-<section class="tile " id="reset" aria-labelledby="reset-h"><div class="title" aria-hidden="true">29</div><h2 id="reset-h">Showcase and reset</h2>
+<section class="tile " id="reset" aria-labelledby="reset-h"><div class="title" aria-hidden="true">29</div><h2 id="reset-h">Store look and reset</h2>
 
-<p><code>showcase setup</code> (in look) rewrites hyprtile.conf to the store look, camel and navy, and keeps your old one as hyprtile.conf.bak.</p>
-<p><code>reset to defaults</code> (in help) offers <code>yes, reset it</code>, <code>bring back the saved copy</code> and <code>keep my config</code>. A reset always saves a copy first.</p>
+<p>The store look is the <b>camel and navy</b> look, in the calm group of <a href="#presets">looks</a>. One tap brings it back.</p>
+<p><code>reset to defaults</code> (in <code>tour and gestures</code>) asks <code>reset hyprtile.conf?</code> and offers <code>yes reset it</code>, <code>bring back the saved copy</code> and <code>keep my config</code>. A reset always saves a copy first.</p>
 
 </section>
 </div>
