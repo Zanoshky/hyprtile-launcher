@@ -21,7 +21,7 @@ This repo is the public home for Hyprtile users: the user guide, bug reports and
 
 ## Quick start
 
-1. Install Hyprtile from Google Play. It runs on Android 7 or newer.
+1. Install Hyprtile from Google Play. It runs on Android 10 or newer.
 2. Open it and take the tour. It acts out each gesture on your own windows.
 3. Tap set up your phone: default home, lock screen, notification access and more.
 4. Swipe sideways for workspaces, swipe up for rofi, double tap a window for full screen.
