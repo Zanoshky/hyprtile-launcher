@@ -16,7 +16,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar">
   <a class="brand" href="index.html"><img src="img/icon-192.png" alt="" width="30" height="30"><span>hyprtile</span></a>
-  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html"><span class="ws" aria-hidden="true">1</span>home</a></li><li><a href="guide.html" aria-current="page"><span class="ws" aria-hidden="true">2</span>guide</a></li><li><a href="use-cases.html"><span class="ws" aria-hidden="true">3</span>use cases</a></li><li><a href="cookbook.html"><span class="ws" aria-hidden="true">4</span>cookbook</a></li><li><a href="faq.html"><span class="ws" aria-hidden="true">5</span>faq</a></li><li><a href="report.html"><span class="ws" aria-hidden="true">6</span>report a bug</a></li></ul></nav>
+  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html"><span class="ws" aria-hidden="true">1</span>home</a></li><li><a href="guide.html" aria-current="page"><span class="ws" aria-hidden="true">2</span>guide</a></li><li><a href="use-cases.html"><span class="ws" aria-hidden="true">3</span>use cases</a></li><li><a href="cookbook.html"><span class="ws" aria-hidden="true">4</span>cookbook</a></li><li><a href="runbook.html"><span class="ws" aria-hidden="true">5</span>runbook</a></li><li><a href="faq.html"><span class="ws" aria-hidden="true">6</span>faq</a></li><li><a href="report.html"><span class="ws" aria-hidden="true">7</span>report a bug</a></li></ul></nav>
 </header>
 <div class="wrap">
 <main id="main">
@@ -263,6 +263,12 @@
   <dt>holidays</dt><dd>days to the next public holiday, long weekends and the bridge day to take off</dd>
   <dt>on this day</dt><dd>what happened on this date in history, from Wikipedia</dd>
   <dt>since</dt><dd>days since a start, with milestones</dd>
+  <dt>ring</dt><dd>your day as a ring round the clock, with your calendar on it</dd>
+  <dt>life dots</dt><dd>your life, year, month or day in dots</dd>
+  <dt>calendars</dt><dd>today in other calendars</dd>
+  <dt>planets</dt><dd>the planets up tonight and where to look, worked out on the phone</dd>
+  <dt>glyph</dt><dd>a 25 by 25 dot matrix: the clock, battery, a timer or a level</dd>
+  <dt>sea</dt><dd>waves, swell and sea temperature at a spot you pick</dd>
 </dl>
 <h3 id="win-phone">Phone</h3>
 <dl class="keys">
@@ -291,6 +297,9 @@
   <dt>pipes</dt><dd>neon pipes that crawl across the tile</dd>
   <dt>matrix</dt><dd>falling streams of glyphs, cmatrix style</dd>
   <dt>fortune</dt><dd>a quote of the day, said by a cow</dd>
+  <dt>fire</dt><dd>aafire, the ASCII doom fire, hotter as the cpu works</dd>
+  <dt>donut</dt><dd>donut.c, the spinning ASCII torus</dd>
+  <dt>life</dt><dd>Conway's game of life. Tap to seed it.</dd>
 </dl>
 <h3 id="win-tools">Tools</h3>
 <dl class="keys">
@@ -305,11 +314,17 @@
   <dt>water</dt><dd>a glass that fills as you drink</dd>
   <dt>breathe</dt><dd>box breathing with a dot tracing the shape</dd>
   <dt>tally</dt><dd>a big tap counter for push ups, coffees, laps</dd>
-  <dt>habits</dt><dd>a habit grid you tap to mark a day</dd>
+  <dt>habits</dt><dd>habits with goals and streaks, and today at a glance</dd>
   <dt>dice</dt><dd>a coin, one to five dice or a d20, tap to roll</dd>
   <dt>pet</dt><dd>a pixel pet to feed and play with</dd>
   <dt>qr</dt><dd>your wifi, a link or a contact as a code to scan</dd>
   <dt>tldr</dt><dd>a command a day for git, Linux, Hyprland, vim and adb</dd>
+  <dt>mood</dt><dd>one tap a day for how the day was, and your year in colour</dd>
+  <dt>cycle</dt><dd>a private period tracker: ring, next period, flow and symptoms. It stays on this phone and never goes in a backup.</dd>
+  <dt>fasting</dt><dd>your fasting window as a ring</dd>
+  <dt>word</dt><dd>a word of the day with its meaning and an example</dd>
+  <dt>define</dt><dd>look up a word: meanings, examples and words that mean the same, from Wiktionary and Datamuse</dd>
+  <dt>convert</dt><dd>units offline, and money with the European Central Bank's daily rates</dd>
 </dl>
 <p>A running countdown, pomodoro or stopwatch, and your work time while you are clocked in, also tick as pills on the <a href="#lock">lock screen</a>.</p>
 <h3 id="prowindows">Pro windows</h3>
@@ -335,6 +350,16 @@
   <dt>matchday</dt><dd>up to 3 teams from football, NBA, NFL, NHL and more: a countdown to kickoff, then the live score, goals, cards and stats, with form, the table and next fixtures. It fetches only while the window is on screen.</dd>
   <dt>devices</dt><dd>your buds, headphones, watch and car with a battery ring, and the last day as a graph</dd>
   <dt>health</dt><dd>steps toward your goal, heart rate and sleep, from Health Connect or the phone's own step counter. It reads only what it shows, and nothing in the background.</dd>
+  <dt>screen time</dt><dd>screen time today against your limit, your top apps, the hours and the week</dd>
+  <dt>data</dt><dd>mobile and wifi data this month</dd>
+  <dt>ticker</dt><dd>stocks and coins with a chart</dd>
+  <dt>lyrics</dt><dd>the words of the song that plays, in time</dd>
+  <dt>apod</dt><dd>NASA's picture of the day in your theme's colours, with its story. Tap for the day before.</dd>
+  <dt>speed</dt><dd>a speed test: download, upload and ping, from Cloudflare</dd>
+  <dt>uptime</dt><dd>your own sites, up or down this month</dd>
+  <dt>hass</dt><dd>your Home Assistant, one tap away: lights, switches and readings. Your token stays on this phone.</dd>
+  <dt>people</dt><dd>your favourite people. Tap one to call or text.</dd>
+  <dt>wifi</dt><dd>the wifi networks around you, their signal and channels</dd>
 </dl>
 <p>With pro, <code>icon pack</code> (menu, <code>home and apps</code>) uses any icon pack app you have for the dock, shelves and apps, and a hold on an app lets you <code>change icon</code> to any icon from any pack. <code>icon size</code> helps packs that draw small.</p>
 <p>Windows show more when their tile is bigger. A tile too small for its content draws the window zoomed out, never squashed.</p>
@@ -630,8 +655,10 @@
   <dt>report a bug or ask for a feature</dt><dd>the <a href="report.html">report page</a></dd>
   <dt>privacy policy</dt><dd>the full <a href="https://hyprtile.zanoski.com/privacy">privacy policy</a></dd>
 </dl>
+<p><code>rate us</code> sits in the main menu just above help: rate Hyprtile on Google Play, or tell us what is wrong. Hyprtile never asks on its own.</p>
+<p>New rows elsewhere: <code>clock font</code> (block, round, led, ascii, shade and round led) in the look's <code>fine tune</code>, <code>date</code> in <code>clock and weather</code> for how the date reads, <code>hidden apps</code> in <code>customize</code>, <code>home</code> to bring a hidden app back, and <code>hinge gap</code> in home's <code>fine tune</code>, which keeps every window off the fold on a two screen phone. Work profile apps say "(work)".</p>
 <h3>support the developer</h3>
-<p>A short note says you can support Hyprtile if it helps you, with a <code>buy me a coffee</code> row. Last comes <code>hyprtile v1.91</code> with <code>about ›</code>, which opens hyprtile.zanoski.com, and one line under it: Hyprtile has no server of its own, so we never see what it shows or fetches.</p>
+<p>A short note says you can support Hyprtile if it helps you, with a <code>buy me a coffee</code> row, then <code>support and live api</code>: an optional 0.99 a month subscription through Google Play that pays for bug fixes and the live feeds (weather, radar, the ISS, quakes and more). It unlocks nothing, and nothing is locked without it. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time. Last comes <code>hyprtile v2.09</code> with <code>about ›</code>, which opens hyprtile.zanoski.com, and one line under it: Hyprtile has no server of its own, so we never see what it shows or fetches.</p>
 
 </section>
 
@@ -660,7 +687,7 @@
 <section class="tile " id="pro" aria-labelledby="pro-h"><div class="title" aria-hidden="true">26</div><h2 id="pro-h">Hyprtile pro</h2>
 <p>The Play price buys the whole app. Pro is an optional extra you never need: one purchase adds everything in it and every add on that comes later, with no subscription. Open the menu, <code>hyprtile pro</code>, then <code>add pro extras</code>. Pro unlocks right after the purchase or a restore.</p>
 <ul class="dots">
-  <li><a href="#prowindows">Pro windows</a>: android widgets and widget stacks, 2fa codes, the editor, passwords, clipboard history, friend, gps, sensors, news, rain radar, aurora, quakes, iss, launches, rates, ping, git, matchday, devices and health.</li>
+  <li><a href="#prowindows">Pro windows</a>: android widgets and widget stacks, 2fa codes, the editor, passwords, clipboard history, friend, gps, sensors, news, rain radar, aurora, quakes, iss, launches, rates, ping, git, matchday, devices, health, screen time, data, ticker, lyrics, apod, speed, uptime, hass, people and wifi.</li>
   <li>The 8 pro <a href="#ready">ready workspaces</a>, like fit, dev, vault and space.</li>
   <li>Lock screen pills for steps today, last night's sleep and your buds' battery.</li>
   <li>Icon packs, and <code>change icon</code> on any app.</li>

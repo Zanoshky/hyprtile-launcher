@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Runbook · Hyprtile user guide</title>
+<meta name="description" content="When something in Hyprtile goes wrong: home, the lock gesture, notifications, weather, the screen saver, pro, the subscription, battery and starting over.">
+<meta name="theme-color" content="#0a0717">
+<meta property="og:title" content="Runbook · Hyprtile user guide">
+<meta property="og:description" content="When something in Hyprtile goes wrong: home, the lock gesture, notifications, weather, the screen saver, pro, the subscription, battery and starting over.">
+<meta property="og:image" content="img/look-camel-and-navy.webp">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="index.html"><img src="img/icon-192.png" alt="" width="30" height="30"><span>hyprtile</span></a>
+  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html"><span class="ws" aria-hidden="true">1</span>home</a></li><li><a href="guide.html"><span class="ws" aria-hidden="true">2</span>guide</a></li><li><a href="use-cases.html"><span class="ws" aria-hidden="true">3</span>use cases</a></li><li><a href="cookbook.html"><span class="ws" aria-hidden="true">4</span>cookbook</a></li><li><a href="runbook.html" aria-current="page"><span class="ws" aria-hidden="true">5</span>runbook</a></li><li><a href="faq.html"><span class="ws" aria-hidden="true">6</span>faq</a></li><li><a href="report.html"><span class="ws" aria-hidden="true">7</span>report a bug</a></li></ul></nav>
+</header>
+<div class="wrap">
+<main id="main">
+
+<div class="eyebrow">~/runbook</div>
+<h1>Runbook</h1>
+<div class="underline" aria-hidden="true"></div>
+<p class="lede">When something is not right: what you see, why it happens, and the taps that fix it. Quickest of all: open the menu, <code>customize</code>, <code>search settings</code>, and type part of a name. Still stuck? <a href="report.html">Report a bug</a>.</p>
+<div class="tiles">
+<section class="tile " id="home" aria-labelledby="home-h"><div class="title" aria-hidden="true">fix</div><h2 id="home-h">Home opens the old launcher</h2>
+<p>Android has one home app, and an update or a reset can give it back to the old one.</p>
+<ol class="steps"><li>Open the menu. If <code>set as home app</code> is there, tap it and pick Hyprtile.</li><li>Or in Android: settings, apps, default apps, home app, Hyprtile.</li></ol>
+</section>
+<section class="tile " id="lock" aria-labelledby="lock-h"><div class="title" aria-hidden="true">fix</div><h2 id="lock-h">Double tap will not lock</h2>
+<p>The lock gesture runs through the Hyprtile lock service. Android, or a battery saver, sometimes turns accessibility services off after an update.</p>
+<ol class="steps"><li>Open the menu, <code>customize</code>, <code>home</code>, <code>fine tune</code>, <code>lock gesture ›</code>.</li><li>Tap <code>agree and open settings</code> and turn Hyprtile lock on again in Accessibility.</li><li>Back home, double tap empty wallpaper.</li></ol><p>Fingerprint and face unlock keep working.</p>
+</section>
+<section class="tile " id="notif" aria-labelledby="notif-h"><div class="title" aria-hidden="true">fix</div><h2 id="notif-h">Notifications are empty</h2>
+<p>The notifications window, badges and the music controls need notification access.</p>
+<ol class="steps"><li>Open the menu, <code>customize</code>, <code>privacy and permissions</code>.</li><li>Tap <code>notification access</code> and turn Hyprtile on in Android's page.</li></ol><p>Nothing read this way leaves the phone.</p>
+</section>
+<section class="tile " id="weather" aria-labelledby="weather-h"><div class="title" aria-hidden="true">fix</div><h2 id="weather-h">Weather is empty or wrong</h2>
+<p>Weather follows the phone's location, rounded to about 1 km. With location off it has nothing to go on.</p>
+<ol class="steps"><li>Open the menu, <code>customize</code>, <code>clock and weather</code>, <code>weather places</code>.</li><li>Type a city instead of auto, or add several.</li></ol><p>A typed place needs no location permission.</p>
+</section>
+<section class="tile " id="saver" aria-labelledby="saver-h"><div class="title" aria-hidden="true">fix</div><h2 id="saver-h">The screen saver never starts</h2>
+<p>Android starts a screen saver only when the screen times out while charging, and only if its own "when to start" says so.</p>
+<ol class="steps"><li>Open the menu, <code>customize</code>, <code>lock screen</code>, <code>screen saver</code>.</li><li>If <code>when to start</code> says not while charging, tap it and pick while charging in Android's page.</li><li>Put the phone on the charger and let the screen time out.</li></ol>
+</section>
+<section class="tile " id="pro" aria-labelledby="pro-h"><div class="title" aria-hidden="true">fix</div><h2 id="pro-h">Pro is missing</h2>
+<p>Pro belongs to the Google account that bought it, not to the phone.</p>
+<ol class="steps"><li>Make sure the Play Store uses the same Google account.</li><li>Open the menu, <code>customize</code>, <code>restore purchase</code>.</li></ol><p>A window with a padlock card is a pro window. Tap it to see what pro adds.</p>
+</section>
+<section class="tile " id="sub" aria-labelledby="sub-h"><div class="title" aria-hidden="true">fix</div><h2 id="sub-h">The subscription fails</h2>
+<p>Support and live api runs through the Google Play app. A copy not from Google Play, an old Play Store, or no account on the phone can not reach it.</p>
+<ol class="steps"><li>Open the Play Store once and check you are signed in.</li><li>Update Hyprtile and the Play Store from Google Play.</li><li>Try again: the menu, <code>help</code>, <code>support and live api</code>.</li></ol><p>It is optional and unlocks nothing. To cancel: tap the same row, or Play Store, your profile, payments and subscriptions.</p>
+</section>
+<section class="tile " id="health" aria-labelledby="health-h"><div class="title" aria-hidden="true">fix</div><h2 id="health-h">Health shows nothing</h2>
+<p>Steps, heart and sleep come from Health Connect, and only the types you allow.</p>
+<ol class="steps"><li>Tap the health window and allow what it asks for.</li><li>Or open Health Connect, app permissions, Hyprtile, and turn on steps, heart rate and sleep.</li></ol>
+</section>
+<section class="tile " id="lan" aria-labelledby="lan-h"><div class="title" aria-hidden="true">fix</div><h2 id="lan-h">Home network out of reach</h2>
+<p>On newer Android, reaching devices on your own wifi (hass, ping, link) needs local network access.</p>
+<ol class="steps"><li>Allow it when Hyprtile asks.</li><li>Missed it? Android settings, apps, Hyprtile, permissions, and allow nearby devices or local network.</li></ol>
+</section>
+<section class="tile " id="battery" aria-labelledby="battery-h"><div class="title" aria-hidden="true">fix</div><h2 id="battery-h">The battery drains fast</h2>
+<p>Motion, glows and many live windows redraw the screen often.</p>
+<ol class="steps"><li>Open the menu, <code>customize</code>, <code>search settings</code>, type <code>frame rate</code> and set it to 30.</li><li>Pick a calmer look, like eink paper.</li><li>Dark themes save the most on OLED screens.</li></ol>
+</section>
+<section class="tile " id="lost" aria-labelledby="lost-h"><div class="title" aria-hidden="true">fix</div><h2 id="lost-h">Something is gone</h2>
+<p>Most things are hidden, not deleted.</p>
+<ol class="steps"><li>A hidden app: the menu, <code>customize</code>, <code>home</code>, <code>hidden apps</code>, tap it.</li><li>A window: hold an empty spot, <code>add a window</code>, and add it again.</li><li>Just changed something? Most menus have <code>undo</code>.</li></ol>
+</section>
+<section class="tile " id="reset" aria-labelledby="reset-h"><div class="title" aria-hidden="true">fix</div><h2 id="reset-h">Start again from fresh</h2>
+<p>When too much has changed, a clean start is quicker.</p>
+<ol class="steps"><li>Open the menu, <code>help</code>, <code>tour and gestures</code>, <code>reset to defaults</code>.</li><li>Confirm.</li></ol><p>For the look of the store pictures only, see the cookbook recipe <a href="cookbook.html">Get the store look back</a>.</p>
+</section>
+</div>
+</main>
+<footer>
+  <div class="tile quiet">
+  <ul>
+    <li><a href="https://play.google.com/store/apps/details?id=com.zanoshky.hyprtile">Google Play</a></li>
+    <li><a href="https://hyprtile.zanoski.com">hyprtile.zanoski.com</a></li>
+    <li><a href="https://github.com/Zanoshky/hyprtile-launcher/issues">Issues</a></li>
+    <li><a href="https://github.com/Zanoshky/hyprtile-launcher/blob/main/LICENSE">License</a></li>
+  </ul>
+  <p>Guide text and images are shared under CC BY 4.0. The Hyprtile app itself is proprietary. Made by Marko Zanoski. Hyprtile is an independent app and is not affiliated with Hyprland, Omarchy, kitty or cliamp.</p>
+  </div>
+</footer>
+</div>
+</body>
+</html>
