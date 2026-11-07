@@ -67,6 +67,13 @@
 </section>
 </div>
 
+<p id="insider" hidden><b>Insider:</b> your request is read first. The title starts with [insider] so it stands out.</p>
+<script>
+document.addEventListener('DOMContentLoaded',function(){if(!/[?&]insider=1(&|$)/.test(location.search))return;
+var n=document.getElementById('insider');if(n)n.hidden=false;
+document.querySelectorAll('a[href*="/issues/new"]').forEach(function(a){var t=/feature_request/.test(a.href)?'[insider] [idea] ':'[insider] [bug] ';a.href+='&title='+encodeURIComponent(t)});
+document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.href+=(a.href.indexOf('?')<0?'?':'&')+'subject='+encodeURIComponent('Insider: ')})});
+</script>
 </main>
 <footer>
   <div class="tile quiet">
