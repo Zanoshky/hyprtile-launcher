@@ -25,7 +25,7 @@
 <h1>The guide</h1>
 <div class="underline" aria-hidden="true"></div>
 <p class="lede">Everything Hyprtile does, from install to the last config key, in order. Words in <code>code</code> are what you see in the app.</p>
-<div class="tiles"><nav class="tile toc" aria-labelledby="toc-h"><h2 id="toc-h">Contents</h2><ol><li><a href="#install"><span class="n">1</span>Install</a></li><li><a href="#setup"><span class="n">2</span>First run and setup</a></li><li><a href="#home"><span class="n">3</span>Set as home screen</a></li><li><a href="#tour"><span class="n">4</span>The tour and the cheat sheet</a></li><li><a href="#gestures"><span class="n">5</span>Gestures</a></li><li><a href="#desktop"><span class="n">6</span>The desktop</a></li><li><a href="#workspaces"><span class="n">7</span>Workspaces</a></li><li><a href="#edit"><span class="n">8</span>Edit mode</a></li><li><a href="#add"><span class="n">9</span>Add a window</a></li><li><a href="#free"><span class="n">10</span>Move and size on a free page</a></li><li><a href="#tiling"><span class="n">11</span>Tiled pages</a></li><li><a href="#winmenu"><span class="n">12</span>The window menu</a></li><li><a href="#windows"><span class="n">13</span>Every window</a></li><li><a href="#notifs"><span class="n">14</span>Notifications and pull down</a></li><li><a href="#rofi"><span class="n">15</span>Rofi: find an app</a></li><li><a href="#terminal"><span class="n">16</span>The terminal</a></li><li><a href="#music"><span class="n">17</span>Music, radio and cava</a></li><li><a href="#weather"><span class="n">18</span>Weather and places</a></li><li><a href="#looks"><span class="n">19</span>Looks, themes and wallpapers</a></li><li><a href="#conf"><span class="n">20</span>hyprtile.conf</a></li><li><a href="#lock"><span class="n">21</span>Lock screen</a></li><li><a href="#lockgesture"><span class="n">22</span>Lock gesture</a></li><li><a href="#settings"><span class="n">23</span>The menu</a></li><li><a href="#motion"><span class="n">24</span>Motion and battery</a></li><li><a href="#link"><span class="n">25</span>Link devices</a></li><li><a href="#pro"><span class="n">26</span>Hyprtile pro</a></li><li><a href="#a11y"><span class="n">27</span>Accessibility</a></li><li><a href="#privacy"><span class="n">28</span>Privacy and permissions</a></li><li><a href="#reset"><span class="n">29</span>Store look and reset</a></li></ol></nav></div>
+<div class="tiles"><nav class="tile toc" aria-labelledby="toc-h"><h2 id="toc-h">Contents</h2><ol><li><a href="#install"><span class="n">1</span>Install</a></li><li><a href="#setup"><span class="n">2</span>First run and setup</a></li><li><a href="#home"><span class="n">3</span>Set as home screen</a></li><li><a href="#tour"><span class="n">4</span>The tour and the cheat sheet</a></li><li><a href="#gestures"><span class="n">5</span>Gestures</a></li><li><a href="#desktop"><span class="n">6</span>The desktop</a></li><li><a href="#workspaces"><span class="n">7</span>Workspaces</a></li><li><a href="#edit"><span class="n">8</span>Edit mode</a></li><li><a href="#add"><span class="n">9</span>Add a window</a></li><li><a href="#free"><span class="n">10</span>Move and size on a free page</a></li><li><a href="#tiling"><span class="n">11</span>Tiled pages</a></li><li><a href="#winmenu"><span class="n">12</span>The window menu</a></li><li><a href="#windows"><span class="n">13</span>Every window</a></li><li><a href="#notifs"><span class="n">14</span>Notifications and pull down</a></li><li><a href="#rofi"><span class="n">15</span>Rofi: find an app</a></li><li><a href="#terminal"><span class="n">16</span>The terminal</a></li><li><a href="#termux"><span class="n">16b</span>Termux scripts</a></li><li><a href="#music"><span class="n">17</span>Music, radio and cava</a></li><li><a href="#weather"><span class="n">18</span>Weather and places</a></li><li><a href="#looks"><span class="n">19</span>Looks, themes and wallpapers</a></li><li><a href="#conf"><span class="n">20</span>hyprtile.conf</a></li><li><a href="#lock"><span class="n">21</span>Lock screen</a></li><li><a href="#lockgesture"><span class="n">22</span>Lock gesture</a></li><li><a href="#settings"><span class="n">23</span>The menu</a></li><li><a href="#motion"><span class="n">24</span>Motion and battery</a></li><li><a href="#link"><span class="n">25</span>Link devices</a></li><li><a href="#pro"><span class="n">26</span>Hyprtile pro</a></li><li><a href="#a11y"><span class="n">27</span>Accessibility</a></li><li><a href="#privacy"><span class="n">28</span>Privacy and permissions</a></li><li><a href="#reset"><span class="n">29</span>Store look and reset</a></li></ol></nav></div>
 
 <div class="tiles one">
 <section class="tile " id="install" aria-labelledby="install-h"><div class="title" aria-hidden="true">01</div><h2 id="install-h">Install</h2>
@@ -325,6 +325,7 @@
   <dt>word</dt><dd>a word of the day with its meaning and an example</dd>
   <dt>define</dt><dd>look up a word: meanings, examples and words that mean the same, from Wiktionary and Datamuse</dd>
   <dt>convert</dt><dd>units offline, and money with the European Central Bank's daily rates</dd>
+  <dt>script</dt><dd>what your own Termux script prints, on a timer (early access, see <a href="#termux">Termux scripts</a>)</dd>
 </dl>
 <p>A running countdown, pomodoro or stopwatch, and your work time while you are clocked in, also tick as pills on the <a href="#lock">lock screen</a>.</p>
 <h3 id="prowindows">Pro windows</h3>
@@ -415,7 +416,19 @@
   <dt>tour, gestures, setup</dt><dd>the tour, the cheat sheet, the setup guide</dd>
   <dt>fetch, battery, uptime, date</dt><dd>info about the phone</dd>
   <dt>clear</dt><dd>clear the screen</dd>
+  <dt>t ls</dt><dd>run a command in your Termux (see below)</dd>
 </dl>
+<p>Under <code>customize</code>, <code>for ricers</code>, <code>kitty</code> you set its text size, cursor (block, bar or underline), blink, how many lines it keeps and whether it opens with fetch or clear.</p>
+
+</section>
+
+<section class="tile " id="termux" aria-labelledby="termux-h"><div class="title" aria-hidden="true">16b</div><h2 id="termux-h">Termux scripts</h2>
+
+<p>Early access: Insiders have it now, and from 1 February 2027 it is part of pro. Hyprtile does not bring Linux with it. It asks your own Termux to run a command and shows what comes back. Use the Termux from F-Droid or GitHub: the Google Play one cannot take commands from other apps.</p>
+<ol class="steps"><li>Open the menu, <code>customize</code>, <code>for ricers</code>, <code>termux</code>.</li><li><code>get termux</code> if you have none.</li><li><code>turn on commands</code> copies one line and opens Termux. Paste it there and press enter.</li><li><code>allow hyprtile</code>, then <code>test</code>. It says ok when all is ready.</li></ol>
+<p>Then type <code>t</code> and a command in kitty, like <code>t ls</code>. Or add a <b>script</b> window: pick a script from <code>~/.shortcuts</code> (the folder Termux:Widget uses) or type a command. It shows what the script prints, colours and all, and runs it again on a timer while it is on screen. Hold it for its menu: run every, name, text size, start at the top or the end, time out, and which parts it shows. Drag to scroll.</p>
+<p>Seven ready widgets (bar, btop, weather, ping, colours, calendar and crypto) install with one line from <a href="https://termux.zanoski.com/widgets">termux.zanoski.com/widgets</a>. The whole setup is at <a href="https://termux.zanoski.com">termux.zanoski.com</a>. Android hides cpu load and uptime from apps, so scripts that read them show nothing; memory, disk, network and anything from the web work.</p>
+<p>Only apps you allow can send commands to Termux, and only after you turn commands on. Hyprtile runs only what you type in kitty or set in a script window, and nothing leaves your phone.</p>
 
 </section>
 
@@ -437,6 +450,7 @@
 <section class="tile " id="weather" aria-labelledby="weather-h"><div class="title" aria-hidden="true">18</div><h2 id="weather-h">Weather and places</h2>
 
 <p>Weather comes from Open Meteo. With location allowed it uses where you are, rounded to about 1 km before it is sent. Or set a city in the menu, <code>clock and weather</code>, <code>weather places</code>, or from the weather window menu. Then no location permission is needed.</p>
+<p><code>forecast model</code>, in <code>clock and weather</code>, picks the weather model: auto, MET Norway, ECMWF, DWD ICON, GFS or Météo France. Auto takes the best one for where you are. The conf key is <code>weather_model</code> under <code>general</code>.</p>
 <p><code>calendar app</code>, in <code>clock and weather</code>, picks which app opens your events and days, so Android stops asking each time.</p>
 <p>Several places work too, split by commas: <code>Zagreb, London, here</code>, where <code>here</code> is your location. Tap the weather window to step to the next place. A tall weather window shows a pill per place and <code>+ city</code>; hold a pill to show, move or remove it. Tap a day in the days row to see that day.</p>
 
@@ -658,7 +672,7 @@
 <p><code>rate us</code> sits in the main menu just above help: rate Hyprtile on Google Play, or tell us what is wrong. Hyprtile never asks on its own.</p>
 <p>New rows elsewhere: <code>clock font</code> (block, round, led, ascii, shade and round led) in the look's <code>fine tune</code>, <code>date</code> in <code>clock and weather</code> for how the date reads, <code>hidden apps</code> in <code>customize</code>, <code>home</code> to bring a hidden app back, and <code>hinge gap</code> in home's <code>fine tune</code>, which keeps every window off the fold on a two screen phone. Work profile apps say "(work)".</p>
 <h3>support the developer</h3>
-<p>A short note says you can support Hyprtile if it helps you, then <code>insider</code>: an optional 0.99 a month subscription through Google Play that pays for bug fixes and the live feeds (weather, radar, the ISS, quakes and more). Insiders get new features before everyone else (each one opens to every user on a set date), their bug reports and ideas read first, and an Insider mark in About with their date. Nothing free or in Pro ever moves behind it. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time. Last comes <code>hyprtile v2.10</code> with <code>about ›</code>, which opens hyprtile.zanoski.com, and one line under it: Hyprtile has no server of its own, so we never see what it shows or fetches.</p>
+<p>A short note says you can support Hyprtile if it helps you, then <code>insider</code>: an optional 0.99 a month subscription through Google Play that pays for bug fixes and the live feeds (weather, radar, the ISS, quakes and more). Insiders get new features before everyone else (each one opens to every user on a set date), their bug reports and ideas read first, and an Insider mark in About with their date. Nothing free or in Pro ever moves behind it. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time. Last comes <code>hyprtile v2.14</code> with <code>about ›</code>, which opens hyprtile.zanoski.com, and one line under it: Hyprtile has no server of its own, so we never see what it shows or fetches.</p>
 
 </section>
 
@@ -723,7 +737,7 @@
   <li><b>only when you turn it on:</b> what goes out, and only once you turn it on</li>
   <li><b>in full:</b> the privacy policy, with every host and what it receives</li>
 </ul>
-<p>Hyprtile holds 22 permissions: 12 that Android asks you for, and 10 that it gives without asking. Every asked one is optional:</p>
+<p>Hyprtile holds 23 permissions: 13 that Android asks you for, and 10 that it gives without asking. Every asked one is optional:</p>
 <dl class="keys">
   <dt>location</dt><dd>weather for where you are, rounded to about 1 km before it is sent. A typed weather place works without it. Precise only for the gps window (pro), and that never leaves the phone.</dd>
   <dt>calendar</dt><dd>the calendar windows read your events on the phone, nothing is written</dd>
@@ -737,6 +751,7 @@
   <dt>exact alarms</dt><dd>the pomodoro rings on time from the background</dd>
   <dt>local network</dt><dd>link and the router ping</dd>
   <dt>accessibility service</dt><dd>only for the lock gesture: it locks the screen and reads nothing</dd>
+  <dt>run commands in termux</dt><dd>only for Termux scripts: kitty's <code>t</code> and script windows ask your Termux to run what you set. Output stays on the phone.</dd>
 </dl>
 <p>Given without asking: internet, alarms, do not disturb, uninstall apps, pull down the shade, vibrate, network state, audio settings, radio playback and Google Play billing.</p>
 <p>Location, calendar and notification access are asked only the first time a window needs them. Microphone, contacts, clipboard history and notification access each show a short note with <code>agree</code> and <code>not now</code> before Android asks. Nothing is sent to us: Hyprtile has no server of its own. Only when you turn them on: the weather and the network windows you place (air quality, rain radar, news, holidays, on this day, aurora, quakes, space station, launches, rates, ping and git), the radio when you press play, link to your own paired devices on the same wifi, and Android backup to your own Google account. 2fa codes and the clipboard history are never in a backup. Read the full <a href="https://hyprtile.zanoski.com/privacy">privacy policy</a>, also under <code>help</code>, <code>privacy policy</code>.</p>
