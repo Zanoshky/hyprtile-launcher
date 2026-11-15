@@ -280,7 +280,7 @@
   <dt>notifications</dt><dd>your notifications as cards, mako style. Tap to open, swipe left to dismiss, hold for more.</dd>
   <dt>inbox</dt><dd>notifications and events as tabs</dd>
   <dt>brief</dt><dd>date, next event, weather, inbox, tasks and phone in one</dd>
-  <dt>apps</dt><dd>every app in a grid, pinned ones first</dd>
+  <dt>apps</dt><dd>every app in a grid, pinned ones first. On Android 15 and later your private space has its own section at the end, with a lock and unlock button; while it is locked its apps show nowhere, not even in search</dd>
   <dt>app shelf</dt><dd>app icons you pick, one per cell, as a row or a block. See <a href="#shelf">the app shelf</a>.</dd>
   <dt>toggles</dt><dd>torch, ring mode, do not disturb and more</dd>
   <dt>battery</dt><dd>level, charge, heat and a graph of the day</dd>
@@ -503,7 +503,7 @@
 <dl class="keys">
   <dt>theme</dt><dd>a list of every theme, each with its own colours beside it. <code>pro themes</code> at the end has 30 more with <a href="#pro">pro</a>.</dd>
   <dt>day and night</dt><dd>a day theme and a night theme, by the sun or by the clock, and the blue light filter. See <a href="#daynight">day and night</a>.</dd>
-  <dt>glass</dt><dd>opacity, glass tint, inactive, blur, dim inactive, bar opacity, menu opacity, rounding and gaps, as sliders that show live while you drag</dd>
+  <dt>glass</dt><dd><code>opacity</code> from 0, fully clear with only borders and content, to 1, solid, and <code>auto</code>, where Hyprtile picks the lightest glass that keeps text readable on your wallpaper. Then inactive, blur, dim inactive, bar opacity (0 makes the bar and dock fully clear), menu opacity, rounding and gaps, as sliders that show live while you drag. In hyprtile.conf it is <code>decoration:glass_opacity</code>, <code>auto</code> or 0 to 1</dd>
   <dt>borders and glow</dt><dd>border size, border glow, which window the glow follows, glow strength and glow size</dd>
   <dt>font</dt><dd>JetBrains Mono, Fira Code, Meslo, Hack, Caskaydia Mono, or the phone's own</dd>
   <dt>load font file</dt><dd>any monospace .ttf or .otf from your phone, free</dd>
@@ -704,7 +704,7 @@
 </dl>
 <h3>system</h3>
 <dl class="keys">
-  <dt>home and apps</dt><dd>top bar, status bar, app dock, rotation, app order, open the only match, contacts in search (pro), pull down, notifications, lock gesture, notification badges, quick actions, real visualizer, hidden apps, app shelf labels, icon pack, icon size, hide passwords, how windows share the page, top bar items, lock layout, link devices, text editor, editor look</dd>
+  <dt>home and apps</dt><dd>top bar, status bar, app dock, rotation, app order, open the only match, contacts in search (pro), pull down, notifications, lock gesture, notification badges, quick actions, real visualizer, hidden apps, private space (shown or hidden, Android 15 and later), app shelf labels, icon pack, icon size, hide passwords, how windows share the page, top bar items, lock layout, link devices, text editor, editor look</dd>
   <dt>clock and weather</dt><dd>clock, units, weather places, calendar app</dd>
   <dt>lock screen and saver</dt><dd><a href="#lock">lock screen</a> and <a href="#saver">screen saver</a></dd>
   <dt>tour and gestures</dt><dd>tour, gestures, setup guide, reset to defaults</dd>
