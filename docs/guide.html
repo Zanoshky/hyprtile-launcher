@@ -127,7 +127,7 @@
 
 <section class="tile " id="workspaces" aria-labelledby="workspaces-h"><div class="title" aria-hidden="true">07</div><h2 id="workspaces-h">Workspaces</h2>
 
-<p>Swipe sideways to slide between workspaces, or pages. You can have up to 9. Open the menu, <code>pages</code>, or <code>pages</code> on the edit strip:</p>
+<p>Swipe sideways to slide between workspaces, or pages. You can have up to 9. Turn on <code>loop pages</code> (in <code>home and apps</code> and in <code>pages</code>) and a swipe past the last page goes to the first, and past the first to the last. The slide keeps its way, so page 1 comes in from the right after the last page. It is off by default; the conf key is <code>general:loop_pages</code>. Open the menu, <code>pages</code>, or <code>pages</code> on the edit strip:</p>
 <dl class="keys">
   <dt>move this page</dt><dd>‹ moves it left, a tap anywhere else moves it right</dd>
   <dt>rename this page</dt><dd>see <a href="#wsnames">workspace names</a></dd>
@@ -280,7 +280,7 @@
   <dt>notifications</dt><dd>your notifications as cards, mako style. Tap to open, swipe left to dismiss, hold for more.</dd>
   <dt>inbox</dt><dd>notifications and events as tabs</dd>
   <dt>brief</dt><dd>date, next event, weather, inbox, tasks and phone in one</dd>
-  <dt>apps</dt><dd>every app in a grid, pinned ones first. On Android 15 and later your private space has its own section at the end, with a lock and unlock button; while it is locked its apps show nowhere, not even in search</dd>
+  <dt>apps</dt><dd>every app in a grid, pinned ones first. Tabs under the title switch the view: <code>all</code> (the grid as it was), <code>frequent</code> (opened most), <code>recent</code> (opened last) and <code>new</code> (installed last). Tap a tab or swipe sideways; at the first or last tab a swipe turns the page. <code>app view tabs</code> turns the tabs off, and <code>apps open on</code> picks the view that opens first (conf keys <code>general:app_views</code> and <code>general:apps_open_on</code>). On Android 15 and later your private space has its own section at the end, with a lock and unlock button; while it is locked its apps show nowhere, not even in search</dd>
   <dt>app shelf</dt><dd>app icons you pick, one per cell, as a row or a block. See <a href="#shelf">the app shelf</a>.</dd>
   <dt>toggles</dt><dd>torch, ring mode, do not disturb and more</dd>
   <dt>battery</dt><dd>level, charge, heat and a graph of the day</dd>
@@ -548,9 +548,10 @@
 <p>The <code>theme</code> row in fine tune changes the side on show, when that side has its own theme. The lock screen and the screen saver follow too. In hyprtile.conf the keys are <code>theme_auto</code> (off, sun or hours), <code>theme_day</code>, <code>theme_night</code> and <code>night_filter</code>.</p>
 <div class="pair"><figure><div class="phone"><img src="img/new-day.webp" width="540" height="1080" loading="lazy" alt="Day and night by the sun, by day: the Catppuccin Latte theme in light grey and violet over the synthwave scene, with a clock, a weather window for Tokyo, an app shelf row of Chrome, Gmail, Maps and Photos, a 2x2 app shelf and the moon."></div><figcaption>by day: the day theme</figcaption></figure><figure><div class="phone"><img src="img/new-night.webp" width="540" height="1080" loading="lazy" alt="The same home by night: the night theme in dark navy and teal, the weather window for London says drizzle, and the drizzle falls faintly over the wallpaper."></div><figcaption>by night: the night theme</figcaption></figure></div>
 <h3 id="wallpapers">Wallpapers</h3>
-<p>Menu, <code>wallpaper</code> (Background) has three entries: <code>your own picture</code>, <code>your own video</code>, and the list of wallpapers for your apps. Open the list and you get live weather and see through on top, then plain, seven photographs and fourteen animations, each card with a small live preview. A tap paints that wallpaper behind the menu, so you can try them in turn. A dot marks the one on show.</p>
+<p>Menu, <code>wallpaper</code> (Background) has three entries: <code>your own picture</code>, <code>your own video</code>, and the list of wallpapers for your apps. Open the list and you get live weather and see through on top, then plain, black, your own picture (once you have one), your phone's own wallpaper, seven photographs and fourteen animations, each card with a small live preview. A tap paints that wallpaper behind the menu, so you can try them in turn. A dot marks the one on show.</p>
 <dl class="keys">
-  <dt>plain</dt><dd>the theme colour alone, nothing drawn, nothing moving (old black, paper and none open this)</dd>
+  <dt>plain</dt><dd>the theme colour alone, nothing drawn, nothing moving (old paper and none open this)</dd>
+  <dt>black</dt><dd>true black on any theme, nothing else (a saved <code>wallpaper = black</code> is this again)</dd>
   <dt>cat's paw, dragon sunset, falcon heavy, kennedy sunset, apollo earthrise, iss aurora, great wave</dt><dd>the seven photographs, all still, free to use, with their sources in the app's SOURCES file. Cat's paw, a Webb picture graded to deep blue and violet, is the first one you see.</dd>
   <dt>synthwave</dt><dd>the banded sun and a neon grid running at you</dd>
   <dt>circuit</dt><dd>light running along circuit traces</dd>
@@ -695,16 +696,12 @@
 </dl>
 <h3>system</h3>
 <dl class="keys">
-  <dt>home and apps</dt><dd>top bar, status bar, app dock, rotation, app order, open the only match, contacts in search (pro), pull down, notifications, lock gesture, notification badges, quick actions, real visualizer, hidden apps, private space (shown or hidden, Android 15 and later), app shelf labels, icon pack, icon size, hide passwords, how windows share the page, top bar items, lock layout, link devices, text editor, editor look</dd>
+  <dt>home and apps</dt><dd>top bar, status bar, app dock, rotation, app order, open the only match, loop pages, app view tabs, apps open on, contacts in search (pro), pull down, notifications, lock gesture, notification badges, quick actions, real visualizer, hidden apps, private space (shown or hidden, Android 15 and later), app shelf labels, icon pack, icon size, hide passwords, how windows share the page, top bar items, lock layout, link devices, text editor, editor look</dd>
   <dt>clock and weather</dt><dd>clock, units, weather places, calendar app</dd>
   <dt>lock screen and saver</dt><dd><a href="#lock">lock screen</a> and <a href="#saver">screen saver</a></dd>
   <dt>tour and gestures</dt><dd>tour, gestures, setup guide, reset to defaults</dd>
   <dt>keyglow keyboard</dt><dd>Keyglow, our keyboard, one tap away on Google Play. It can take your wallpaper picture, glass and rounding along with the theme. Fileglow, the file manager, can take your theme too.</dd>
   <dt>config file</dt><dd>hyprtile.conf</dd>
-</dl>
-<h3>privacy</h3>
-<dl class="keys">
-  <dt>privacy and permissions</dt><dd>the privacy page, with every permission and what it is for. See <a href="#privacy">privacy</a>.</dd>
 </dl>
 <h3>pro</h3>
 <dl class="keys">
@@ -712,15 +709,20 @@
   <dt>restore purchase</dt><dd>pro bought on another phone</dd>
 </dl>
 <h3>help</h3>
+<p>Help, privacy and about are one page, <code>help</code>, and search finds each row once:</p>
 <dl class="keys">
+  <dt>tour and gestures</dt><dd>the tour, the cheat sheet of gestures and the setup guide</dd>
   <dt>user guide</dt><dd>this guide, in the browser</dd>
   <dt>report a bug or ask for a feature</dt><dd>the <a href="report.html">report page</a></dd>
-  <dt>privacy policy</dt><dd>the full <a href="https://hyprtile.zanoski.com/privacy">privacy policy</a></dd>
+  <dt>privacy and permissions</dt><dd>the privacy page, with every permission and what it is for, and the full <a href="https://hyprtile.zanoski.com/privacy">privacy policy</a>. See <a href="#privacy">privacy</a>.</dd>
+  <dt>apps by us</dt><dd>our other apps</dd>
+  <dt>insider</dt><dd>see below</dd>
+  <dt>about</dt><dd>the version, and hyprtile.zanoski.com</dd>
 </dl>
 <p><code>rate us</code> sits in the main menu just above help: rate Hyprtile on Google Play, or tell us what is wrong. After a few good starts, never on the first, Google Play may show its own short rating sheet, at most once in 60 days.</p>
 <p>New rows elsewhere: <code>clock font</code> (block, round, led, ascii, shade and round led) in the look's <code>fine tune</code>, <code>date</code> in <code>clock and weather</code> for how the date reads, <code>hidden apps</code> in <code>customize</code>, <code>home</code> to bring a hidden app back, and <code>hinge gap</code> in home's <code>fine tune</code>, which keeps every window off the fold on a two screen phone. Work profile apps say "(work)".</p>
 <h3>support the developer</h3>
-<p>A short note says you can support Hyprtile if it helps you, then <code>insider</code>: an optional 0.99 a month subscription through Google Play that pays for bug fixes and the live feeds (weather, radar, the ISS, quakes and more). Insiders get new features before everyone else (each one opens to every user on a set date), their bug reports and ideas read first, and an Insider mark in About with their date. Nothing free or in Pro ever moves behind it. The <a href="#browser">browser</a> window is the one thing made for Insiders alone: it stays with Insider and does not come to pro. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time. Last comes <code>hyprtile v2.32</code> with <code>about ›</code>, which opens hyprtile.zanoski.com, and one line under it: Hyprtile has no server of its own, so we never see what it shows or fetches.</p>
+<p>A short note says you can support Hyprtile if it helps you, then <code>insider</code>: an optional 0.99 a month subscription through Google Play that pays for bug fixes and the live feeds (weather, radar, the ISS, quakes and more). Insiders get new features before everyone else (each one opens to every user on a set date), their bug reports and ideas read first, and an Insider mark in About with their date. Nothing free or in Pro ever moves behind it. The <a href="#browser">browser</a> window is the one thing made for Insiders alone: it stays with Insider and does not come to pro. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time. Last comes <code>about</code> with the version, which opens hyprtile.zanoski.com, and one line under it: Hyprtile has no server of its own, so we never see what it shows or fetches.</p>
 
 </section>
 
