@@ -16,7 +16,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar">
   <a class="brand" href="index.html"><img src="img/icon-192.png" alt="" width="30" height="30"><span>hyprtile</span></a>
-  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html"><span class="ws" aria-hidden="true">1</span>home</a></li><li><a href="guide.html"><span class="ws" aria-hidden="true">2</span>guide</a></li><li><a href="use-cases.html"><span class="ws" aria-hidden="true">3</span>use cases</a></li><li><a href="cookbook.html"><span class="ws" aria-hidden="true">4</span>cookbook</a></li><li><a href="runbook.html" aria-current="page"><span class="ws" aria-hidden="true">5</span>runbook</a></li><li><a href="faq.html"><span class="ws" aria-hidden="true">6</span>faq</a></li><li><a href="report.html"><span class="ws" aria-hidden="true">7</span>report a bug</a></li></ul></nav>
+  <nav class="nav" aria-label="Guide pages"><ul><li><a href="index.html"><span class="ws" aria-hidden="true">1</span>home</a></li><li><a href="guide.html"><span class="ws" aria-hidden="true">2</span>guide</a></li><li><a href="use-cases.html"><span class="ws" aria-hidden="true">3</span>use cases</a></li><li><a href="cookbook.html"><span class="ws" aria-hidden="true">4</span>cookbook</a></li><li><a href="config.html"><span class="ws" aria-hidden="true">5</span>config</a></li><li><a href="runbook.html" aria-current="page"><span class="ws" aria-hidden="true">6</span>runbook</a></li><li><a href="faq.html"><span class="ws" aria-hidden="true">7</span>faq</a></li><li><a href="report.html"><span class="ws" aria-hidden="true">8</span>report a bug</a></li></ul></nav>
 </header>
 <div class="wrap">
 <main id="main">
@@ -86,7 +86,9 @@
 <p>Motion, glows and many live windows redraw the screen often.</p>
 <ol class="steps"><li>Open the menu, <code>customize</code>, <code>search settings</code>, type <code>frame rate</code> and set it to 30.</li><li>Pick a calmer look, like eink paper.</li><li>Dark themes save the most on OLED screens.</li></ol>
 </section>
-<section class="tile " id="lost" aria-labelledby="lost-h"><div class="title" aria-hidden="true">fix</div><h2 id="lost-h">Something is gone</h2>
+<section class="tile " id="confline" aria-labelledby="confline-h"><div class="title" aria-hidden="true">fix</div><h2 id="confline-h">A line in hyprtile.conf does nothing</h2>
+<ol class="steps"><li>Open the editor and look at the notes at the top. A bad value or unknown key is listed with its line number.</li><li>Check the key sits in the right section: <code>rounding</code> belongs in <code>decoration</code>, <code>gaps_in</code> in <code>general</code>, window options in <code>windows</code>.</li><li>Check the value against the <a href="config.html">config reference</a>. Numbers outside the range are pulled to the nearest end, and words must be one of the listed ones.</li><li>If nothing helps, <code>reset to defaults</code> keeps your file as <code>hyprtile.conf.bak</code>.</li></ol>
+</section><section class="tile " id="lost" aria-labelledby="lost-h"><div class="title" aria-hidden="true">fix</div><h2 id="lost-h">Something is gone</h2>
 <p>Most things are hidden, not deleted.</p>
 <ol class="steps"><li>A hidden app: the menu, <code>customize</code>, <code>home</code>, <code>hidden apps</code>, tap it.</li><li>A window: hold an empty spot, <code>add a window</code>, and add it again.</li><li>Just changed something? Most menus have <code>undo</code>.</li></ol>
 </section>
