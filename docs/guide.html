@@ -370,6 +370,12 @@
 </dl>
 <p>With pro, <code>icon pack</code> (menu, <code>home and apps</code>) uses any icon pack app you have for the dock, shelves and apps, and a hold on an app lets you <code>change icon</code> to any icon from any pack. <code>icon size</code> helps packs that draw small.</p>
 <p>Windows show more when their tile is bigger. A tile too small for its content draws the window zoomed out, never squashed.</p>
+<h3 id="appswin">The apps window</h3>
+<p>The apps window shows a grid or, new in 2.70, a list with a letter rail down the edge. Open its menu, then <code>all settings</code>, to change it: hide the title, the count, the section headers or all apps; pick the frame, the rows and the icon style; set apps per row and the row size. <code>letter headers</code> and <code>letter rail</code> can be turned off. With the rail off the edge still scrolls by letter.</p>
+<p>Hold an app and choose <code>rename</code> to give it your own name. On Android 15 and later, apps in your private space can be hidden or renamed too, and removing a work or private copy removes only that copy. <code>hold time</code> in all settings sets how long a press lasts before it counts as a hold.</p>
+<h3 id="textlines">Text lines</h3>
+<p><code>text lines</code> has three levels: <code>full</code>, <code>quiet</code> and <code>bare</code>. One setting hides titles, counts and hints in every window. All settings is one scrolling column; rows show their value, and a row whose name wraps keeps its switch.</p>
+<p>Window options live in <code>hyprtile.conf</code> (<code>windows { kind_option }</code>), so a window's look can be shared by copy and paste. The app shelf has its own <code>shelf_row</code>, apps per row.</p>
 <h3 id="shelf">The app shelf</h3>
 <p>The app shelf is in the phone group of <code>+ add</code>. It holds one app per cell, at any size: 1x1 is one app, a 4x1 is a row of four, a 1x4 is a column, and 4x2 or bigger is a grid. It opens as a 4x1 row. Each shelf keeps its own apps, so you can have as many as you like.</p>
 <ul class="dots">

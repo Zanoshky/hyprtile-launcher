@@ -23,7 +23,7 @@
 
 <section class="hero" aria-labelledby="hero-h">
   <div class="tile">
-    <div class="title" aria-hidden="true">kitty ~ user guide · 2.79</div>
+    <div class="title" aria-hidden="true">kitty ~ user guide · 2.82</div>
     <h1 id="hero-h">hyprtile</h1>
     <div class="underline" aria-hidden="true"></div>
     <p class="lede">Your Android home screen as a tiling Linux desktop, inspired by Hyprland, Omarchy and kitty. Widgets become windows with gaps and glowing borders, under a waybar, with a terminal, a launcher and 40 themes from the ricing scene.</p>
@@ -66,6 +66,9 @@
 <section class="tile" id="new" aria-labelledby="new-h"><div class="title" aria-hidden="true">changelog</div><h2 id="new-h">New since 1.54</h2>
 
 <ul class="dots cols">
+  <li><a href="guide.html#appswin"><b>Apps window, your way</b></a>, new in 2.70 to 2.78: a list layout with a letter rail beside the grid, hide the title, count, section headers or all apps, change the frame, rows and icon style, set apps per row and row size, and turn the letter headers and the rail off (the edge still scrolls by letter). Rename any app from its menu. Private space apps can be hidden or renamed, and removing a work or private copy removes only that copy.</li>
+  <li><a href="guide.html#textlines"><b>Text lines and hold time</b></a>: one setting, <code>text lines</code> (full, quiet or bare), hides titles, counts and hints in every window. <code>hold time</code> sets how long a press lasts before it counts as a hold. All settings is one scrolling column, rows show their values and wrapped rows keep their switch.</li>
+  <li><a href="guide.html#conf"><b>Window settings in hyprtile.conf</b></a>: each window's options live in the conf, so you can share them by copy and paste, with shelf apps per row too. Also in 2.82: idle animation no longer stutters, and a third party widget can no longer crash the launcher.</li>
   <li><a href="guide.html#presets"><b>Six mesh looks</b></a>, new in 2.76 and cut from 36 to six in 2.79: pastel haze, midnight bloom, peach fizz, mint frost, mono ink and onyx gold, each a drifting gradient wallpaper with a free theme, in a first group called mesh. A look you had that is gone becomes the closest one kept. Pastel haze is the look of a fresh install. Camel and navy, emerald and rose are gone.</li>
   <li><a href="guide.html#windows"><b>Private space</b></a>: on Android 15 and later, apps in your private space get their own section at the end of the apps window, with a lock and unlock button. Locked, they show nowhere, not even in search. Hide the section in <code>home and apps</code>.</li>
   <li><a href="guide.html#settings"><b>One opacity slider</b></a>: windows go from 0, fully clear with only borders and content, to 1, solid. On <code>auto</code> Hyprtile picks the lightest glass that keeps text readable, with every theme. Bar opacity 0 makes the bar and dock fully clear too.</li>
