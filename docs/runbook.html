@@ -50,6 +50,10 @@
 <p>The browser window shows pages as text, like lynx. Pages built with JavaScript, logins and video do not come through as text.</p>
 <ol class="steps"><li>Hold the browser window and tap <code>open full</code>. The page opens as it really is.</li><li>Still blank: in the same menu, turn <code>javascript in full</code> on.</li><li>Or tap <code>open in your browser</code>.</li></ol><p>The window says "insiders only" without the subscription. See <a href="guide.html#browser">the browser</a>.</p>
 </section>
+<section class="tile " id="portfolio" aria-labelledby="portfolio-h"><div class="title" aria-hidden="true">fix</div><h2 id="portfolio-h">The portfolio shows dashes or says some totals are missing</h2>
+<p>The portfolio window asks the same free quote feed as the ticker, and it needs an exchange rate for every holding that is not in your chosen currency.</p>
+<ol class="steps"><li>Hold the window and tap <code>refresh</code>.</li><li>Check the symbol in <code>holdings</code>. Stocks use the plain symbol, coins use a pair like <code>BTC-USD</code>.</li><li>Still missing: pick another <code>currency</code>. A holding with no rate is left out of the totals until the feed has one.</li></ol>
+</section>
 <section class="tile " id="hass" aria-labelledby="hass-h"><div class="title" aria-hidden="true">fix</div><h2 id="hass-h">Home Assistant does not answer away from home</h2>
 <p>A plain http address, like homeassistant.local:8123, is only asked on the wifi you set it up on. On mobile data or another wifi it is not asked at all, so your token is never sent where someone else could catch it.</p>
 <ol class="steps"><li>Use an https address for Home Assistant, like your Nabu Casa or own domain address.</li><li>Or use Tailscale: behind a VPN, a 100.64 address is asked.</li><li>Moved house or changed router? Type the address again on the new wifi.</li></ol>
